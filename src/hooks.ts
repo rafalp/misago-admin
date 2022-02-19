@@ -1,9 +1,7 @@
 import React from "react"
 
 const EXTRA_COMPONENTS: Record<string, Array<React.ComponentType>> = {
-  TEST: []
+  TEST: [],
 }
 
-export {
-  EXTRA_COMPONENTS
-}
+export { EXTRA_COMPONENTS }

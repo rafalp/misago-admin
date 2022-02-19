@@ -1,7 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
-import LocaleProvider from './LocaleProvider'
+import React from "react"
+import ReactDOM from "react-dom"
+import App from "./App"
+import LocaleProvider from "./LocaleProvider"
 import setupPlugins from "./plugins"
 import "./styles/index.scss"
 
@@ -13,5 +13,5 @@ ReactDOM.render(
       <App />
     </LocaleProvider>
   </React.StrictMode>,
-  document.getElementById('root')
-);
+  document.getElementById("root")
+)
