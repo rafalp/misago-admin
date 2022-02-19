@@ -10,3 +10,5 @@ msgstr ""
 #: App.tsx:9
 msgid "login.submit"
 msgstr "Logowanie"
+
+# Plugins locales
