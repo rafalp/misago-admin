@@ -1,5 +1,5 @@
 #!/bin/bash
-# Bootstrap script used to run setup tasks for Misago client image
+# Bootstrap script used to run setup tasks for Misago admin image
 
 # Text styles
 RED='\033[0;31m'
@@ -21,9 +21,9 @@ install_plugins() {
 
 prepare_deploy() {
     npm run build
-    mv build/asset-manifest.json build/static/misago/asset-manifest.json
+    mv build/asset-manifest.json build/static/admin/asset-manifest.json
     mkdir build_tmp
-    mv build/static/misago build_tmp/misago
+    mv build/static/admin build_tmp/admin
     rm -rf build
     mv build_tmp build
 }
