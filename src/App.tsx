@@ -1,16 +1,11 @@
-import { Trans } from "@lingui/macro"
 import React from "react"
-import Navbar from "./components/Navbar"
-import { EXTRA_COMPONENTS } from "./hooks"
+import { useAuth } from "./auth"
 import LoginPage from "./pages/LoginPage"
 
-const App: React.FC = () => (
-  <div>
-    <LoginPage />
-    {EXTRA_COMPONENTS.TEST.map((Component, i) => (
-      <Component key={i} />
-    ))}
-  </div>
-)
+const App: React.FC = () => {
+  const user = useAuth()
+
+  return user ? <div>{"Hello, " + user.name}</div> : <LoginPage />
+}
 
 export default App

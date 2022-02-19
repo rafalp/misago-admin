@@ -1,0 +1,14 @@
+html, body, #root {
+  height: 100%;
+}
+
+.layout-centered {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.layout-centered .container-fluid {
+  width: 100%;
+  max-width: 500px;
+}

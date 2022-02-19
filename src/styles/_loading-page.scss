@@ -1,0 +1,25 @@
+/* Full-page loading animation that consists of flashing Misago logo */
+.page-loading {
+  width: 215px;
+  height: 100px;
+  margin: $spacer auto;
+
+  background-image: url("./assets/logo-gray.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  animation: loader-logo-in 3s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes loader-logo-in {
+  0% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}

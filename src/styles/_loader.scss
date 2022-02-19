@@ -1,0 +1,64 @@
+/* Loader animation from https://loading.io/css/ */
+.loader {
+  display: inline-block;
+  position: relative;
+  width: $loader-size * 5;
+  height: $loader-size;
+}
+
+.loader div {
+  position: absolute;
+  top: 0;
+  width: $loader-size;
+  height: $loader-size;
+  border-radius: 50%;
+  background: $loader-color;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.loader div:nth-child(1) {
+  left: 0;
+  animation: loader-fade-in 0.6s infinite;
+}
+
+.loader div:nth-child(2) {
+  left: 0;
+  animation: loader-move-right 0.6s infinite;
+}
+
+.loader div:nth-child(3) {
+  left: $loader-size * 2;
+  animation: loader-move-right 0.6s infinite;
+}
+
+.loader div:nth-child(4) {
+  left: $loader-size * 4;
+  animation: loader-fade-out 0.6s infinite;
+}
+
+@keyframes loader-fade-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes loader-fade-out {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes loader-move-right {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate($loader-size * 2, 0);
+  }
+}

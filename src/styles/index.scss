@@ -1,3 +1,7 @@
+// Misago variables
+
+@import "variables";
+
 // Plugins variables
 
 // Bootstrap configuration
@@ -49,3 +53,7 @@
 // Plugins components
 
 // Misago components
+
+@import "layouts";
+@import "loader";
+@import "loading-page";
