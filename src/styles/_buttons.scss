@@ -1,6 +1,6 @@
 /* Add spacing between icon or spinner and text in button */
 .btn.has-text {
   .icon, .spinner-border {
-    margin-right: calc($spacer / 2);
+    margin-right: $spacer / 2;
   }
 }

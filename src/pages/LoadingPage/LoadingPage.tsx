@@ -1,5 +1,4 @@
 import React from "react"
-import Loader from "../../components/Loader"
 import CenteredLayout from "../../layouts/CenteredLayout"
 
 const LoadingPage: React.FC = () => (
