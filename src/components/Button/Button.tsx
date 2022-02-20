@@ -23,14 +23,13 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
 }) => (
   <button
-    className={classnames("btn", className, { "btn-sm": small })}
+    className={classnames("btn", className, { "btn-sm": small, "has-text": !!children })}
     disabled={disabled}
     type={!!onClick ? "button" : "submit"}
     onClick={onClick}
   >
     {icon && !spinner && <Icon name={icon} fixedWidth />}
     {spinner && <Spinner />}
-    {(!!icon || !!spinner) && children && " "}
     {children}
   </button>
 )

@@ -96,7 +96,7 @@ exports[`Storyshots Components/Alert Warning 1`] = `
 
 exports[`Storyshots Components/Button Danger 1`] = `
 <button
-  className="btn btn-danger"
+  className="btn btn-danger has-text"
   disabled={false}
   type="submit"
 >
@@ -106,7 +106,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
 
 exports[`Storyshots Components/Button Light 1`] = `
 <button
-  className="btn btn-light"
+  className="btn btn-light has-text"
   disabled={false}
   type="submit"
 >
@@ -114,9 +114,21 @@ exports[`Storyshots Components/Button Light 1`] = `
 </button>
 `;
 
-exports[`Storyshots Components/Button Primary 1`] = `
+exports[`Storyshots Components/Button Only Icon 1`] = `
 <button
   className="btn btn-primary"
+  disabled={false}
+  type="submit"
+>
+  <i
+    className="icon far fa-message fa-fw"
+  />
+</button>
+`;
+
+exports[`Storyshots Components/Button Primary 1`] = `
+<button
+  className="btn btn-primary has-text"
   disabled={false}
   type="submit"
 >
@@ -126,7 +138,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
 
 exports[`Storyshots Components/Button Success 1`] = `
 <button
-  className="btn btn-success"
+  className="btn btn-success has-text"
   disabled={false}
   type="submit"
 >
@@ -136,14 +148,13 @@ exports[`Storyshots Components/Button Success 1`] = `
 
 exports[`Storyshots Components/Button With Icon 1`] = `
 <button
-  className="btn btn-primary"
+  className="btn btn-primary has-text"
   disabled={false}
   type="submit"
 >
   <i
     className="icon far fa-message fa-fw"
   />
-   
   With icon
 </button>
 `;

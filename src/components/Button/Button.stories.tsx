@@ -27,3 +27,8 @@ export const WithIcon = (args: typeof Template) => (
   <ButtonPrimary icon="far fa-message" {...args} />
 )
 WithIcon.args = { ...Template, children: "With icon" }
+
+export const OnlyIcon = (args: typeof Template) => (
+  <ButtonPrimary icon="far fa-message" {...args} />
+)
+OnlyIcon.args = { ...Template, children: null }
