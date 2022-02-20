@@ -31,7 +31,8 @@ exports[`Storyshots Components/Alert Danger 1`] = `
   className="alert alert-danger"
   role="alert"
 >
-  A simple danger alert with 
+  A simple danger alert with
+   
   <a
     className="alert-link"
     href="#"
@@ -47,7 +48,8 @@ exports[`Storyshots Components/Alert Info 1`] = `
   className="alert alert-info"
   role="alert"
 >
-  A simple info alert with 
+  A simple info alert with
+   
   <a
     className="alert-link"
     href="#"
@@ -63,7 +65,8 @@ exports[`Storyshots Components/Alert Success 1`] = `
   className="alert alert-success"
   role="alert"
 >
-  A simple success alert with 
+  A simple success alert with
+   
   <a
     className="alert-link"
     href="#"
@@ -79,7 +82,8 @@ exports[`Storyshots Components/Alert Warning 1`] = `
   className="alert alert-warning"
   role="alert"
 >
-  A simple danger alert with 
+  A simple danger alert with
+   
   <a
     className="alert-link"
     href="#"
