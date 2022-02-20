@@ -1,4 +1,4 @@
-name: Publish Storybook on GitHub Pages 
+name: Publish Storybook
 
 on:
   push:
@@ -15,7 +15,6 @@ jobs:
       with:
         node-version: 14.x
     - name: Build storybook
-      working-directory: website
       run: |
         npm install
         npm run build-storybook
