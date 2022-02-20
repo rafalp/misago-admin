@@ -10,6 +10,7 @@
 
 # Build
 /build
+/storybook-static
 
 # Logs
 npm-debug.log*
