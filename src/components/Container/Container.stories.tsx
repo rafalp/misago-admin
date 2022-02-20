@@ -1,8 +1,10 @@
-import Container from "./Container"
+import Container from "."
 
 export default {
   title: "Components",
 }
 
-export const Story = () => <Container>Lorem ipsum dolor met.</Container>
-Story.storyName = "Container"
+export const ContainerStory = () => (
+  <Container>Lorem ipsum dolor met.</Container>
+)
+ContainerStory.storyName = "Container"

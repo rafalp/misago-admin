@@ -1,8 +1,8 @@
-import Loader from "./Loader"
+import Loader from "."
 
 export default {
   title: "Components",
 }
 
-export const Story = () => <Loader />
-Story.storyName = "Loader"
+export const LoaderStory = () => <Loader />
+LoaderStory.storyName = "Loader"
