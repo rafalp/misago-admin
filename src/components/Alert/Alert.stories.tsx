@@ -1,17 +1,17 @@
-import { AlertDanger, AlertInfo, AlertSuccess, AlertWarning } from "."
+import { AlertError, AlertInfo, AlertSuccess, AlertWarning } from "."
 
 export default {
   title: "Components/Alert",
 }
 
-export const Danger = () => (
-  <AlertDanger>
-    A simple danger alert with{" "}
+export const Error = () => (
+  <AlertError>
+    A simple error alert with{" "}
     <a href="#" className="alert-link">
       an example link
     </a>
     . Give it a click if you like.
-  </AlertDanger>
+  </AlertError>
 )
 
 export const Info = () => (

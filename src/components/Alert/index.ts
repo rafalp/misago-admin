@@ -1,9 +1,9 @@
 import {
   Alert,
-  AlertDanger,
+  AlertError,
   AlertInfo,
   AlertSuccess,
   AlertWarning,
 } from "./Alert"
 
-export { Alert, AlertDanger, AlertInfo, AlertSuccess, AlertWarning }
+export { Alert, AlertError, AlertInfo, AlertSuccess, AlertWarning }

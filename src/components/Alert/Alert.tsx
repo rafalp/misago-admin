@@ -12,7 +12,7 @@ const Alert: React.FC<AlertProps> = ({ children, className }) => (
   </div>
 )
 
-const AlertDanger: React.FC<AlertProps> = ({ children, className }) => (
+const AlertError: React.FC<AlertProps> = ({ children, className }) => (
   <Alert className={classnames("alert-danger", className)}>{children}</Alert>
 )
 
@@ -28,4 +28,4 @@ const AlertWarning: React.FC<AlertProps> = ({ children, className }) => (
   <Alert className={classnames("alert-warning", className)}>{children}</Alert>
 )
 
-export { Alert, AlertDanger, AlertInfo, AlertSuccess, AlertWarning }
+export { Alert, AlertError, AlertInfo, AlertSuccess, AlertWarning }

@@ -2,7 +2,7 @@ import { i18n } from "@lingui/core"
 import { I18nProvider } from "@lingui/react"
 import * as plurals from "make-plural/plurals"
 import React from "react"
-import LoadingPage from "./pages/LoadingPage"
+import Loading from "./pages/Loading"
 
 interface LocaleProviderProps {
   children: React.ReactNode
@@ -27,7 +27,7 @@ const LocaleProvider: React.FC<LocaleProviderProps> = ({
     })
   }, [language])
 
-  if (loading) return <LoadingPage />
+  if (loading) return <Loading />
 
   return <I18nProvider i18n={i18n}>{children}</I18nProvider>
 }

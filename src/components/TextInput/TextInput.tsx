@@ -9,7 +9,6 @@ interface TextInputProps {
   maxLength?: number
   name?: string
   placeholder?: string
-  ref?: React.LegacyRef<HTMLInputElement>
   required?: boolean
   type?: "text" | "email" | "password"
   value?: string | number
@@ -17,37 +16,41 @@ interface TextInputProps {
   onChange?: React.ChangeEventHandler<HTMLInputElement>
 }
 
-const TextInput: React.FC<TextInputProps> = ({
-  className,
-  disabled,
-  id,
-  invalid,
-  maxLength,
-  name,
-  placeholder,
-  ref,
-  required,
-  type,
-  value,
-  onBlur,
-  onChange,
-}) => (
-  <input
-    className={classnames("form-control", className, {
-      "is-invalid": invalid,
-    })}
-    disabled={disabled}
-    id={id}
-    maxLength={maxLength}
-    name={name}
-    placeholder={placeholder}
-    ref={ref}
-    required={required}
-    type={type || "text"}
-    value={value}
-    onBlur={onBlur}
-    onChange={onChange}
-  />
+const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
+  (
+    {
+      className,
+      disabled,
+      id,
+      invalid,
+      maxLength,
+      name,
+      placeholder,
+      required,
+      type,
+      value,
+      onBlur,
+      onChange,
+    },
+    ref
+  ) => (
+    <input
+      className={classnames("form-control", className, {
+        "is-invalid": invalid,
+      })}
+      disabled={disabled}
+      id={id}
+      maxLength={maxLength}
+      name={name}
+      placeholder={placeholder}
+      ref={ref}
+      required={required}
+      type={type || "text"}
+      value={value}
+      onBlur={onBlur}
+      onChange={onChange}
+    />
+  )
 )
 
 export default TextInput

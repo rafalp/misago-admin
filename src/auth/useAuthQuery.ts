@@ -1,6 +1,6 @@
 import { gql, useQuery } from "@apollo/client"
 
-const AUTH = gql`
+const AUTH_QUERY = gql`
   query Auth {
     auth {
       id
@@ -16,6 +16,6 @@ interface AuthData {
   } | null
 }
 
-const useAuthQuery = () => useQuery<AuthData>(AUTH)
+const useAuthQuery = () => useQuery<AuthData>(AUTH_QUERY)
 
 export default useAuthQuery

@@ -1,5 +1,5 @@
 import React from "react"
-import LoadingPage from "../pages/LoadingPage"
+import Loading from "../pages/Loading"
 import { AuthContext } from "./context"
 import useAuthQuery from "./useAuthQuery"
 
@@ -10,7 +10,7 @@ interface AuthProviderProps {
 const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const { loading, data } = useAuthQuery()
 
-  if (loading) return <LoadingPage />
+  if (loading) return <Loading />
 
   return (
     <AuthContext.Provider value={data?.auth || null}>
