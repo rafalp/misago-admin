@@ -23,7 +23,10 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
 }) => (
   <button
-    className={classnames("btn", className, { "btn-sm": small, "has-text": !!children })}
+    className={classnames("btn", className, {
+      "btn-sm": small,
+      "has-text": !!children,
+    })}
     disabled={disabled}
     type={!!onClick ? "button" : "submit"}
     onClick={onClick}
