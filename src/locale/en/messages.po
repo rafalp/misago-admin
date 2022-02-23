@@ -6,9 +6,49 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: pages/Login/LoginErrorMessage.tsx:19
+msgid "auth_error.invalid_credentials"
+msgstr "Login or password is incorrect."
+
+#: pages/Login/LoginErrorMessage.tsx:27
+msgid "auth_error.not_admin"
+msgstr "Administrator permission is required."
+
+#: components/ClientError/ClientError.tsx:28
+msgid "client_error.graphql"
+msgstr "Unexpected error has occurred."
+
+#: components/ClientError/ClientError.tsx:18
+msgid "client_error.network"
+msgstr "Site server can't be reached."
 
 #: App.tsx:9
-msgid "login.submit"
-msgstr "Login"
+#~ msgid "login.submit"
+#~ msgstr "Login"
 
-# Plugins locales
+#: pages/Login/LoginForm.tsx:84
+msgid "login_form.password"
+msgstr "Password"
+
+#: pages/Login/LoginForm.tsx:92
+msgid "login_form.submit"
+msgstr "Continue"
+
+#: pages/Login/LoginForm.tsx:76
+msgid "login_form.username"
+msgstr "Username or e-mail"
+
+#: components/WindowTitle/WindowTitle.tsx:15
+msgid "misago_admin"
+msgstr "Misago Administration"
+
+#: pages/Login/LoginErrorMessage.tsx:35
+msgid "value_error.all_fields_are_required"
+msgstr "Fill out all fields."

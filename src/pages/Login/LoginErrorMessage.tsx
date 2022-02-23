@@ -1,15 +1,18 @@
 import { t } from "@lingui/macro"
 import React from "react"
 
-interface LoginMessageProps {
+interface LoginErrorMessageProps {
+  children(message: string): React.ReactElement
   error: {
     type: string
     message: string
   }
-  children(message: string): React.ReactElement
 }
 
-const LoginMessage: React.FC<LoginMessageProps> = ({ error, children }) => {
+const LoginErrorMessage: React.FC<LoginErrorMessageProps> = ({
+  children,
+  error,
+}) => {
   switch (error.type) {
     case "auth_error.invalid_credentials":
       return children(
@@ -40,4 +43,4 @@ const LoginMessage: React.FC<LoginMessageProps> = ({ error, children }) => {
   }
 }
 
-export default LoginMessage
+export default LoginErrorMessage

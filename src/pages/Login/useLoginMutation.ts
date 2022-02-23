@@ -1,5 +1,5 @@
 import { gql, useMutation } from "@apollo/client"
-import { MutationError } from "../../types"
+import { ApiError } from "../../types"
 import { FormData } from "./Login.types"
 
 const LOGIN_MUTATION = gql`
@@ -18,7 +18,7 @@ const LOGIN_MUTATION = gql`
 interface LoginData {
   login: {
     token: string
-    errors: Array<MutationError>
+    errors: Array<ApiError>
   }
 }
 
