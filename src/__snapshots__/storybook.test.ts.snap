@@ -193,6 +193,10 @@ exports[`Storyshots Components/Card With Header And Footer 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/ClientError Application Error 1`] = `"{\\"location\\":\\"__root__\\",\\"type\\":\\"client_error.graphql\\",\\"message\\":\\"Unexpected error has occurred.\\"}"`;
+
+exports[`Storyshots Components/ClientError Network Error 1`] = `"{\\"location\\":\\"__root__\\",\\"type\\":\\"client_error.network\\",\\"message\\":\\"Site server can't be reached.\\"}"`;
+
 exports[`Storyshots Components/Controls Email Input 1`] = `
 <input
   className="form-control"
@@ -340,6 +344,7 @@ exports[`Storyshots Pages Login Page 1`] = `
             />
             <button
               className="btn btn-primary has-text"
+              disabled={false}
               type="submit"
             >
               Continue
