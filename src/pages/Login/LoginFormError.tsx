@@ -5,9 +5,7 @@ interface LoginFormErrorProps {
 }
 
 const LoginFormError: React.FC<LoginFormErrorProps> = ({ children }) => (
-  <div className="login-form-error">
-    {children}
-  </div>
+  <div className="login-form-error">{children}</div>
 )
 
 export default LoginFormError

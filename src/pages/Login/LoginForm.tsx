@@ -1,6 +1,7 @@
 import { Trans, t } from "@lingui/macro"
 import React from "react"
 import { useForm } from "react-hook-form"
+import { useAuth } from "../../auth"
 import { ButtonPrimary } from "../../components/Button"
 import ClientError from "../../components/ClientError"
 import TextInput from "../../components/TextInput"
@@ -11,6 +12,7 @@ import LoginFormError from "./LoginFormError"
 import useLoginMutation from "./useLoginMutation"
 
 const LoginForm: React.FC = () => {
+  const auth = useAuth()
   const [disabled, setDisabled] = React.useState(false)
   const [errors, setErrors] = React.useState<Array<ApiError>>([])
   const [login, { loading, error }] = useLoginMutation()
@@ -47,8 +49,7 @@ const LoginForm: React.FC = () => {
           }
 
           if (token) {
-            // SET TOKEN AND REFETCH AUTH QUERY
-            console.log(token)
+            auth.login(token)
           } else if (errors) {
             setErrors(errors)
             setDisabled(false)

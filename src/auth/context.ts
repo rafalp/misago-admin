@@ -1,11 +1,17 @@
 import React from "react"
+import { AuthenticatedUser } from "./types"
 
-interface AuthenticatedUser {
-  id: string
-  name: string
+interface AuthContextData {
+  user: AuthenticatedUser | null
+  login: (token: string) => void
+  logout: () => void
 }
 
-const AuthContext = React.createContext<AuthenticatedUser | null>(null)
+const AuthContext = React.createContext<AuthContextData>({
+  user: null,
+  login: (token: string) => {},
+  logout: () => {},
+})
 
 const useAuth = () => React.useContext(AuthContext)
 
