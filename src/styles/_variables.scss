@@ -5,22 +5,18 @@
 
 // Color system
 
-// scss-docs-start gray-color-variables
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
+$gray-100: #f3f6fb !default;
+$gray-200: #e0e7f2 !default;
+$gray-300: #c9d4e3 !default;
+$gray-400: #bfc9d8 !default;
+$gray-500: #95a6b8 !default;
+$gray-600: #717f8d !default;
 $gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
-// scss-docs-end gray-color-variables
+$gray-800: #333236 !default;
+$gray-900: #2e2d30 !default;
+$black:    #191919 !default;
 
-// fusv-disable
-// scss-docs-start gray-colors-map
 $grays: (
   "100": $gray-100,
   "200": $gray-200,
@@ -32,12 +28,92 @@ $grays: (
   "800": $gray-800,
   "900": $gray-900
 ) !default;
-// scss-docs-end gray-colors-map
-// fusv-enable
+
+$blues: (
+  "blue-100": #d8e4f8,
+  "blue-200": #5384df,
+  "blue-300": #304c89
+) !default;
+
+
+$blue:    #5384df !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #ef233c !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #198754 !default;
+$teal:    #20c997 !default;
+$cyan:    #0dcaf0 !default;
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
+
+// The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
+// See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
+$min-contrast-ratio:   3 !default;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                     $gray-100 !default;
+$body-color:                  $gray-900 !default;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+$box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-border-width:      2px !default;
+
+// Forms
+
+$input-bg:                    $white !default;
+
+// Cards
+
+$card-border-color:                 $gray-200 !default;
+$card-cap-bg:                       $white !default;
+
+// Login form
+//
+// Style Loader component.
+
+$login-logo-height:           4rem;
+$login-logo-margin:           $spacer * 2;
+
+$login-form-padding:          $spacer * 1 !default;
+$login-form-shadow:           $box-shadow-sm !default;
+$login-form-gap:              $spacer * 1.5 !default;
+$login-form-error:            $red !default;
 
 // Loaders
 //
 // Style Loader component.
 
-$loader-color:    $gray-500 !default;
-$loader-size:     1rem !default;
+$loader-color:                $gray-500 !default;
+$loader-size:                 1rem !default;

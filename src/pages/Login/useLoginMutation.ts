@@ -19,7 +19,7 @@ interface LoginData {
   login: {
     token: string
     errors: Array<MutationError>
-  } | null
+  }
 }
 
 const useLoginMutation = () => {

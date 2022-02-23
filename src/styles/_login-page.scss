@@ -1,0 +1,26 @@
+.login-form-logo {
+  width: 100%;
+  height: $login-logo-height;
+  margin-bottom: $login-logo-margin;
+
+  background-image: url("./assets/logo-gray.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.login-form-card {
+  padding: $login-form-padding;
+  box-shadow: $login-form-shadow;
+}
+
+.login-form-grid {
+  display: grid;
+  gap: $login-form-gap;
+}
+
+.login-form-error {
+  color: $login-form-error;
+  font-weight: bold;
+  text-align: center;
+}

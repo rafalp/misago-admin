@@ -5,4 +5,4 @@ export default {
 }
 
 export const LoadingPageStory = () => <Loading />
-LoadingPageStory.storyName = "Loading"
+LoadingPageStory.storyName = "Loading Page"

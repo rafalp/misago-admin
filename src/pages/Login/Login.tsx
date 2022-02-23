@@ -1,17 +1,17 @@
 import React from "react"
 import WindowTitle from "../../components/WindowTitle"
 import CenteredLayout from "../../layouts/CenteredLayout"
-import LoginCard from "./LoginCard"
 import LoginForm from "./LoginForm"
-import LoginLogo from "./LoginLogo"
+import LoginFormLogo from "./LoginFormLogo"
+import LoginFormCard from "./LoginFormCard"
 
 const Login: React.FC = () => (
   <CenteredLayout>
     <WindowTitle />
-    <LoginCard>
-      <LoginLogo />
+    <LoginFormLogo />
+    <LoginFormCard>
       <LoginForm />
-    </LoginCard>
+    </LoginFormCard>
   </CenteredLayout>
 )
 

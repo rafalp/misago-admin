@@ -43,6 +43,23 @@ exports[`Storyshots Components/Alert Danger 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Alert Error 1`] = `
+<div
+  className="alert alert-danger"
+  role="alert"
+>
+  A simple error alert with
+   
+  <a
+    className="alert-link"
+    href="#"
+  >
+    an example link
+  </a>
+  . Give it a click if you like.
+</div>
+`;
+
 exports[`Storyshots Components/Alert Info 1`] = `
 <div
   className="alert alert-info"
@@ -191,6 +208,36 @@ exports[`Storyshots Components/Card With Header And Footer 1`] = `
     Card Footer
   </div>
 </div>
+`;
+
+exports[`Storyshots Components/Controls Email Input 1`] = `
+<input
+  className="form-control"
+  disabled={false}
+  placeholder="Enter your e-mail..."
+  type="email"
+  value=""
+/>
+`;
+
+exports[`Storyshots Components/Controls Password Input 1`] = `
+<input
+  className="form-control"
+  disabled={false}
+  placeholder="Enter your password.."
+  type="password"
+  value=""
+/>
+`;
+
+exports[`Storyshots Components/Controls Text Input 1`] = `
+<input
+  className="form-control"
+  disabled={false}
+  placeholder="Enter your username..."
+  type="text"
+  value=""
+/>
 `;
 
 exports[`Storyshots Components/Icon Fixed Width 1`] = `

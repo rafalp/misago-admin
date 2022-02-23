@@ -5,6 +5,8 @@ import { ButtonPrimary } from "../../components/Button"
 import TextInput from "../../components/TextInput"
 import { MutationError } from "../../types"
 import { FormData } from "./Login.types"
+import LoginFormError from "./LoginFormError"
+import LoginMessage from "./LoginMessage"
 import useLoginMutation from "./useLoginMutation"
 
 const LoginForm: React.FC = () => {
@@ -24,7 +26,7 @@ const LoginForm: React.FC = () => {
         const password = data.password.trim()
 
         if (!username.length || !password.length) {
-          setError({ 
+          setError({
             type: "value_error.all_fields_are_required",
             location: "__root__",
             message: "...",
@@ -32,24 +34,33 @@ const LoginForm: React.FC = () => {
           return
         }
 
-        setError(null)
         setDisabled(true)
 
         try {
           const result = await login({ variables: { username, password } })
-          if (result.data?.login?.errors) {
-            setError(result.data?.login?.errors[0])
-            setDisabled(false)
-          } else {
+          const { token, errors } = result?.data?.login || { token: null, errors: null }
+
+          if (token) {
             // SET TOKEN AND REFETCH AUTH QUERY
+            console.log(token)
+          } else if (errors) {
+            setError(errors[0])
+            setDisabled(false)
           }
         } catch (error) {
+          setError(null)
           setDisabled(false)
         }
       })}
     >
-      <div className="d-grid gap-4">
-        {error && <div className="text-danger text-center">{error.type}</div>}
+      <div className="login-form-grid">
+        {error && (
+          <LoginMessage error={error}>
+            {(message) => (
+              <LoginFormError>{message}</LoginFormError>
+              )}
+          </LoginMessage>
+        )}
         <TextInput
           disabled={submitting}
           placeholder={t({
