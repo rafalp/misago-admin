@@ -3,6 +3,9 @@ import Login from "./Login"
 
 export default {
   title: "Pages",
+  parameters: {
+    layout: 'fullscreen',
+  },
 }
 
 export const LoginPageStory = () => (

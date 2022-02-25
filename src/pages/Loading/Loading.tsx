@@ -1,10 +1,12 @@
 import React from "react"
-import CenteredLayout from "../../layouts/CenteredLayout"
+import WindowTitle from "../../components/WindowTitle"
+import LayoutMinimal from "../../layouts/LayoutMinimal"
 
 const Loading: React.FC = () => (
-  <CenteredLayout>
+  <LayoutMinimal>
+    <WindowTitle />
     <div className="page-loading" />
-  </CenteredLayout>
+  </LayoutMinimal>
 )
 
 export default Loading

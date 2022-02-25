@@ -2,13 +2,23 @@ html, body, #root {
   height: 100%;
 }
 
-.layout-centered {
+.layout-minimal {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
-.layout-centered .container-fluid {
+.layout-minimal .container-fluid {
   width: 100%;
   max-width: 500px;
+}
+
+// Full-page layout side and main cols
+.col-side {
+  flex: 0 0 auto;
+  width: $col-side-width;
+}
+
+.col-main {
+  @include make-col();
 }

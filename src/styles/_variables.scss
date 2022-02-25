@@ -31,12 +31,12 @@ $grays: (
 
 $blues: (
   "blue-100": #d8e4f8,
-  "blue-200": #5384df,
-  "blue-300": #304c89
+  "blue-500": #4b7edc,
+  "blue-900": #304c89
 ) !default;
 
 
-$blue:    #5384df !default;
+$blue:    #4b7edc !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
@@ -117,3 +117,9 @@ $login-form-error:            $red !default;
 
 $loader-color:                $gray-500 !default;
 $loader-size:                 1rem !default;
+
+// Full-page layout
+//
+// Style Loader component.
+
+$col-side-width:              300px;
