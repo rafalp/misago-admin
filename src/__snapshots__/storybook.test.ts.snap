@@ -19,6 +19,31 @@ exports[`Storyshots Components Loader 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components Navbar 1`] = `
+<nav
+  className="navbar navbar-expand"
+>
+  <div
+    className="container-fluid"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-side"
+      >
+        [BRAND]
+      </div>
+      <div
+        className="col-main"
+      >
+        [SEARCH]
+      </div>
+    </div>
+  </div>
+</nav>
+`;
+
 exports[`Storyshots Components Spinner 1`] = `
 <span
   className="spinner-border spinner-border-sm"
@@ -259,9 +284,51 @@ exports[`Storyshots Components/Icon Solid 1`] = `
 />
 `;
 
-exports[`Storyshots Layouts Centered 1`] = `
+exports[`Storyshots Layouts Full 1`] = `
 <div
-  className="layout-centered"
+  className="layout-full"
+>
+  <div
+    className="container-fluid"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-side"
+      >
+        [SIDENAV]
+      </div>
+      <div
+        className="col-main"
+      >
+        <div
+          className="card"
+        >
+          <div
+            className="card-body"
+          >
+            <h5
+              className="card-title"
+            >
+              Full Layout
+            </h5>
+            <p
+              className="card-text"
+            >
+              Used for authenticated users.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts Minimal 1`] = `
+<div
+  className="layout-minimal"
 >
   <div
     className="container-fluid"
@@ -275,12 +342,12 @@ exports[`Storyshots Layouts Centered 1`] = `
         <h5
           className="card-title"
         >
-          Centered Layout
+          Minimal Layout
         </h5>
         <p
           className="card-text"
         >
-          This card is vertically centered.
+          Used when user is not authenticated.
         </p>
       </div>
     </div>
@@ -290,7 +357,7 @@ exports[`Storyshots Layouts Centered 1`] = `
 
 exports[`Storyshots Pages Loading Page 1`] = `
 <div
-  className="layout-centered"
+  className="layout-minimal"
 >
   <div
     className="container-fluid"
@@ -304,7 +371,7 @@ exports[`Storyshots Pages Loading Page 1`] = `
 
 exports[`Storyshots Pages Login Page 1`] = `
 <div
-  className="layout-centered"
+  className="layout-minimal"
 >
   <div
     className="container-fluid"
