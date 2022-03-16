@@ -3,7 +3,7 @@ import LayoutMinimal from "."
 export default {
   title: "Layouts",
   parameters: {
-    layout: 'fullscreen',
+    layout: "fullscreen",
   },
 }
 

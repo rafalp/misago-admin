@@ -30,9 +30,9 @@ $grays: (
 ) !default;
 
 $blues: (
-  "blue-100": #d8e4f8,
+  "blue-100": #d0ddf5,
   "blue-500": #4b7edc,
-  "blue-900": #304c89
+  "blue-900": #405d93
 ) !default;
 
 
@@ -98,6 +98,9 @@ $input-bg:                    $white !default;
 
 $card-border-color:                 $gray-200 !default;
 $card-cap-bg:                       $white !default;
+$card-cap-color:                    $body-color !default;
+$card-foot-bg:                      $white !default;
+$card-foot-color:                   $body-color !default;
 
 // Login form
 //

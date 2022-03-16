@@ -3,6 +3,7 @@ import React from "react"
 
 interface TextInputProps {
   className?: string | null
+  describedBy?: string
   disabled?: boolean
   id?: string
   invalid?: boolean
@@ -20,6 +21,7 @@ const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
   (
     {
       className,
+      describedBy,
       disabled,
       id,
       invalid,
@@ -35,6 +37,7 @@ const TextInput = React.forwardRef<HTMLInputElement, TextInputProps>(
     ref
   ) => (
     <input
+      aria-describedby={describedBy}
       className={classnames("form-control", className, {
         "is-invalid": invalid,
       })}

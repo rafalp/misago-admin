@@ -3,7 +3,7 @@ import Navbar from "."
 export default {
   title: "Components",
   parameters: {
-    layout: 'fullscreen',
+    layout: "fullscreen",
   },
 }
 

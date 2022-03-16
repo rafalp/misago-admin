@@ -3,7 +3,7 @@ import Loading from "."
 export default {
   title: "Pages",
   parameters: {
-    layout: 'fullscreen',
+    layout: "fullscreen",
   },
 }
 

@@ -4,7 +4,7 @@ import Login from "./Login"
 export default {
   title: "Pages",
   parameters: {
-    layout: 'fullscreen',
+    layout: "fullscreen",
   },
 }
 

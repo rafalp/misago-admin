@@ -1,4 +1,4 @@
-import { Card, CardBody, CardFooter, CardHeader } from "."
+import { Card, CardBody, CardFooter, CardHeader, CardTitle } from "."
 
 export default {
   title: "Components/Card",
@@ -6,7 +6,9 @@ export default {
 
 export const WithHeaderAndFooter = () => (
   <Card>
-    <CardHeader>Card Title</CardHeader>
+    <CardHeader>
+      <CardTitle>Card Title</CardTitle>
+    </CardHeader>
     <CardBody>This is some text within a card body</CardBody>
     <CardFooter>Card Footer</CardFooter>
   </Card>

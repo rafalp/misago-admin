@@ -3,7 +3,7 @@ import Container from "."
 export default {
   title: "Components",
   parameters: {
-    layout: 'fullscreen',
+    layout: "fullscreen",
   },
 }
 
