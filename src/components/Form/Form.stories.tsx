@@ -31,7 +31,6 @@ export const FormTextControl = () => {
           label="Example field"
           name="message"
           control={<FormTextInput />}
-          feedback={({ message }) => message}
         />
       </FormProvider>
       <hr />
