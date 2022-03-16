@@ -203,7 +203,11 @@ exports[`Storyshots Components/Card With Header And Footer 1`] = `
   <div
     className="card-header"
   >
-    Card Title
+    <strong
+      className="card-title"
+    >
+      Card Title
+    </strong>
   </div>
   <div
     className="card-body"
@@ -250,6 +254,117 @@ exports[`Storyshots Components/Controls Text Input 1`] = `
   type="text"
   value=""
 />
+`;
+
+exports[`Storyshots Components/Form Disabled 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-row"
+  >
+    <label
+      className="form-label"
+      htmlFor="form-control-message"
+    >
+      Example field
+    </label>
+    <input
+      aria-describedby=""
+      className="form-control"
+      disabled={true}
+      id="form-control-message"
+      name="message"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="text"
+    />
+  </div>
+  <hr />
+  <button
+    className="btn btn-primary has-text"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
+
+exports[`Storyshots Components/Form Text Input Field 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-row"
+  >
+    <label
+      className="form-label"
+      htmlFor="form-control-message"
+    >
+      Example field
+    </label>
+    <input
+      aria-describedby=""
+      className="form-control"
+      id="form-control-message"
+      name="message"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="text"
+    />
+  </div>
+  <hr />
+  <button
+    className="btn btn-primary has-text"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
+
+exports[`Storyshots Components/Form Text Input Field Full Example 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-row"
+  >
+    <label
+      className="form-label"
+      htmlFor="form-control-message"
+    >
+      Username
+      <span
+        className="badge bg-light text-dark"
+      >
+        Optional
+      </span>
+    </label>
+    <input
+      aria-describedby="form-help-text-message"
+      className="form-control"
+      id="form-control-message"
+      name="message"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="text"
+    />
+    <div
+      className="form-text"
+      id="form-help-text-message"
+    >
+      Your user name must be 4-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+    </div>
+  </div>
+  <hr />
+  <button
+    className="btn btn-primary has-text"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
 `;
 
 exports[`Storyshots Components/Icon Fixed Width 1`] = `
