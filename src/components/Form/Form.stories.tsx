@@ -1,9 +1,12 @@
 import { yupResolver } from "@hookform/resolvers/yup"
 import { FormProvider, useForm } from "react-hook-form"
 import * as yup from "yup"
-import { textValidationMessage } from "../../validation/messages"
+import {
+  numberValidationMessage,
+  textValidationMessage,
+} from "../../validation"
 import { ButtonPrimary } from "../Button"
-import { Form, FormRow, FormTextInput } from "."
+import { Form, FormNumberInput, FormRow, FormTextInput } from "."
 
 export default {
   title: "Components/Form",
@@ -19,8 +22,8 @@ const textSchema = yup
     message: yup
       .string()
       .trim()
-      .min(textConstraints.min, "error_min")
-      .max(textConstraints.max, "error_max"),
+      .min(textConstraints.min)
+      .max(textConstraints.max),
   })
   .required()
 
@@ -103,3 +106,45 @@ export const FormDisabled = () => {
   )
 }
 FormDisabled.storyName = "Disabled"
+
+interface NumberFormData {
+  age: string | number | null
+}
+
+const ageConstraints = { min: 18, max: 64 }
+const ageSchema = yup
+  .object({
+    age: yup
+      .number()
+      .integer()
+      .min(ageConstraints.min)
+      .max(ageConstraints.max)
+      .transform((value, orgValue) => (orgValue === "" ? null : value))
+      .nullable(),
+  })
+  .required()
+
+export const FormNumberControl = () => {
+  const methods = useForm<NumberFormData, {}>({
+    defaultValues: { age: 24 },
+    resolver: yupResolver(ageSchema),
+  })
+
+  return (
+    <Form onSubmit={methods.handleSubmit(() => {})}>
+      <FormProvider {...methods}>
+        <FormRow
+          label="Example field"
+          name="age"
+          control={<FormNumberInput />}
+          validationMessage={(value: string, error) =>
+            numberValidationMessage(value, error, ageConstraints)
+          }
+        />
+      </FormProvider>
+      <hr />
+      <ButtonPrimary>Submit</ButtonPrimary>
+    </Form>
+  )
+}
+FormNumberControl.storyName = "Number Input Field"

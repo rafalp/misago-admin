@@ -2,6 +2,7 @@ import Form, { useFormContext } from "./Form"
 import FormField, { useFormFieldContext } from "./FormField"
 import FormError from "./FormError"
 import FormHelp from "./FormHelp"
+import FormNumberInput from "./FormNumberInput"
 import FormRow from "./FormRow"
 import FormTextInput from "./FormTextInput"
 import FormValidationMessage from "./FormValidationMessage"
@@ -12,6 +13,7 @@ export {
   FormError,
   FormField,
   FormHelp,
+  FormNumberInput,
   FormRow,
   FormTextInput,
   FormValidationMessage,
