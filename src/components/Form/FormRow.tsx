@@ -2,28 +2,32 @@ import classnames from "classnames"
 import { Trans } from "@lingui/macro"
 import React from "react"
 import { useFormContext as useHookFormContext } from "react-hook-form"
+import { ValidationError } from "../../validation"
 import { useFormContext } from "./Form"
 import FormField from "./FormField"
-import FormErrorText from "./FormErrorText"
-import FormHelpText from "./FormHelpText"
-import { buildErrorId, buildFieldId, buildHelpTextId } from "./buildId"
+import FormError from "./FormError"
+import FormHelp from "./FormHelp"
+import FormValidationMessage from "./FormValidationMessage"
+import { buildErrorId, buildFieldId, buildHelpId } from "./buildId"
 
 interface FormRowProps {
   className?: string | null
   control: React.ReactNode
-  helpText?: React.ReactNode
+  help?: React.ReactNode
   label: React.ReactNode
   name: string
   optional?: boolean
+  validationMessage?: (value: any, error: ValidationError) => string | null
 }
 
 const FormRow: React.FC<FormRowProps> = ({
   className,
   control,
-  helpText,
+  help,
   label,
   name,
   optional,
+  validationMessage,
 }) => {
   const { formState } = useHookFormContext()
   const { id: formId } = useFormContext()
@@ -31,7 +35,7 @@ const FormRow: React.FC<FormRowProps> = ({
   const error = formState.errors[name]
 
   return (
-    <FormField name={name} helpText={!!helpText} invalid={!!error}>
+    <FormField name={name} help={!!help} invalid={!!error}>
       <div className={classnames("form-row", className)}>
         <label htmlFor={buildFieldId(name, formId)} className="form-label">
           {label}
@@ -42,16 +46,15 @@ const FormRow: React.FC<FormRowProps> = ({
           )}
         </label>
         {control}
-        {!!error && (
-          <FormErrorText id={buildErrorId(name, formId)}>
-            {error.message}
-          </FormErrorText>
+        {!!error && !!validationMessage && (
+          <FormError id={buildErrorId(name, formId)}>
+            <FormValidationMessage
+              name={name}
+              validationMessage={validationMessage}
+            />
+          </FormError>
         )}
-        {helpText && (
-          <FormHelpText id={buildHelpTextId(name, formId)}>
-            {helpText}
-          </FormHelpText>
-        )}
+        {help && <FormHelp id={buildHelpId(name, formId)}>{help}</FormHelp>}
       </div>
     </FormField>
   )

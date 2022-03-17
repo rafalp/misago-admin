@@ -2,7 +2,7 @@ import React from "react"
 
 interface FormFieldData {
   name: string
-  helpText?: boolean
+  help?: boolean
   invalid?: boolean
 }
 
@@ -17,10 +17,10 @@ interface FormFieldProps extends FormFieldData {
 const FormField: React.FC<FormFieldProps> = ({
   children,
   name,
-  helpText,
+  help,
   invalid,
 }) => (
-  <FormFieldContext.Provider value={{ name, helpText, invalid }}>
+  <FormFieldContext.Provider value={{ name, help, invalid }}>
     {children}
   </FormFieldContext.Provider>
 )

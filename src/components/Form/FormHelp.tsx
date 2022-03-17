@@ -1,17 +1,13 @@
 import classnames from "classnames"
 import React from "react"
 
-interface FormHelpTextProps {
+interface FormHelpProps {
   children: React.ReactNode
   className?: string | null
   id?: string
 }
 
-const FormHelpText: React.FC<FormHelpTextProps> = ({
-  children,
-  className,
-  id,
-}) => {
+const FormHelp: React.FC<FormHelpProps> = ({ children, className, id }) => {
   return (
     <div id={id} className={classnames("form-text", className)}>
       {children}
@@ -19,4 +15,4 @@ const FormHelpText: React.FC<FormHelpTextProps> = ({
   )
 }
 
-export default FormHelpText
+export default FormHelp

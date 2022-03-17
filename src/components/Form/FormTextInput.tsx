@@ -4,7 +4,7 @@ import { useFormContext as useHookFormContext } from "react-hook-form"
 import TextInput from "../TextInput"
 import { useFormContext } from "./Form"
 import { useFormFieldContext } from "./FormField"
-import { buildErrorId, buildFieldId, buildHelpTextId } from "./buildId"
+import { buildErrorId, buildFieldId, buildHelpId } from "./buildId"
 
 interface FormTextInputProps {
   className?: string
@@ -18,14 +18,14 @@ const FormTextInput: React.FC<FormTextInputProps> = (props) => {
   const { disabled, id } = useFormContext()
   const fieldContext = useFormFieldContext()
 
-  const { name, helpText, invalid } = fieldContext
+  const { name, help, invalid } = fieldContext
 
   return (
     <TextInput
       id={buildFieldId(name, id)}
       describedBy={classnames({
         [buildErrorId(name, id)]: invalid,
-        [buildHelpTextId(name, id)]: helpText,
+        [buildHelpId(name, id)]: help,
       })}
       disabled={disabled}
       invalid={invalid}

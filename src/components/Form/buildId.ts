@@ -6,8 +6,8 @@ const buildFieldId = (name: string, formId?: string) => {
   return (formId || "form") + "-control-" + name
 }
 
-const buildHelpTextId = (name: string, formId?: string) => {
-  return (formId || "form") + "-help-text-" + name
+const buildHelpId = (name: string, formId?: string) => {
+  return (formId || "form") + "-help-" + name
 }
 
-export { buildErrorId, buildFieldId, buildHelpTextId }
+export { buildErrorId, buildFieldId, buildHelpId }

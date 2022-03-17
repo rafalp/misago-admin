@@ -1,21 +1,23 @@
 import Form, { useFormContext } from "./Form"
 import FormField, { useFormFieldContext } from "./FormField"
-import FormErrorText from "./FormErrorText"
-import FormHelpText from "./FormHelpText"
+import FormError from "./FormError"
+import FormHelp from "./FormHelp"
 import FormRow from "./FormRow"
 import FormTextInput from "./FormTextInput"
-import { buildErrorId, buildFieldId, buildHelpTextId } from "./buildId"
+import FormValidationMessage from "./FormValidationMessage"
+import { buildErrorId, buildFieldId, buildHelpId } from "./buildId"
 
 export {
   Form,
-  FormErrorText,
+  FormError,
   FormField,
-  FormHelpText,
+  FormHelp,
   FormRow,
   FormTextInput,
+  FormValidationMessage,
   buildErrorId,
   buildFieldId,
-  buildHelpTextId,
+  buildHelpId,
   useFormContext,
   useFormFieldContext,
 }

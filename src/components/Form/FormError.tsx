@@ -1,14 +1,14 @@
 import React from "react"
 
-interface FormErrorTextProps {
+interface FormErrorProps {
   children: React.ReactNode
   id?: string
 }
 
-const FormErrorText: React.FC<FormErrorTextProps> = ({ children, id }) => (
+const FormError: React.FC<FormErrorProps> = ({ children, id }) => (
   <div id={id} className="invalid-feedback">
     {children}
   </div>
 )
 
-export default FormErrorText
+export default FormError
