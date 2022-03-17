@@ -236,6 +236,16 @@ exports[`Storyshots Components/Controls Email Input 1`] = `
 />
 `;
 
+exports[`Storyshots Components/Controls Number Input 1`] = `
+<input
+  className="form-control"
+  disabled={false}
+  placeholder="Enter your age..."
+  type="number"
+  value=""
+/>
+`;
+
 exports[`Storyshots Components/Controls Password Input 1`] = `
 <input
   className="form-control"
@@ -278,6 +288,39 @@ exports[`Storyshots Components/Form Disabled 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       type="text"
+    />
+  </div>
+  <hr />
+  <button
+    className="btn btn-primary has-text"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
+
+exports[`Storyshots Components/Form Number Input Field 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-row"
+  >
+    <label
+      className="form-label"
+      htmlFor="form-control-age"
+    >
+      Example field
+    </label>
+    <input
+      aria-describedby=""
+      className="form-control"
+      id="form-control-age"
+      name="age"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="number"
     />
   </div>
   <hr />
