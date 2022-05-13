@@ -1,4 +1,13 @@
+.card {
+  box-shadow: $card-shadow;
+}
+
+.card-header {
+  border-bottom: $card-cap-border;
+}
+
 .card-footer {
   color: $card-foot-color;
   background-color: $card-foot-bg;
+  border-top: $card-foot-border;
 }
