@@ -266,6 +266,108 @@ exports[`Storyshots Components/Controls Text Input 1`] = `
 />
 `;
 
+exports[`Storyshots Components/Form Card Minimal 1`] = `
+<div
+  className="card form-card"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="card-header form-card-header"
+    >
+      <strong
+        className="card-title form-card-title"
+      >
+        Edit User
+      </strong>
+    </div>
+    <div
+      className="card-body form-card-body"
+    >
+      <div
+        className="form-row"
+      >
+        <label
+          className="form-label"
+          htmlFor="form-control-username"
+        >
+          Username
+        </label>
+        <input
+          aria-describedby="form-help-username"
+          className="form-control"
+          id="form-control-username"
+          name="username"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="text"
+        />
+        <div
+          className="form-text"
+          id="form-help-username"
+        >
+          Your user name must be 4-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+        </div>
+      </div>
+      <div
+        className="form-row"
+      >
+        <label
+          className="form-label"
+          htmlFor="form-control-email"
+        >
+          E-mail address
+        </label>
+        <input
+          aria-describedby=""
+          className="form-control"
+          id="form-control-email"
+          name="email"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="text"
+        />
+      </div>
+      <div
+        className="form-row"
+      >
+        <label
+          className="form-label"
+          htmlFor="form-control-title"
+        >
+          Title
+          <span
+            className="badge bg-light text-dark"
+          >
+            Optional
+          </span>
+        </label>
+        <input
+          aria-describedby=""
+          className="form-control"
+          id="form-control-title"
+          name="title"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      className="card-footer form-card-footer"
+    >
+      <button
+        className="btn btn-primary has-text"
+        type="submit"
+      >
+        Save changes
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
 exports[`Storyshots Components/Form Disabled 1`] = `
 <form
   onSubmit={[Function]}
