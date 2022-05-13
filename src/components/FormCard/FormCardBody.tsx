@@ -7,8 +7,13 @@ interface FormCardBodyProps {
   className?: string
 }
 
-const FormCardBody: React.FC<FormCardBodyProps> = ({ children, className }) => (
-  <CardBody className={classnames("form-card-body", className)}>{children}</CardBody>
+const FormCardBody: React.FC<FormCardBodyProps> = ({
+  children,
+  className,
+}) => (
+  <CardBody className={classnames("form-card-body", className)}>
+    {children}
+  </CardBody>
 )
 
 export default FormCardBody

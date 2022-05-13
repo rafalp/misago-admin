@@ -7,8 +7,13 @@ interface FormCardTitleProps {
   className?: string
 }
 
-const FormCardTitle: React.FC<FormCardTitleProps> = ({ children, className }) => (
-  <CardTitle className={classnames("form-card-title", className)}>{children}</CardTitle>
+const FormCardTitle: React.FC<FormCardTitleProps> = ({
+  children,
+  className,
+}) => (
+  <CardTitle className={classnames("form-card-title", className)}>
+    {children}
+  </CardTitle>
 )
 
 export default FormCardTitle

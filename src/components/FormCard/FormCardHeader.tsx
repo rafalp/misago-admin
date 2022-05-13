@@ -7,8 +7,13 @@ interface FormCardHeaderProps {
   className?: string
 }
 
-const FormCardHeader: React.FC<FormCardHeaderProps> = ({ children, className }) => (
-  <CardHeader className={classnames("form-card-header", className)}>{children}</CardHeader>
+const FormCardHeader: React.FC<FormCardHeaderProps> = ({
+  children,
+  className,
+}) => (
+  <CardHeader className={classnames("form-card-header", className)}>
+    {children}
+  </CardHeader>
 )
 
 export default FormCardHeader

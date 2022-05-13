@@ -7,8 +7,13 @@ interface FormCardFooterProps {
   className?: string
 }
 
-const FormCardFooter: React.FC<FormCardFooterProps> = ({ children, className }) => (
-  <CardFooter className={classnames("form-card-footer", className)}>{children}</CardFooter>
+const FormCardFooter: React.FC<FormCardFooterProps> = ({
+  children,
+  className,
+}) => (
+  <CardFooter className={classnames("form-card-footer", className)}>
+    {children}
+  </CardFooter>
 )
 
 export default FormCardFooter

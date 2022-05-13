@@ -8,7 +8,11 @@ interface FormCardFieldsetProps {
   legend: string
 }
 
-const FormCardFieldset: React.FC<FormCardFieldsetProps> = ({ children, className, legend }) => (
+const FormCardFieldset: React.FC<FormCardFieldsetProps> = ({
+  children,
+  className,
+  legend,
+}) => (
   <CardBody className={classnames("form-card-fieldset", className)}>
     <fieldset>
       <legend className="form-card-legend">{legend}</legend>

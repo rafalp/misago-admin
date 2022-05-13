@@ -4,7 +4,13 @@ import * as yup from "yup"
 import { textValidationMessage } from "../../validation"
 import { ButtonPrimary } from "../Button"
 import { Form, FormRow, FormTextInput } from "../Form"
-import { FormCard, FormCardBody, FormCardHeader, FormCardFooter, FormCardTitle } from "."
+import {
+  FormCard,
+  FormCardBody,
+  FormCardHeader,
+  FormCardFooter,
+  FormCardTitle,
+} from "."
 
 export default {
   title: "Components/Form Card",
@@ -26,7 +32,11 @@ const minimalFormSchema = yup
 
 export const Minimal = () => {
   const methods = useForm<MinimalFormData, {}>({
-    defaultValues: { username: "Aerith", email: "test@example.com", title: "" },
+    defaultValues: {
+      username: "Aerith",
+      email: "test@example.com",
+      title: "",
+    },
     resolver: yupResolver(minimalFormSchema),
   })
 
@@ -47,9 +57,9 @@ export const Minimal = () => {
               }
               help={
                 <>
-                  Your user name must be 4-20 characters long, contain letters and
-                  numbers, and must not contain spaces, special characters, or
-                  emoji.
+                  Your user name must be 4-20 characters long, contain letters
+                  and numbers, and must not contain spaces, special characters,
+                  or emoji.
                 </>
               }
             />
