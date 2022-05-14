@@ -6,7 +6,15 @@ import {
   textValidationMessage,
 } from "../../validation"
 import { ButtonPrimary } from "../Button"
-import { Form, FormNumberInput, FormRow, FormTextInput } from "."
+import {
+  Form,
+  FormCheckbox,
+  FormCheckboxLabel,
+  FormNumberInput,
+  FormRow,
+  FormTextAreaInput,
+  FormTextInput,
+} from "."
 
 export default {
   title: "Components/Form",
@@ -84,6 +92,83 @@ export const FormTextControlFullExample = () => {
   )
 }
 FormTextControlFullExample.storyName = "Text Input Field Full Example"
+
+export const FormTextAreaControl = () => {
+  const methods = useForm<TextFormData, {}>({
+    defaultValues: { message: "Hello" },
+    resolver: yupResolver(textSchema),
+  })
+
+  return (
+    <Form onSubmit={methods.handleSubmit(() => {})}>
+      <FormProvider {...methods}>
+        <FormRow
+          label="Example field"
+          name="message"
+          control={<FormTextAreaInput />}
+          validationMessage={(value: string, error) =>
+            textValidationMessage(value, error, textConstraints)
+          }
+        />
+      </FormProvider>
+      <hr />
+      <ButtonPrimary>Submit</ButtonPrimary>
+    </Form>
+  )
+}
+FormTextAreaControl.storyName = "Text Area Input Field"
+
+interface BoolFormData {
+  checked: boolean
+}
+
+export const FormCheckboxControl = () => {
+  const methods = useForm<BoolFormData, {}>({
+    defaultValues: { checked: false },
+    resolver: yupResolver(textSchema),
+  })
+
+  return (
+    <Form onSubmit={methods.handleSubmit(() => {})}>
+      <FormProvider {...methods}>
+        <FormRow
+          label="Example field"
+          name="checked"
+          control={<FormCheckbox />}
+        />
+      </FormProvider>
+      <hr />
+      <ButtonPrimary>Submit</ButtonPrimary>
+    </Form>
+  )
+}
+FormCheckboxControl.storyName = "Checkbox Field"
+
+export const FormCheckboxLabelControl = () => {
+  const methods = useForm<BoolFormData, {}>({
+    defaultValues: { checked: false },
+    resolver: yupResolver(textSchema),
+  })
+
+  return (
+    <Form onSubmit={methods.handleSubmit(() => {})}>
+      <FormProvider {...methods}>
+        <FormRow
+          label="Example field"
+          name="checked"
+          control={
+            <FormCheckboxLabel label="Accept terms and services">
+              <FormCheckbox />
+            </FormCheckboxLabel>
+          }
+        />
+      </FormProvider>
+      <hr />
+      <ButtonPrimary>Submit</ButtonPrimary>
+    </Form>
+  )
+}
+FormCheckboxLabelControl.storyName = "Checkbox Field With Label"
 
 export const FormDisabled = () => {
   const methods = useForm<TextFormData, {}>({
