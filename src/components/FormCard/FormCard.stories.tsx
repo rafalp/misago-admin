@@ -235,20 +235,18 @@ export const Complex = () => {
               help={<>Select other groups this user is member of.</>}
             />
             <FormRow
-              label="Global moderator"
               name="mod"
               control={
-                <FormCheckboxLabel label="Is global moderator">
+                <FormCheckboxLabel label="Global moderator">
                   <FormCheckbox />
                 </FormCheckboxLabel>
               }
               help={<>Global moderator can moderate entire site without need for explicit moderator permissions.</>}
             />
             <FormRow
-              label="Root administrator"
               name="admin"
               control={
-                <FormCheckboxLabel label="Is root administrator">
+                <FormCheckboxLabel label="Root administrator">
                   <FormCheckbox />
                 </FormCheckboxLabel>
               }

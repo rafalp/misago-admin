@@ -14,7 +14,7 @@ interface FormRowProps {
   className?: string | null
   control: React.ReactNode
   help?: React.ReactNode
-  label: React.ReactNode
+  label?: React.ReactNode
   name: string
   optional?: boolean
   validationMessage?: (value: any, error: ValidationError) => string | null
@@ -37,14 +37,16 @@ const FormRow: React.FC<FormRowProps> = ({
   return (
     <FormField name={name} help={!!help} invalid={!!error}>
       <div className={classnames("form-row", className)}>
-        <label htmlFor={buildFieldId(name, formId)} className="form-label">
-          {label}
-          {optional && (
-            <span className="badge bg-light text-dark">
-              <Trans id="field.optional">Optional</Trans>
-            </span>
-          )}
-        </label>
+        {label && (
+          <label htmlFor={buildFieldId(name, formId)} className="form-label">
+            {label}
+            {optional && (
+              <span className="badge bg-light text-dark">
+                <Trans id="field.optional">Optional</Trans>
+              </span>
+            )}
+          </label>
+        )}
         {control}
         {!!error && !!validationMessage && (
           <FormError id={buildErrorId(name, formId)}>
