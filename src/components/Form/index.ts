@@ -5,7 +5,10 @@ import FormField, { useFormFieldContext } from "./FormField"
 import FormError from "./FormError"
 import FormHelp from "./FormHelp"
 import FormNumberInput from "./FormNumberInput"
+import FormRadioSelect from "./FormRadioSelect"
 import FormRow from "./FormRow"
+import FormSelect from "./FormSelect"
+import FormSelectMultiple from "./FormSelectMultiple"
 import FormTextAreaInput from "./FormTextAreaInput"
 import FormTextInput from "./FormTextInput"
 import FormValidationMessage from "./FormValidationMessage"
@@ -19,7 +22,10 @@ export {
   FormField,
   FormHelp,
   FormNumberInput,
+  FormRadioSelect,
   FormRow,
+  FormSelect,
+  FormSelectMultiple,
   FormTextAreaInput,
   FormTextInput,
   FormValidationMessage,

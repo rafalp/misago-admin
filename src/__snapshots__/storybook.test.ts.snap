@@ -226,6 +226,15 @@ exports[`Storyshots Components/ClientError Application Error 1`] = `"{\\"locatio
 
 exports[`Storyshots Components/ClientError Network Error 1`] = `"{\\"location\\":\\"__root__\\",\\"type\\":\\"client_error.network\\",\\"message\\":\\"Site server can't be reached.\\"}"`;
 
+exports[`Storyshots Components/Controls Checkbox 1`] = `
+<input
+  checked={false}
+  className="form-check-input"
+  disabled={false}
+  type="checkbox"
+/>
+`;
+
 exports[`Storyshots Components/Controls Email Input 1`] = `
 <input
   className="form-control"
@@ -256,6 +265,167 @@ exports[`Storyshots Components/Controls Password Input 1`] = `
 />
 `;
 
+exports[`Storyshots Components/Controls Radio Select 1`] = `
+<div
+  className="form-check-select"
+>
+  <div
+    className="form-check"
+  >
+    <input
+      checked={false}
+      className="form-check-input"
+      disabled={false}
+      id="undefined_user"
+      type="radio"
+      value="user"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="undefined_user"
+    >
+      User
+    </label>
+  </div>
+  <div
+    className="form-check"
+  >
+    <input
+      checked={true}
+      className="form-check-input"
+      disabled={false}
+      id="undefined_mod"
+      type="radio"
+      value="mod"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="undefined_mod"
+    >
+      Moderator
+    </label>
+  </div>
+  <div
+    className="form-check"
+  >
+    <input
+      checked={false}
+      className="form-check-input"
+      disabled={false}
+      id="undefined_admin"
+      type="radio"
+      value="admin"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="undefined_admin"
+    >
+      Admin
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Controls Select 1`] = `
+<select
+  className="form-control"
+  disabled={false}
+  value=""
+>
+  <option
+    value=""
+  >
+    
+  </option>
+  <option
+    value="user"
+  >
+    User
+  </option>
+  <option
+    value="mod"
+  >
+    Moderator
+  </option>
+  <option
+    value="admin"
+  >
+    Admin
+  </option>
+</select>
+`;
+
+exports[`Storyshots Components/Controls Select Multiple 1`] = `
+<div
+  className="form-select-multiple"
+>
+  <div
+    className="form-check"
+  >
+    <input
+      checked={true}
+      className="form-check-input"
+      disabled={false}
+      id="undefined_user"
+      type="checkbox"
+      value="user"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="undefined_user"
+    >
+      User
+    </label>
+  </div>
+  <div
+    className="form-check"
+  >
+    <input
+      checked={false}
+      className="form-check-input"
+      disabled={false}
+      id="undefined_mod"
+      type="checkbox"
+      value="mod"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="undefined_mod"
+    >
+      Moderator
+    </label>
+  </div>
+  <div
+    className="form-check"
+  >
+    <input
+      checked={true}
+      className="form-check-input"
+      disabled={false}
+      id="undefined_admin"
+      type="checkbox"
+      value="admin"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="undefined_admin"
+    >
+      Admin
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Controls Text Area Input 1`] = `
+<textarea
+  className="form-control"
+  disabled={false}
+  placeholder="Enter your story..."
+  rows={5}
+  value=""
+/>
+`;
+
 exports[`Storyshots Components/Controls Text Input 1`] = `
 <input
   className="form-control"
@@ -264,6 +434,192 @@ exports[`Storyshots Components/Controls Text Input 1`] = `
   type="text"
   value=""
 />
+`;
+
+exports[`Storyshots Components/Form Card Complex 1`] = `
+<div
+  className="card form-card"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="card-header form-card-header"
+    >
+      <strong
+        className="card-title form-card-title"
+      >
+        Edit User
+      </strong>
+    </div>
+    <div
+      className="card-body form-card-fieldset"
+    >
+      <fieldset>
+        <legend
+          className="form-card-legend"
+        >
+          Basic Details
+        </legend>
+        <div
+          className="form-row"
+        >
+          <label
+            className="form-label"
+            htmlFor="form-control-username"
+          >
+            Username
+          </label>
+          <input
+            aria-describedby="form-help-username"
+            className="form-control"
+            id="form-control-username"
+            name="username"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="text"
+          />
+          <div
+            className="form-text"
+            id="form-help-username"
+          >
+            Your user name must be 4-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+          </div>
+        </div>
+        <div
+          className="form-row"
+        >
+          <label
+            className="form-label"
+            htmlFor="form-control-title"
+          >
+            Title
+            <span
+              className="badge bg-light text-dark"
+            >
+              Optional
+            </span>
+          </label>
+          <input
+            aria-describedby=""
+            className="form-control"
+            id="form-control-title"
+            name="title"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+        <div
+          className="form-row"
+        >
+          <label
+            className="form-label"
+            htmlFor="form-control-description"
+          >
+            Description
+            <span
+              className="badge bg-light text-dark"
+            >
+              Optional
+            </span>
+          </label>
+          <textarea
+            aria-describedby=""
+            className="form-control"
+            id="form-control-description"
+            name="description"
+            onBlur={[Function]}
+            onChange={[Function]}
+            rows={5}
+          />
+        </div>
+      </fieldset>
+    </div>
+    <div
+      className="card-body form-card-fieldset"
+    >
+      <fieldset>
+        <legend
+          className="form-card-legend"
+        >
+          Sign In Credentials
+        </legend>
+        <div
+          className="form-row"
+        >
+          <label
+            className="form-label"
+            htmlFor="form-control-email"
+          >
+            E-mail address
+          </label>
+          <input
+            aria-describedby=""
+            className="form-control"
+            id="form-control-email"
+            name="email"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="text"
+          />
+        </div>
+        <div
+          className="form-row"
+        >
+          <label
+            className="form-label"
+            htmlFor="form-control-password"
+          >
+            New password
+            <span
+              className="badge bg-light text-dark"
+            >
+              Optional
+            </span>
+          </label>
+          <input
+            aria-describedby="form-help-password"
+            className="form-control"
+            id="form-control-password"
+            name="password"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="password"
+          />
+          <div
+            className="form-text"
+            id="form-help-password"
+          >
+            To change user password enter new password here.
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div
+      className="card-body form-card-fieldset"
+    >
+      <fieldset>
+        <legend
+          className="form-card-legend"
+        >
+          Permissions
+        </legend>
+        - primary group - group memberships - admin yes no - moderator yes no
+      </fieldset>
+    </div>
+    <div
+      className="card-footer form-card-footer"
+    >
+      <button
+        className="btn btn-primary has-text"
+        type="submit"
+      >
+        Save changes
+      </button>
+    </div>
+  </form>
+</div>
 `;
 
 exports[`Storyshots Components/Form Card Minimal 1`] = `
@@ -368,6 +724,82 @@ exports[`Storyshots Components/Form Card Minimal 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Form Checkbox Field 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-row"
+  >
+    <label
+      className="form-label"
+      htmlFor="form-control-checked"
+    >
+      Example field
+    </label>
+    <input
+      aria-describedby=""
+      className="form-check-input"
+      id="form-control-checked"
+      name="checked"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="checkbox"
+    />
+  </div>
+  <hr />
+  <button
+    className="btn btn-primary has-text"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
+
+exports[`Storyshots Components/Form Checkbox Field With Label 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-row"
+  >
+    <label
+      className="form-label"
+      htmlFor="form-control-checked"
+    >
+      Example field
+    </label>
+    <div
+      className="form-check"
+    >
+      <input
+        aria-describedby=""
+        className="form-check-input"
+        id="form-control-checked"
+        name="checked"
+        onBlur={[Function]}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <label
+        className="form-check-label"
+        htmlFor="form-control-checked"
+      >
+        Accept terms and services
+      </label>
+    </div>
+  </div>
+  <hr />
+  <button
+    className="btn btn-primary has-text"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
+
 exports[`Storyshots Components/Form Disabled 1`] = `
 <form
   onSubmit={[Function]}
@@ -423,6 +855,262 @@ exports[`Storyshots Components/Form Number Input Field 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       type="number"
+    />
+  </div>
+  <hr />
+  <button
+    className="btn btn-primary has-text"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
+
+exports[`Storyshots Components/Form Radio Select Field 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-row"
+  >
+    <label
+      className="form-label"
+      htmlFor="form-control-choice"
+    >
+      Example field
+    </label>
+    <div
+      className="form-check-select"
+    >
+      <div
+        className="form-check"
+      >
+        <input
+          className="form-check-input"
+          id="form-control-choice_user"
+          name="choice"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="radio"
+          value="user"
+        />
+        <label
+          className="form-check-label"
+          htmlFor="form-control-choice_user"
+        >
+          User
+        </label>
+      </div>
+      <div
+        className="form-check"
+      >
+        <input
+          className="form-check-input"
+          id="form-control-choice_mod"
+          name="choice"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="radio"
+          value="mod"
+        />
+        <label
+          className="form-check-label"
+          htmlFor="form-control-choice_mod"
+        >
+          Moderator
+        </label>
+      </div>
+      <div
+        className="form-check"
+      >
+        <input
+          className="form-check-input"
+          id="form-control-choice_admin"
+          name="choice"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="radio"
+          value="admin"
+        />
+        <label
+          className="form-check-label"
+          htmlFor="form-control-choice_admin"
+        >
+          Administrator
+        </label>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <button
+    className="btn btn-primary has-text"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
+
+exports[`Storyshots Components/Form Select Field 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-row"
+  >
+    <label
+      className="form-label"
+      htmlFor="form-control-choice"
+    >
+      Example field
+    </label>
+    <select
+      aria-describedby=""
+      className="form-control"
+      id="form-control-choice"
+      name="choice"
+      onBlur={[Function]}
+      onChange={[Function]}
+    >
+      <option
+        value=""
+      >
+        
+      </option>
+      <option
+        value="user"
+      >
+        User
+      </option>
+      <option
+        value="mod"
+      >
+        Moderator
+      </option>
+      <option
+        value="admin"
+      >
+        Administrator
+      </option>
+    </select>
+  </div>
+  <hr />
+  <button
+    className="btn btn-primary has-text"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
+
+exports[`Storyshots Components/Form Select Multiple Field 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-row"
+  >
+    <label
+      className="form-label"
+      htmlFor="form-control-choices"
+    >
+      Example field
+    </label>
+    <div
+      className="form-select-multiple"
+    >
+      <div
+        className="form-check"
+      >
+        <input
+          className="form-check-input"
+          id="form-control-choices_user"
+          name="choices"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="checkbox"
+          value="user"
+        />
+        <label
+          className="form-check-label"
+          htmlFor="form-control-choices_user"
+        >
+          User
+        </label>
+      </div>
+      <div
+        className="form-check"
+      >
+        <input
+          className="form-check-input"
+          id="form-control-choices_mod"
+          name="choices"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="checkbox"
+          value="mod"
+        />
+        <label
+          className="form-check-label"
+          htmlFor="form-control-choices_mod"
+        >
+          Moderator
+        </label>
+      </div>
+      <div
+        className="form-check"
+      >
+        <input
+          className="form-check-input"
+          id="form-control-choices_admin"
+          name="choices"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="checkbox"
+          value="admin"
+        />
+        <label
+          className="form-check-label"
+          htmlFor="form-control-choices_admin"
+        >
+          Administrator
+        </label>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <button
+    className="btn btn-primary has-text"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
+
+exports[`Storyshots Components/Form Text Area Input Field 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-row"
+  >
+    <label
+      className="form-label"
+      htmlFor="form-control-message"
+    >
+      Example field
+    </label>
+    <textarea
+      aria-describedby=""
+      className="form-control"
+      id="form-control-message"
+      name="message"
+      onBlur={[Function]}
+      onChange={[Function]}
+      rows={5}
     />
   </div>
   <hr />

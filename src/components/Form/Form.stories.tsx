@@ -11,7 +11,10 @@ import {
   FormCheckbox,
   FormCheckboxLabel,
   FormNumberInput,
+  FormRadioSelect,
   FormRow,
+  FormSelect,
+  FormSelectMultiple,
   FormTextAreaInput,
   FormTextInput,
 } from "."
@@ -125,7 +128,6 @@ interface BoolFormData {
 export const FormCheckboxControl = () => {
   const methods = useForm<BoolFormData, {}>({
     defaultValues: { checked: false },
-    resolver: yupResolver(textSchema),
   })
 
   return (
@@ -147,7 +149,6 @@ FormCheckboxControl.storyName = "Checkbox Field"
 export const FormCheckboxLabelControl = () => {
   const methods = useForm<BoolFormData, {}>({
     defaultValues: { checked: false },
-    resolver: yupResolver(textSchema),
   })
 
   return (
@@ -169,6 +170,102 @@ export const FormCheckboxLabelControl = () => {
   )
 }
 FormCheckboxLabelControl.storyName = "Checkbox Field With Label"
+
+interface SelectFormData {
+  choice: string
+}
+
+export const FormSelectControl = () => {
+  const methods = useForm<SelectFormData, {}>({
+    defaultValues: { choice: "" },
+  })
+
+  return (
+    <Form onSubmit={methods.handleSubmit(() => {})}>
+      <FormProvider {...methods}>
+        <FormRow
+          label="Example field"
+          name="choice"
+          control={
+            <FormSelect
+              options={[
+                { value: "", name: "" },
+                { value: "user", name: "User" },
+                { value: "mod", name: "Moderator" },
+                { value: "admin", name: "Administrator" },
+              ]}
+            />
+          }
+        />
+      </FormProvider>
+      <hr />
+      <ButtonPrimary>Submit</ButtonPrimary>
+    </Form>
+  )
+}
+FormSelectControl.storyName = "Select Field"
+
+export const FormRadioSelectControl = () => {
+  const methods = useForm<SelectFormData, {}>({
+    defaultValues: { choice: "user" },
+  })
+
+  return (
+    <Form onSubmit={methods.handleSubmit(() => {})}>
+      <FormProvider {...methods}>
+        <FormRow
+          label="Example field"
+          name="choice"
+          control={
+            <FormRadioSelect
+              options={[
+                { value: "user", name: "User" },
+                { value: "mod", name: "Moderator" },
+                { value: "admin", name: "Administrator" },
+              ]}
+            />
+          }
+        />
+      </FormProvider>
+      <hr />
+      <ButtonPrimary>Submit</ButtonPrimary>
+    </Form>
+  )
+}
+FormRadioSelectControl.storyName = "Radio Select Field"
+
+interface SelectMultipleFormData {
+  choices: Array<string>
+}
+
+export const FormSelectMultipleControl = () => {
+  const methods = useForm<SelectMultipleFormData, {}>({
+    defaultValues: { choices: [] },
+  })
+
+  return (
+    <Form onSubmit={methods.handleSubmit(() => {})}>
+      <FormProvider {...methods}>
+        <FormRow
+          label="Example field"
+          name="choices"
+          control={
+            <FormSelectMultiple
+              options={[
+                { value: "user", name: "User" },
+                { value: "mod", name: "Moderator" },
+                { value: "admin", name: "Administrator" },
+              ]}
+            />
+          }
+        />
+      </FormProvider>
+      <hr />
+      <ButtonPrimary>Submit</ButtonPrimary>
+    </Form>
+  )
+}
+FormSelectMultipleControl.storyName = "Select Multiple Field"
 
 export const FormDisabled = () => {
   const methods = useForm<TextFormData, {}>({

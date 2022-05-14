@@ -5,7 +5,7 @@ export const requiredValidationMessage = (
   value: any,
   error: ValidationError
 ) => {
-  if (error.type == "required" || error.type == "value_error.missing") {
+  if (error.type === "required" || error.type === "value_error.missing") {
     return t({
       id: "value_error.missing",
       message: `This field can't be empty.`,
