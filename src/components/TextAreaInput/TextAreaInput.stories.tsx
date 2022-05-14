@@ -6,7 +6,7 @@ export default {
 
 const Template = {
   value: "",
-  placeholder: "",
+  placeholder: "Enter your story...",
   disabled: false,
   invalid: false,
 }
@@ -15,4 +15,4 @@ export const TextAreaInputStory = (args: typeof Template) => (
   <TextAreaInput {...args} />
 )
 TextAreaInputStory.storyName = "Text Area Input"
-TextAreaInputStory.args = { ...Template, placeholder: "Enter your story..." }
+TextAreaInputStory.args = Template

@@ -21,4 +21,4 @@ export const RadioSelectStory = (args: typeof Template) => (
   />
 )
 RadioSelectStory.storyName = "Radio Select"
-RadioSelectStory.args = { ...Template }
+RadioSelectStory.args = Template

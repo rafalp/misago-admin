@@ -10,6 +10,7 @@ import {
   Form,
   FormCheckbox,
   FormCheckboxLabel,
+  FormFileInput,
   FormNumberInput,
   FormRadioSelect,
   FormRow,
@@ -266,6 +267,31 @@ export const FormSelectMultipleControl = () => {
   )
 }
 FormSelectMultipleControl.storyName = "Select Multiple Field"
+
+interface FileFormData {
+  file: File | null
+}
+
+export const FormFileControl = () => {
+  const methods = useForm<FileFormData, {}>({
+    defaultValues: { file: null },
+  })
+
+  return (
+    <Form onSubmit={methods.handleSubmit(() => {})}>
+      <FormProvider {...methods}>
+        <FormRow
+          label="Example field"
+          name="file"
+          control={<FormFileInput accept="image/*" />}
+        />
+      </FormProvider>
+      <hr />
+      <ButtonPrimary>Submit</ButtonPrimary>
+    </Form>
+  )
+}
+FormFileControl.storyName = "File Input Field"
 
 export const FormDisabled = () => {
   const methods = useForm<TextFormData, {}>({

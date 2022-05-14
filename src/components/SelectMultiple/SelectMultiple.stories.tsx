@@ -21,4 +21,4 @@ export const SelectMultipleStory = (args: typeof Template) => (
   />
 )
 SelectMultipleStory.storyName = "Select Multiple"
-SelectMultipleStory.args = { ...Template }
+SelectMultipleStory.args = Template

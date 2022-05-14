@@ -2,6 +2,7 @@ import Form, { useFormContext } from "./Form"
 import FormCheckbox from "./FormCheckbox"
 import FormCheckboxLabel from "./FormCheckboxLabel"
 import FormField, { useFormFieldContext } from "./FormField"
+import FormFileInput from "./FormFileInput"
 import FormError from "./FormError"
 import FormHelp from "./FormHelp"
 import FormNumberInput from "./FormNumberInput"
@@ -20,6 +21,7 @@ export {
   FormCheckboxLabel,
   FormError,
   FormField,
+  FormFileInput,
   FormHelp,
   FormNumberInput,
   FormRadioSelect,

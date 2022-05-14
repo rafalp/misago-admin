@@ -245,6 +245,15 @@ exports[`Storyshots Components/Controls Email Input 1`] = `
 />
 `;
 
+exports[`Storyshots Components/Controls File Input 1`] = `
+<input
+  accept="image/*"
+  className="form-control"
+  disabled={false}
+  type="file"
+/>
+`;
+
 exports[`Storyshots Components/Controls Number Input 1`] = `
 <input
   className="form-control"
@@ -822,6 +831,40 @@ exports[`Storyshots Components/Form Disabled 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       type="text"
+    />
+  </div>
+  <hr />
+  <button
+    className="btn btn-primary has-text"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
+
+exports[`Storyshots Components/Form File Input Field 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-row"
+  >
+    <label
+      className="form-label"
+      htmlFor="form-control-file"
+    >
+      Example field
+    </label>
+    <input
+      accept="image/*"
+      aria-describedby=""
+      className="form-control"
+      id="form-control-file"
+      name="file"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="file"
     />
   </div>
   <hr />

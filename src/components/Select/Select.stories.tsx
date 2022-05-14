@@ -22,4 +22,4 @@ export const SelectStory = (args: typeof Template) => (
   />
 )
 SelectStory.storyName = "Select"
-SelectStory.args = { ...Template }
+SelectStory.args = Template
