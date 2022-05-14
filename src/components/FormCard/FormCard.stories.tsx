@@ -3,7 +3,16 @@ import { FormProvider, useForm } from "react-hook-form"
 import * as yup from "yup"
 import { textValidationMessage } from "../../validation"
 import { ButtonPrimary } from "../Button"
-import { Form, FormRow, FormTextAreaInput, FormTextInput } from "../Form"
+import {
+  Form,
+  FormRow,
+  FormCheckbox,
+  FormCheckboxLabel,
+  FormSelect,
+  FormSelectMultiple,
+  FormTextAreaInput,
+  FormTextInput,
+} from "../Form"
 import {
   FormCard,
   FormCardBody,
@@ -97,6 +106,10 @@ interface ComplexFormData {
   title: string
   password: string
   description: string
+  group: string
+  groups: Array<string>
+  mod: boolean
+  admin: boolean
 }
 
 const complexFormSchema = yup
@@ -117,6 +130,10 @@ export const Complex = () => {
       title: "",
       password: "",
       description: "",
+      group: "admin",
+      groups: ["user", "admin"],
+      mod: true,
+      admin: false,
     },
     resolver: yupResolver(complexFormSchema),
   })
@@ -184,8 +201,59 @@ export const Complex = () => {
             />
           </FormCardFieldset>
           <FormCardFieldset legend="Permissions">
-            - primary group - group memberships - admin yes no - moderator yes
-            no
+            <FormRow
+              label="Primary group"
+              name="group"
+              control={
+                <FormSelect
+                  options={[
+                    { value: "user", name: "Users" },
+                    { value: "mod", name: "Moderators" },
+                    { value: "admin", name: "Administrators" },
+                  ]}
+                />
+              }
+              help={
+                <>
+                  Primary group for this user. Affects the way user is
+                  displayed.
+                </>
+              }
+            />
+            <FormRow
+              label="Group memberships"
+              name="groups"
+              control={
+                <FormSelectMultiple
+                  options={[
+                    { value: "user", name: "Users" },
+                    { value: "mod", name: "Moderators" },
+                    { value: "admin", name: "Administrators" },
+                  ]}
+                />
+              }
+              help={<>Select other groups this user is member of.</>}
+            />
+            <FormRow
+              label="Global moderator"
+              name="mod"
+              control={
+                <FormCheckboxLabel label="Is global moderator">
+                  <FormCheckbox />
+                </FormCheckboxLabel>
+              }
+              help={<>Global moderator can moderate entire site without need for explicit moderator permissions.</>}
+            />
+            <FormRow
+              label="Root administrator"
+              name="admin"
+              control={
+                <FormCheckboxLabel label="Is root administrator">
+                  <FormCheckbox />
+                </FormCheckboxLabel>
+              }
+              help={<>Root administrator status can only be removed by other root admins.</>}
+            />
           </FormCardFieldset>
           <FormCardFooter>
             <ButtonPrimary>Save changes</ButtonPrimary>
