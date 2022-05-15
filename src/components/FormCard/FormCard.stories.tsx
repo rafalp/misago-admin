@@ -241,7 +241,12 @@ export const Complex = () => {
                   <FormCheckbox />
                 </FormCheckboxLabel>
               }
-              help={<>Global moderator can moderate entire site without need for explicit moderator permissions.</>}
+              help={
+                <>
+                  Global moderator can moderate entire site without need for
+                  explicit moderator permissions.
+                </>
+              }
             />
             <FormRow
               name="admin"
@@ -250,7 +255,12 @@ export const Complex = () => {
                   <FormCheckbox />
                 </FormCheckboxLabel>
               }
-              help={<>Root administrator status can only be removed by other root admins.</>}
+              help={
+                <>
+                  Root administrator status can only be removed by other root
+                  admins.
+                </>
+              }
             />
           </FormCardFieldset>
           <FormCardFooter>

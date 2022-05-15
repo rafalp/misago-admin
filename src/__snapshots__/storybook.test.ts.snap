@@ -734,12 +734,6 @@ exports[`Storyshots Components/Form Card Complex 1`] = `
         <div
           className="form-row"
         >
-          <label
-            className="form-label"
-            htmlFor="form-control-mod"
-          >
-            Global moderator
-          </label>
           <div
             className="form-check"
           >
@@ -756,7 +750,7 @@ exports[`Storyshots Components/Form Card Complex 1`] = `
               className="form-check-label"
               htmlFor="form-control-mod"
             >
-              Is global moderator
+              Global moderator
             </label>
           </div>
           <div
@@ -769,12 +763,6 @@ exports[`Storyshots Components/Form Card Complex 1`] = `
         <div
           className="form-row"
         >
-          <label
-            className="form-label"
-            htmlFor="form-control-admin"
-          >
-            Root administrator
-          </label>
           <div
             className="form-check"
           >
@@ -791,7 +779,7 @@ exports[`Storyshots Components/Form Card Complex 1`] = `
               className="form-check-label"
               htmlFor="form-control-admin"
             >
-              Is root administrator
+              Root administrator
             </label>
           </div>
           <div
@@ -1459,6 +1447,131 @@ exports[`Storyshots Components/Icon Solid 1`] = `
 <i
   className="icon fas fa-address-card"
 />
+`;
+
+exports[`Storyshots Components/Navigation Navigation 1`] = `
+<ul
+  className="nav flex-column nav-main"
+>
+  <li
+    className="nav-item"
+  >
+    <a
+      aria-current="page"
+      className="nav-link active"
+      href="/"
+      onClick={[Function]}
+    >
+      <i
+        className="icon fas fa-home fa-fw"
+      />
+      Dashboard
+    </a>
+    <ul
+      className="nav flex-column nav-nested"
+    >
+      <li
+        className="nav-item"
+      >
+        <a
+          aria-current="page"
+          className="nav-link active"
+          href="/"
+          onClick={[Function]}
+        >
+          Analytics
+        </a>
+      </li>
+      <li
+        className="nav-item"
+      >
+        <a
+          aria-current="page"
+          className="nav-link active"
+          href="/"
+          onClick={[Function]}
+        >
+          System checks
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li
+    className="nav-item"
+  >
+    <a
+      aria-current="page"
+      className="nav-link active"
+      href="/"
+      onClick={[Function]}
+    >
+      <i
+        className="icon fas fa-users fa-fw"
+      />
+      Users
+    </a>
+  </li>
+  <li
+    className="nav-item"
+  >
+    <a
+      aria-current="page"
+      className="nav-link active"
+      href="/"
+      onClick={[Function]}
+    >
+      <i
+        className="icon fas fa-sitemap fa-fw"
+      />
+      Categories
+    </a>
+  </li>
+  <li
+    className="nav-item"
+  >
+    <a
+      aria-current="page"
+      className="nav-link active"
+      href="/"
+      onClick={[Function]}
+    >
+      <i
+        className="icon fas fa-paint-brush fa-fw"
+      />
+      Themes
+    </a>
+  </li>
+  <li
+    className="nav-item"
+  >
+    <a
+      aria-current="page"
+      className="nav-link active"
+      href="/"
+      onClick={[Function]}
+    >
+      <i
+        className="icon fas fa-paperclip fa-fw"
+      />
+      Attachments
+    </a>
+  </li>
+  <li
+    className="nav-item"
+  >
+    <a
+      aria-current="page"
+      className="nav-link active"
+      href="/"
+      onClick={[Function]}
+    >
+      <i
+        className="icon fas fa-cog fa-fw"
+      />
+      Settings
+    </a>
+  </li>
+</ul>
 `;
 
 exports[`Storyshots Layouts Full 1`] = `
