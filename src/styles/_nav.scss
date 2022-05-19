@@ -1,0 +1,8 @@
+/* Make nested nav only visible for active item */
+.nav-sub {
+  display: none;
+}
+
+.active + .nav-sub {
+  display: block;
+}

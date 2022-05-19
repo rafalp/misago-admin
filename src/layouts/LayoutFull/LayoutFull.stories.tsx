@@ -8,7 +8,7 @@ export default {
 }
 
 export const Full = () => (
-  <LayoutFull>
+  <LayoutFull navItems={[]}>
     <div className="card">
       <div className="card-body">
         <h5 className="card-title">Full Layout</h5>

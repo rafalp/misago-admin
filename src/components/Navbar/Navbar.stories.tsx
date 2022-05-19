@@ -7,5 +7,12 @@ export default {
   },
 }
 
-export const NavbarStory = () => <Navbar />
+export const NavbarStory = () => (
+  <Navbar
+    user={{
+      name: "Sephiroth",
+    }}
+    logout={() => {}}
+  />
+)
 NavbarStory.storyName = "Navbar"
