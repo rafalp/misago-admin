@@ -1,10 +1,10 @@
 `MAIN_NAV`
 ========
 
-`MAIN_NAV` is an array of `MainNav` items defining admin dashboard's main menu:
+`MAIN_NAV` is an array of `MainNav` items defining admin dashboard main menu:
 
 ```typescript
-MAIN_NAV = Array<MainNavItem>
+const MAIN_NAV: Array<MainNavItem> = []
 
 type MainNavItem = {
   key: string

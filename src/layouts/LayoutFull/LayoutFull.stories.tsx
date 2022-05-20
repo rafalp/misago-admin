@@ -1,3 +1,4 @@
+import { MAIN_NAV } from "../../site"
 import LayoutFull from "."
 
 export default {
@@ -8,7 +9,7 @@ export default {
 }
 
 export const Full = () => (
-  <LayoutFull navItems={[]}>
+  <LayoutFull navItems={MAIN_NAV}>
     <div className="card">
       <div className="card-body">
         <h5 className="card-title">Full Layout</h5>

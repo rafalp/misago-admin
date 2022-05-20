@@ -27,8 +27,9 @@ exports[`Storyshots Components Main Nav 1`] = `
     className="nav-item"
   >
     <a
-      className="nav-link"
-      href="/home/"
+      aria-current="page"
+      className="nav-link active"
+      href="#/"
       onClick={[Function]}
     >
       <i
@@ -44,7 +45,7 @@ exports[`Storyshots Components Main Nav 1`] = `
       >
         <a
           className="nav-link"
-          href="/home/analytics/"
+          href="#/home/analytics"
           onClick={[Function]}
         >
           Analytics
@@ -55,7 +56,7 @@ exports[`Storyshots Components Main Nav 1`] = `
       >
         <a
           className="nav-link"
-          href="/home/checks/"
+          href="#/home/checks"
           onClick={[Function]}
         >
           System checks
@@ -68,7 +69,7 @@ exports[`Storyshots Components Main Nav 1`] = `
   >
     <a
       className="nav-link"
-      href="/users/"
+      href="#/users"
       onClick={[Function]}
     >
       <i
@@ -84,7 +85,7 @@ exports[`Storyshots Components Main Nav 1`] = `
       >
         <a
           className="nav-link"
-          href="/users/groups/"
+          href="#/users/groups"
           onClick={[Function]}
         >
           Groups
@@ -95,7 +96,7 @@ exports[`Storyshots Components Main Nav 1`] = `
       >
         <a
           className="nav-link"
-          href="/users/bans/"
+          href="#/users/bans"
           onClick={[Function]}
         >
           Bans
@@ -108,7 +109,7 @@ exports[`Storyshots Components Main Nav 1`] = `
   >
     <a
       className="nav-link"
-      href="/categories/"
+      href="#/categories"
       onClick={[Function]}
     >
       <i
@@ -122,7 +123,7 @@ exports[`Storyshots Components Main Nav 1`] = `
   >
     <a
       className="nav-link"
-      href="/themes/"
+      href="#/themes"
       onClick={[Function]}
     >
       <i
@@ -136,7 +137,7 @@ exports[`Storyshots Components Main Nav 1`] = `
   >
     <a
       className="nav-link"
-      href="/attachments/"
+      href="#/attachments"
       onClick={[Function]}
     >
       <i
@@ -150,7 +151,7 @@ exports[`Storyshots Components Main Nav 1`] = `
   >
     <a
       className="nav-link"
-      href="/settings/"
+      href="#/settings"
       onClick={[Function]}
     >
       <i
@@ -175,7 +176,7 @@ exports[`Storyshots Components Navbar 1`] = `
       <div
         className="col-side"
       >
-        [BRAND]
+        [MISAGO]
       </div>
       <div
         className="col-main d-flex justify-content-end align-items-center"
@@ -1618,7 +1619,52 @@ exports[`Storyshots Layouts Full 1`] = `
       >
         <ul
           className="nav flex-column nav-main"
-        />
+        >
+          <li
+            className="nav-item"
+          >
+            <a
+              aria-current="page"
+              className="nav-link active"
+              href="#/"
+              onClick={[Function]}
+            >
+              <i
+                className="icon fas fa-home fa-fw"
+              />
+              Dashboard
+            </a>
+          </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link"
+              href="#/settings"
+              onClick={[Function]}
+            >
+              <i
+                className="icon fas fa-cog fa-fw"
+              />
+              Settings
+            </a>
+            <ul
+              className="nav nav-sub flex-column"
+            >
+              <li
+                className="nav-item"
+              >
+                <a
+                  className="nav-link"
+                  href="#/settings/general"
+                  onClick={[Function]}
+                >
+                  General settings
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
       <div
         className="col-main"

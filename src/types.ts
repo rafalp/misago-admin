@@ -19,3 +19,9 @@ export type MainNavChildItem = {
   link: string
   text: React.ReactNode
 }
+
+export type Route = {
+  key: string
+  path: string
+  element: React.ReactNode
+}
