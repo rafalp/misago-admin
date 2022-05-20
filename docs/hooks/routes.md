@@ -4,6 +4,8 @@
 `ROUTES` is an array of `Route` items defining admin dashboard routes:
 
 ```typescript
+const ROUTES: Array<Route> = []
+
 export type Route = {
   key: string
   path: string
