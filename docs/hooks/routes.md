@@ -13,4 +13,4 @@ export type Route = {
 }
 ```
 
-`Route` is importable from `misago/types` module.
+`Route` is importable from `@misago/types` module.

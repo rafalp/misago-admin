@@ -21,4 +21,4 @@ type MainNavChildItem = {
 }
 ```
 
-`MainNavItem` and `MainNavChildItem` are importable from `misago/types` module.
+`MainNavItem` and `MainNavChildItem` are importable from `@misago/types` module.
