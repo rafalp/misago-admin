@@ -18,6 +18,7 @@ const GeneralSettings: React.FC = () => {
       />
       <Header title={<Trans id="settings.general">General settings</Trans>} />
       {loading && <div>LOADING</div>}
+      {error && <div>ERROR LOADING</div>}
       {data && data.settings && (
         <GeneralSettingsForm settings={data.settings} />
       )}
