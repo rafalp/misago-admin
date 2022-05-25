@@ -1,7 +1,3 @@
-import register0 from "./testplugin/plugin"
-
-const setupPlugins = () => {
-  register0()
-}
+const setupPlugins = () => {}
 
 export default setupPlugins
