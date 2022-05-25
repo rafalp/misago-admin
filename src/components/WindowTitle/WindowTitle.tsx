@@ -14,7 +14,7 @@ const WindowTitle: React.FC<WindowTitleProps> = ({ title, parent }) => {
   segments.push(
     t({
       id: "misago_admin",
-      message: "Misago Administration",
+      message: "Misago Admin",
     })
   )
 

@@ -1,32 +1,29 @@
+import { Trans } from "@lingui/macro"
+import Dashboard from "./pages/Dashboard"
+import GeneralSettings from "./pages/GeneralSettings"
 import { MainNavItem, Route } from "./types"
 
 const MAIN_NAV: Array<MainNavItem> = [
   {
-    key: "home",
+    key: "dashboard",
     icon: "fas fa-home",
     link: "/",
-    text: "Dashboard",
+    text: <Trans id="dashboard">Dashboard</Trans>,
   },
   {
     key: "settings",
     icon: "fas fa-cog",
     link: "/settings",
-    text: "Settings",
+    text: <Trans id="settings">Settings</Trans>,
     children: [
       {
         key: "settings-general",
         link: "/settings/general",
-        text: "General settings",
+        text: <Trans id="settings.general">General settings</Trans>,
       },
     ],
   },
 ]
-
-const Home = () => (
-  <div>
-    <h1>HOME PAGE</h1>
-  </div>
-)
 
 const Settings = () => (
   <div>
@@ -34,17 +31,11 @@ const Settings = () => (
   </div>
 )
 
-const SettingsGeneral = () => (
-  <div>
-    <h1>GENERAL SETTINGS PAGE</h1>
-  </div>
-)
-
 const ROUTES: Array<Route> = [
   {
-    key: "home",
+    key: "dashboard",
     path: "/",
-    element: <Home />,
+    element: <Dashboard />,
   },
   {
     key: "settings",
@@ -54,7 +45,7 @@ const ROUTES: Array<Route> = [
   {
     key: "settings-general",
     path: "/settings/general",
-    element: <SettingsGeneral />,
+    element: <GeneralSettings />,
   },
 ]
 

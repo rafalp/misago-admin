@@ -1572,6 +1572,39 @@ exports[`Storyshots Components/Form Text Input Field Full Example 1`] = `
 </form>
 `;
 
+exports[`Storyshots Components/Header Basic 1`] = `
+<div
+  className="page-header"
+>
+  <h1>
+    Page header
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Components/Header With Parent 1`] = `
+<div
+  className="page-header"
+>
+  <div
+    className="page-header-parent"
+  >
+    <a
+      href="#/parent"
+      onClick={[Function]}
+    >
+      Parent title
+      <i
+        className="icon fas fa-chevron-right"
+      />
+    </a>
+  </div>
+  <h1>
+    Page header
+  </h1>
+</div>
+`;
+
 exports[`Storyshots Components/Icon Fixed Width 1`] = `
 Array [
   <i
@@ -1602,6 +1635,86 @@ exports[`Storyshots Components/Icon Solid 1`] = `
 <i
   className="icon fas fa-address-card"
 />
+`;
+
+exports[`Storyshots Components/Toasts Error Toast 1`] = `
+<div
+  aria-atomic="true"
+  aria-live="assertive"
+  className="toast fade show toast-danger"
+  role="alert"
+>
+  <div
+    className="toast-layout"
+  >
+    <div
+      className="toast-body"
+    >
+      Oops! Something wrong has happened!
+    </div>
+    <button
+      aria-label="Close"
+      className="btn-close btn-close-white"
+      type="button"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Toasts Success Toast 1`] = `
+<div
+  aria-atomic="true"
+  aria-live="assertive"
+  className="toast fade show toast-success"
+  role="alert"
+>
+  <div
+    className="toast-layout"
+  >
+    <div
+      className="toast-body"
+    >
+      Hello world!
+    </div>
+    <button
+      aria-label="Close"
+      className="btn-close btn-close-white"
+      type="button"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Toasts Toasts provider 1`] = `
+Array [
+  <div
+    className="toast-container"
+  />,
+  <input
+    className="form-control"
+    onChange={[Function]}
+    type="text"
+    value="Hello world!"
+  />,
+  <br />,
+  <button
+    className="btn btn-success has-text"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Primary
+  </button>,
+  " ",
+  <button
+    className="btn btn-danger has-text"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Error
+  </button>,
+]
 `;
 
 exports[`Storyshots Layouts Full 1`] = `

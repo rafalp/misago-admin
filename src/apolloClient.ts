@@ -8,7 +8,7 @@ import {
 import { getAuthToken } from "./auth"
 
 const httpLink = new HttpLink({
-  uri: (process as any).env.REACT_APP_GRAPHQL_URL || "/admin/graphql/"
+  uri: (process as any).env.REACT_APP_GRAPHQL_URL || "/admin/graphql/",
 })
 
 const authMiddleware = new ApolloLink((operation, forward) => {

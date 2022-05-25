@@ -52,3 +52,5 @@ msgstr "Misago Administration"
 #: pages/Login/LoginErrorMessage.tsx:35
 msgid "value_error.all_fields_are_required"
 msgstr "Fill out all fields."
+
+# Plugins locales

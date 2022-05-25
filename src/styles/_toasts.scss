@@ -1,0 +1,33 @@
+/* Position toasts in top right */
+.toast-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: $zindex-tooltip;
+}
+
+/* Make toast vertically aligned s*/
+.toast {
+  align-items: center;
+}
+
+.toast-layout {
+  display: flex;
+}
+
+.toast .btn-close {
+  margin: auto;
+  margin-right: .5rem;
+}
+
+.toast-danger {
+  background-color: $toast-danger-bg;
+  border: $toast-danger-border;
+  color: $toast-danger-color;
+}
+
+.toast-success {
+  background-color: $toast-success-bg;
+  border: $toast-success-border;
+  color: $toast-success-color;
+}
