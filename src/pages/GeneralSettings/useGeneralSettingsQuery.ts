@@ -4,6 +4,9 @@ const GENERAL_SETTINGS_QUERY = gql`
   query GeneralSettings {
     settings {
       forumName
+      forumIndexTitle
+      forumIndexHeader
+      forumIndexThreads
     }
   }
 `
@@ -11,6 +14,9 @@ const GENERAL_SETTINGS_QUERY = gql`
 interface GeneralSettingsData {
   settings: {
     forumName: string
+    forumIndexTitle: string
+    forumIndexHeader: string
+    forumIndexThreads: boolean
   } | null
 }
 

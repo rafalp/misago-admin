@@ -5,7 +5,7 @@ import { CardBody } from "../Card"
 interface FormCardFieldsetProps {
   children: React.ReactNode
   className?: string
-  legend: string
+  legend: React.ReactNode
 }
 
 const FormCardFieldset: React.FC<FormCardFieldsetProps> = ({

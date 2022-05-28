@@ -125,6 +125,12 @@ $card-foot-bg:                      $white !default;
 $card-foot-border:                  1px solid $gray-200 !default;
 $card-foot-color:                   $body-color !default;
 
+// UI skeletons
+
+$skeleton-color:                    $gray-300 !default;
+$skeleton-radius:                   0.1rem !default;
+$skeleton-word-spacing:             0.5rem !default;
+
 // Login form
 //
 // Style Loader component.

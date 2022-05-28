@@ -16,6 +16,7 @@ interface ToastsContextData {
   success(message: React.ReactNode): void
   error(message: React.ReactNode): void
   graphQLError(error: ApolloError): void
+  useGraphQLErrorEffect(error?: ApolloError): void
 }
 
 const ToastsContext = React.createContext<ToastsContextData>({
@@ -26,6 +27,7 @@ const ToastsContext = React.createContext<ToastsContextData>({
   success: () => {},
   error: () => {},
   graphQLError: () => {},
+  useGraphQLErrorEffect: () => {},
 })
 
 const useToasts = () => React.useContext(ToastsContext)

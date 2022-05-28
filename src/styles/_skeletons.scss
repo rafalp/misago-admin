@@ -1,0 +1,35 @@
+/* Base skeleton, adds flashing animation */
+.skeleton {
+  animation: skeleton-animation 1s infinite;
+  animation-timing-function: ease-in-out;
+  user-select: none;
+
+  .skeleton {
+    animation: none;
+  }
+}
+
+@keyframes skeleton-animation {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* Text and sentence skeletons */
+.skeleton-text {
+  display: inline-block;
+
+  background: $skeleton-color;
+  border-radius: $skeleton-radius;
+  color: transparent;
+}
+
+.skeleton-sentence {
+  word-spacing: $skeleton-word-spacing;
+}

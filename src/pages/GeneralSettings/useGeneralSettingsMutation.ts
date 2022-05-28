@@ -24,6 +24,8 @@ interface UpdateGeneralSettingsData {
 interface UpdateGeneralSettingsInput {
   input: {
     forumName: string
+    forumIndexTitle: string
+    forumIndexHeader: string
   }
 }
 

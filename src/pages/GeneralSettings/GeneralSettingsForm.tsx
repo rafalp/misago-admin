@@ -8,8 +8,8 @@ import { ButtonPrimary } from "../../components/Button"
 import { Form, FormRow, FormTextInput } from "../../components/Form"
 import {
   FormCard,
-  FormCardBody,
   FormCardHeader,
+  FormCardFieldset,
   FormCardTitle,
   FormCardFooter,
 } from "../../components/FormCard"
@@ -19,11 +19,15 @@ import useGeneralSettingsMutation from "./useGeneralSettingsMutation"
 
 interface FormData {
   forumName: string
+  forumIndexTitle: string
+  forumIndexHeader: string
 }
 
 const FormSchema = yup
   .object({
     forumName: yup.string().trim().min(1).max(250),
+    forumIndexTitle: yup.string().trim().min(0).max(250),
+    forumIndexHeader: yup.string().trim().min(0).max(250),
   })
   .required()
 
@@ -51,6 +55,8 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
               variables: {
                 input: {
                   forumName: data.forumName,
+                  forumIndexTitle: data.forumIndexTitle,
+                  forumIndexHeader: data.forumIndexHeader,
                 },
               },
             })
@@ -78,7 +84,9 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
               <Trans id="settings.change">Change settings</Trans>
             </FormCardTitle>
           </FormCardHeader>
-          <FormCardBody>
+          <FormCardFieldset
+            legend={<Trans id="settings.branding">Forum branding</Trans>}
+          >
             <FormRow
               label={<Trans id="settings.forum_name">Forum name</Trans>}
               name="forumName"
@@ -87,7 +95,31 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
                 textValidationMessage(value, error, { min: 1, max: 250 })
               }
             />
-          </FormCardBody>
+          </FormCardFieldset>
+          <FormCardFieldset
+            legend={<Trans id="settings.forum_index">Forum index</Trans>}
+          >
+            <FormRow
+              label={<Trans id="settings.forum_name">Forum index title</Trans>}
+              name="forumIndexTitle"
+              control={<FormTextInput />}
+              validationMessage={(value: string, error) =>
+                textValidationMessage(value, error, { min: 0, max: 250 })
+              }
+              optional
+            />
+            <FormRow
+              label={
+                <Trans id="settings.forum_name">Forum index header</Trans>
+              }
+              name="forumIndexHeader"
+              control={<FormTextInput />}
+              validationMessage={(value: string, error) =>
+                textValidationMessage(value, error, { min: 0, max: 250 })
+              }
+              optional
+            />
+          </FormCardFieldset>
           <FormCardFooter>
             <ButtonPrimary disabled={loading} spinner={loading}>
               <Trans id="save_changes">Save changes</Trans>

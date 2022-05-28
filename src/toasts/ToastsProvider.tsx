@@ -79,9 +79,22 @@ const ToastsProvider: React.FC<ToastsProviderProps> = ({ children }) => {
     [error]
   )
 
-  const value = React.useMemo(() => {
-    return { toasts, toast, hide, remove, success, error, graphQLError }
-  }, [toasts, toast, hide, remove, success, error, graphQLError])
+  const useGraphQLErrorEffect = (error?: ApolloError) => {
+    React.useEffect(() => {
+      if (error) graphQLError(error)
+    }, [error])
+  }
+
+  const value = {
+    toasts,
+    toast,
+    hide,
+    remove,
+    success,
+    error,
+    graphQLError,
+    useGraphQLErrorEffect,
+  }
 
   return (
     <ToastsContext.Provider value={value}>{children}</ToastsContext.Provider>

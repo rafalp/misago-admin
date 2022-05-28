@@ -1,5 +1,5 @@
-import classnames from "classnames"
 import { Trans } from "@lingui/macro"
+import classnames from "classnames"
 import React from "react"
 import { useFormContext as useHookFormContext } from "react-hook-form"
 import { ValidationError } from "../../validation"
