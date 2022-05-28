@@ -1637,6 +1637,252 @@ exports[`Storyshots Components/Icon Solid 1`] = `
 />
 `;
 
+exports[`Storyshots Components/Skeletons Form Row Skeleton 1`] = `
+<div
+  aria-hidden="true"
+  className="form-row"
+>
+  <label
+    className="form-label"
+  >
+    <span
+      className="skeleton skeleton-sentence"
+    >
+      <span
+        aria-hidden="true"
+        className="skeleton skeleton-text"
+        style={
+          Object {
+            "width": "100px",
+          }
+        }
+      >
+         
+      </span>
+       
+      <span
+        aria-hidden="true"
+        className="skeleton skeleton-text"
+        style={
+          Object {
+            "width": "40px",
+          }
+        }
+      >
+         
+      </span>
+       
+      <span
+        aria-hidden="true"
+        className="skeleton skeleton-text"
+        style={
+          Object {
+            "width": "90px",
+          }
+        }
+      >
+         
+      </span>
+      
+    </span>
+  </label>
+  <div
+    aria-hidden="true"
+    className="form-control"
+  >
+    <span
+      className="skeleton skeleton-sentence"
+    >
+      <span
+        aria-hidden="true"
+        className="skeleton skeleton-text"
+        style={
+          Object {
+            "width": "100px",
+          }
+        }
+      >
+         
+      </span>
+       
+      <span
+        aria-hidden="true"
+        className="skeleton skeleton-text"
+        style={
+          Object {
+            "width": "40px",
+          }
+        }
+      >
+         
+      </span>
+       
+      <span
+        aria-hidden="true"
+        className="skeleton skeleton-text"
+        style={
+          Object {
+            "width": "90px",
+          }
+        }
+      >
+         
+      </span>
+      
+    </span>
+  </div>
+  <div
+    className="form-text"
+  >
+    <span
+      className="skeleton skeleton-sentence"
+    >
+      <span
+        aria-hidden="true"
+        className="skeleton skeleton-text"
+        style={
+          Object {
+            "width": "100px",
+          }
+        }
+      >
+         
+      </span>
+       
+      <span
+        aria-hidden="true"
+        className="skeleton skeleton-text"
+        style={
+          Object {
+            "width": "40px",
+          }
+        }
+      >
+         
+      </span>
+       
+      <span
+        aria-hidden="true"
+        className="skeleton skeleton-text"
+        style={
+          Object {
+            "width": "90px",
+          }
+        }
+      >
+         
+      </span>
+      
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Skeletons Sentence Skeleton 1`] = `
+<span
+  className="skeleton skeleton-sentence"
+>
+  <span
+    aria-hidden="true"
+    className="skeleton skeleton-text"
+    style={
+      Object {
+        "width": "100px",
+      }
+    }
+  >
+     
+  </span>
+   
+  <span
+    aria-hidden="true"
+    className="skeleton skeleton-text"
+    style={
+      Object {
+        "width": "40px",
+      }
+    }
+  >
+     
+  </span>
+   
+  <span
+    aria-hidden="true"
+    className="skeleton skeleton-text"
+    style={
+      Object {
+        "width": "90px",
+      }
+    }
+  >
+     
+  </span>
+  
+</span>
+`;
+
+exports[`Storyshots Components/Skeletons Text Input Skeleton 1`] = `
+<div
+  aria-hidden="true"
+  className="form-control"
+>
+  <span
+    className="skeleton skeleton-sentence"
+  >
+    <span
+      aria-hidden="true"
+      className="skeleton skeleton-text"
+      style={
+        Object {
+          "width": "100px",
+        }
+      }
+    >
+       
+    </span>
+     
+    <span
+      aria-hidden="true"
+      className="skeleton skeleton-text"
+      style={
+        Object {
+          "width": "40px",
+        }
+      }
+    >
+       
+    </span>
+     
+    <span
+      aria-hidden="true"
+      className="skeleton skeleton-text"
+      style={
+        Object {
+          "width": "90px",
+        }
+      }
+    >
+       
+    </span>
+    
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Skeletons Text Skeleton 1`] = `
+<span
+  aria-hidden="true"
+  className="skeleton skeleton-text"
+  style={
+    Object {
+      "width": "80px",
+    }
+  }
+>
+   
+</span>
+`;
+
 exports[`Storyshots Components/Toasts Error Toast 1`] = `
 <div
   aria-atomic="true"
