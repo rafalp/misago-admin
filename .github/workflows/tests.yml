@@ -12,3 +12,5 @@ jobs:
           node-version: '14'
       - run: npm install
       - run: npm test -- --watchAll=false
+      - run: npm run makemessages
+      - run: npm run build
