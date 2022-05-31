@@ -13,16 +13,11 @@ import {
   FormCardTitle,
   FormCardFooter,
 } from "../../components/FormCard"
-import { SkeletonSentence, SkeletonTextInput } from "../../components/Skeleton"
+import { SkeletonTextInput } from "../../components/Skeleton"
 import { useToasts } from "../../toasts"
 import { textValidationMessage } from "../../validation"
 import useGeneralSettingsMutation from "./useGeneralSettingsMutation"
-
-interface FormData {
-  forumName: string
-  forumIndexTitle: string
-  forumIndexHeader: string
-}
+import { SettingsFormData } from "./useGeneralSettingsQuery"
 
 const FormSchema = yup
   .object({
@@ -33,7 +28,7 @@ const FormSchema = yup
   .required()
 
 interface GeneralSettingsFormProps {
-  settings?: FormData | null
+  settings?: SettingsFormData | null
 }
 
 const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
@@ -42,7 +37,7 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
   const ready = !!settings
   const toasts = useToasts()
   const [mutate, { loading }] = useGeneralSettingsMutation()
-  const methods = useForm<FormData, {}>({
+  const methods = useForm<SettingsFormData, {}>({
     defaultValues: settings || {},
     resolver: yupResolver(FormSchema),
   })
@@ -96,9 +91,7 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
                 ready ? (
                   <FormTextInput />
                 ) : (
-                  <SkeletonTextInput>
-                    <SkeletonSentence words={[150, 120]} />
-                  </SkeletonTextInput>
+                  <SkeletonTextInput words={[130, 70]} />
                 )
               }
               validationMessage={(value: string, error) =>
@@ -116,9 +109,7 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
                 ready ? (
                   <FormTextInput />
                 ) : (
-                  <SkeletonTextInput>
-                    <SkeletonSentence words={[100, 140]} />
-                  </SkeletonTextInput>
+                  <SkeletonTextInput words={[130, 60, 110]} />
                 )
               }
               validationMessage={(value: string, error) =>
@@ -135,9 +126,7 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
                 ready ? (
                   <FormTextInput />
                 ) : (
-                  <SkeletonTextInput>
-                    <SkeletonSentence words={[120, 120]} />
-                  </SkeletonTextInput>
+                  <SkeletonTextInput words={[110, 90]} />
                 )
               }
               validationMessage={(value: string, error) =>

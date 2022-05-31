@@ -11,13 +11,15 @@ export const GENERAL_SETTINGS_QUERY = gql`
   }
 `
 
+interface SettingsFormData {
+  forumName: string
+  forumIndexTitle: string
+  forumIndexHeader: string
+  forumIndexThreads: boolean
+}
+
 interface GeneralSettingsData {
-  settings: {
-    forumName: string
-    forumIndexTitle: string
-    forumIndexHeader: string
-    forumIndexThreads: boolean
-  } | null
+  settings: SettingsFormData | null
 }
 
 const useGeneralSettingsQuery = () => {

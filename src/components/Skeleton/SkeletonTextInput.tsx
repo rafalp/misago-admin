@@ -1,12 +1,13 @@
 import React from "react"
+import SkeletonSentence from "./SkeletonSentence"
 
 interface SkeletonTextInputProps {
-  children: React.ReactNode
+  words: Array<number>
 }
 
-const SkeletonTextInput: React.FC<SkeletonTextInputProps> = ({ children }) => (
+const SkeletonTextInput: React.FC<SkeletonTextInputProps> = ({ words }) => (
   <div aria-hidden="true" className="form-control">
-    {children}
+    <SkeletonSentence words={words} />
   </div>
 )
 

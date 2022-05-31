@@ -1637,147 +1637,6 @@ exports[`Storyshots Components/Icon Solid 1`] = `
 />
 `;
 
-exports[`Storyshots Components/Skeletons Form Row Skeleton 1`] = `
-<div
-  aria-hidden="true"
-  className="form-row"
->
-  <label
-    className="form-label"
-  >
-    <span
-      className="skeleton skeleton-sentence"
-    >
-      <span
-        aria-hidden="true"
-        className="skeleton skeleton-text"
-        style={
-          Object {
-            "width": "100px",
-          }
-        }
-      >
-         
-      </span>
-       
-      <span
-        aria-hidden="true"
-        className="skeleton skeleton-text"
-        style={
-          Object {
-            "width": "40px",
-          }
-        }
-      >
-         
-      </span>
-       
-      <span
-        aria-hidden="true"
-        className="skeleton skeleton-text"
-        style={
-          Object {
-            "width": "90px",
-          }
-        }
-      >
-         
-      </span>
-      
-    </span>
-  </label>
-  <div
-    aria-hidden="true"
-    className="form-control"
-  >
-    <span
-      className="skeleton skeleton-sentence"
-    >
-      <span
-        aria-hidden="true"
-        className="skeleton skeleton-text"
-        style={
-          Object {
-            "width": "100px",
-          }
-        }
-      >
-         
-      </span>
-       
-      <span
-        aria-hidden="true"
-        className="skeleton skeleton-text"
-        style={
-          Object {
-            "width": "40px",
-          }
-        }
-      >
-         
-      </span>
-       
-      <span
-        aria-hidden="true"
-        className="skeleton skeleton-text"
-        style={
-          Object {
-            "width": "90px",
-          }
-        }
-      >
-         
-      </span>
-      
-    </span>
-  </div>
-  <div
-    className="form-text"
-  >
-    <span
-      className="skeleton skeleton-sentence"
-    >
-      <span
-        aria-hidden="true"
-        className="skeleton skeleton-text"
-        style={
-          Object {
-            "width": "100px",
-          }
-        }
-      >
-         
-      </span>
-       
-      <span
-        aria-hidden="true"
-        className="skeleton skeleton-text"
-        style={
-          Object {
-            "width": "40px",
-          }
-        }
-      >
-         
-      </span>
-       
-      <span
-        aria-hidden="true"
-        className="skeleton skeleton-text"
-        style={
-          Object {
-            "width": "90px",
-          }
-        }
-      >
-         
-      </span>
-      
-    </span>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Components/Skeletons Sentence Skeleton 1`] = `
 <span
   className="skeleton skeleton-sentence"
@@ -2301,7 +2160,7 @@ Array [
                           className="skeleton skeleton-text"
                           style={
                             Object {
-                              "width": "150px",
+                              "width": "130px",
                             }
                           }
                         >
@@ -2313,7 +2172,7 @@ Array [
                           className="skeleton skeleton-text"
                           style={
                             Object {
-                              "width": "120px",
+                              "width": "70px",
                             }
                           }
                         >
@@ -2360,7 +2219,7 @@ Array [
                           className="skeleton skeleton-text"
                           style={
                             Object {
-                              "width": "100px",
+                              "width": "130px",
                             }
                           }
                         >
@@ -2372,7 +2231,19 @@ Array [
                           className="skeleton skeleton-text"
                           style={
                             Object {
-                              "width": "140px",
+                              "width": "60px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                         
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "110px",
                             }
                           }
                         >
@@ -2408,7 +2279,7 @@ Array [
                           className="skeleton skeleton-text"
                           style={
                             Object {
-                              "width": "120px",
+                              "width": "110px",
                             }
                           }
                         >
@@ -2420,7 +2291,7 @@ Array [
                           className="skeleton skeleton-text"
                           style={
                             Object {
-                              "width": "120px",
+                              "width": "90px",
                             }
                           }
                         >
@@ -2603,7 +2474,7 @@ Array [
                           className="skeleton skeleton-text"
                           style={
                             Object {
-                              "width": "150px",
+                              "width": "130px",
                             }
                           }
                         >
@@ -2615,7 +2486,7 @@ Array [
                           className="skeleton skeleton-text"
                           style={
                             Object {
-                              "width": "120px",
+                              "width": "70px",
                             }
                           }
                         >
@@ -2662,7 +2533,7 @@ Array [
                           className="skeleton skeleton-text"
                           style={
                             Object {
-                              "width": "100px",
+                              "width": "130px",
                             }
                           }
                         >
@@ -2674,7 +2545,19 @@ Array [
                           className="skeleton skeleton-text"
                           style={
                             Object {
-                              "width": "140px",
+                              "width": "60px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                         
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "110px",
                             }
                           }
                         >
@@ -2710,7 +2593,7 @@ Array [
                           className="skeleton skeleton-text"
                           style={
                             Object {
-                              "width": "120px",
+                              "width": "110px",
                             }
                           }
                         >
@@ -2722,7 +2605,7 @@ Array [
                           className="skeleton skeleton-text"
                           style={
                             Object {
-                              "width": "120px",
+                              "width": "90px",
                             }
                           }
                         >
