@@ -1389,7 +1389,7 @@ exports[`Storyshots Components/Form Radio Switch Field 1`] = `
         className="form-check"
       >
         <input
-          checked={false}
+          checked={true}
           className="form-check-input"
           id="form-control-checked_on"
           name="checked"
@@ -1408,7 +1408,7 @@ exports[`Storyshots Components/Form Radio Switch Field 1`] = `
         className="form-check"
       >
         <input
-          checked={true}
+          checked={false}
           className="form-check-input"
           id="form-control-checked_off"
           name="checked"
@@ -2417,7 +2417,7 @@ Array [
                   >
                     <label
                       className="form-label"
-                      htmlFor="form-control-sc"
+                      htmlFor="form-control-forumIndexThreads"
                     >
                       Forum index page
                     </label>
@@ -2431,15 +2431,15 @@ Array [
                           checked={false}
                           className="form-check-input"
                           disabled={true}
-                          id="form-control-sc_on"
-                          name="sc"
+                          id="form-control-forumIndexThreads_on"
+                          name="forumIndexThreads"
                           onBlur={[Function]}
                           onChange={[Function]}
                           type="radio"
                         />
                         <label
                           className="form-check-label"
-                          htmlFor="form-control-sc_on"
+                          htmlFor="form-control-forumIndexThreads_on"
                         >
                           Threads
                         </label>
@@ -2451,15 +2451,15 @@ Array [
                           checked={true}
                           className="form-check-input"
                           disabled={true}
-                          id="form-control-sc_off"
-                          name="sc"
+                          id="form-control-forumIndexThreads_off"
+                          name="forumIndexThreads"
                           onBlur={[Function]}
                           onChange={[Function]}
                           type="radio"
                         />
                         <label
                           className="form-check-label"
-                          htmlFor="form-control-sc_off"
+                          htmlFor="form-control-forumIndexThreads_off"
                         >
                           Categories
                         </label>
@@ -2785,7 +2785,7 @@ Array [
                   >
                     <label
                       className="form-label"
-                      htmlFor="form-control-sc"
+                      htmlFor="form-control-forumIndexThreads"
                     >
                       Forum index page
                     </label>
@@ -2799,15 +2799,15 @@ Array [
                           checked={false}
                           className="form-check-input"
                           disabled={true}
-                          id="form-control-sc_on"
-                          name="sc"
+                          id="form-control-forumIndexThreads_on"
+                          name="forumIndexThreads"
                           onBlur={[Function]}
                           onChange={[Function]}
                           type="radio"
                         />
                         <label
                           className="form-check-label"
-                          htmlFor="form-control-sc_on"
+                          htmlFor="form-control-forumIndexThreads_on"
                         >
                           Threads
                         </label>
@@ -2819,15 +2819,15 @@ Array [
                           checked={true}
                           className="form-check-input"
                           disabled={true}
-                          id="form-control-sc_off"
-                          name="sc"
+                          id="form-control-forumIndexThreads_off"
+                          name="forumIndexThreads"
                           onBlur={[Function]}
                           onChange={[Function]}
                           type="radio"
                         />
                         <label
                           className="form-check-label"
-                          htmlFor="form-control-sc_off"
+                          htmlFor="form-control-forumIndexThreads_off"
                         >
                           Categories
                         </label>

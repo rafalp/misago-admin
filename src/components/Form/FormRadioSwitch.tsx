@@ -22,7 +22,7 @@ const FormRadioSwitch: React.FC<FormRadioSwitchProps> = ({
 
   const { name, invalid } = fieldContext
   register(name)
-  const checked = watch(name, false)
+  const checked = watch(name) || false
 
   return (
     <RadioSwitch

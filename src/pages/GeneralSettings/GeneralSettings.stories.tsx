@@ -21,9 +21,9 @@ export const GeneralSettingsStory = () => (
           result: {
             data: {
               settings: {
-                forumName: "Lorem ipsum",
-                forumIndexTitle: "",
-                forumIndexHeader: "",
+                forumName: "My forum",
+                forumIndexTitle: "My forum community",
+                forumIndexHeader: "Welcome to my forum!",
                 forumIndexThreads: true,
               },
             },

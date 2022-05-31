@@ -152,7 +152,7 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
                   Forum index page
                 </Trans>
               }
-              name="sc"
+              name="forumIndexThreads"
               control={
                 <FormRadioSwitch
                   on={<Trans id="settings.forum_index_threads">Threads</Trans>}
