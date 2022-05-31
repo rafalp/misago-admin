@@ -11,7 +11,7 @@ export const GENERAL_SETTINGS_QUERY = gql`
   }
 `
 
-interface SettingsFormData {
+export interface SettingsFormData {
   forumName: string
   forumIndexTitle: string
   forumIndexHeader: string
