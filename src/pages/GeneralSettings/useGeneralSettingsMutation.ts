@@ -26,6 +26,7 @@ interface UpdateGeneralSettingsInput {
     forumName: string
     forumIndexTitle: string
     forumIndexHeader: string
+    forumIndexThreads: boolean
   }
 }
 

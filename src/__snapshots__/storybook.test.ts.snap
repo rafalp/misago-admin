@@ -490,6 +490,51 @@ exports[`Storyshots Components/Controls Radio Select 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Controls Radio Switch 1`] = `
+<div
+  className="form-check-select"
+>
+  <div
+    className="form-check"
+  >
+    <input
+      checked={true}
+      className="form-check-input"
+      disabled={false}
+      id="undefined_on"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="radio"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="undefined_on"
+    >
+      Categories
+    </label>
+  </div>
+  <div
+    className="form-check"
+  >
+    <input
+      checked={false}
+      className="form-check-input"
+      disabled={false}
+      id="undefined_off"
+      onBlur={[Function]}
+      onChange={[Function]}
+      type="radio"
+    />
+    <label
+      className="form-check-label"
+      htmlFor="undefined_off"
+    >
+      Threads
+    </label>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Controls Select 1`] = `
 <select
   className="form-control"
@@ -1310,6 +1355,72 @@ exports[`Storyshots Components/Form Radio Select Field 1`] = `
           htmlFor="form-control-choice_admin"
         >
           Administrator
+        </label>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <button
+    className="btn btn-primary has-text"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
+
+exports[`Storyshots Components/Form Radio Switch Field 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-row"
+  >
+    <label
+      className="form-label"
+      htmlFor="form-control-checked"
+    >
+      Example field
+    </label>
+    <div
+      className="form-check-select"
+    >
+      <div
+        className="form-check"
+      >
+        <input
+          checked={false}
+          className="form-check-input"
+          id="form-control-checked_on"
+          name="checked"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="radio"
+        />
+        <label
+          className="form-check-label"
+          htmlFor="form-control-checked_on"
+        >
+          Threads
+        </label>
+      </div>
+      <div
+        className="form-check"
+      >
+        <input
+          checked={true}
+          className="form-check-input"
+          id="form-control-checked_off"
+          name="checked"
+          onBlur={[Function]}
+          onChange={[Function]}
+          type="radio"
+        />
+        <label
+          className="form-check-label"
+          htmlFor="form-control-checked_off"
+        >
+          Categories
         </label>
       </div>
     </div>
@@ -2301,6 +2412,60 @@ Array [
                       </span>
                     </div>
                   </div>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-sc"
+                    >
+                      Forum index page
+                    </label>
+                    <div
+                      className="form-check-select"
+                    >
+                      <div
+                        className="form-check"
+                      >
+                        <input
+                          checked={false}
+                          className="form-check-input"
+                          disabled={true}
+                          id="form-control-sc_on"
+                          name="sc"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          type="radio"
+                        />
+                        <label
+                          className="form-check-label"
+                          htmlFor="form-control-sc_on"
+                        >
+                          Threads
+                        </label>
+                      </div>
+                      <div
+                        className="form-check"
+                      >
+                        <input
+                          checked={true}
+                          className="form-check-input"
+                          disabled={true}
+                          id="form-control-sc_off"
+                          name="sc"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          type="radio"
+                        />
+                        <label
+                          className="form-check-label"
+                          htmlFor="form-control-sc_off"
+                        >
+                          Categories
+                        </label>
+                      </div>
+                    </div>
+                  </div>
                 </fieldset>
               </div>
               <div
@@ -2613,6 +2778,60 @@ Array [
                         </span>
                         
                       </span>
+                    </div>
+                  </div>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-sc"
+                    >
+                      Forum index page
+                    </label>
+                    <div
+                      className="form-check-select"
+                    >
+                      <div
+                        className="form-check"
+                      >
+                        <input
+                          checked={false}
+                          className="form-check-input"
+                          disabled={true}
+                          id="form-control-sc_on"
+                          name="sc"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          type="radio"
+                        />
+                        <label
+                          className="form-check-label"
+                          htmlFor="form-control-sc_on"
+                        >
+                          Threads
+                        </label>
+                      </div>
+                      <div
+                        className="form-check"
+                      >
+                        <input
+                          checked={true}
+                          className="form-check-input"
+                          disabled={true}
+                          id="form-control-sc_off"
+                          name="sc"
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          type="radio"
+                        />
+                        <label
+                          className="form-check-label"
+                          htmlFor="form-control-sc_off"
+                        >
+                          Categories
+                        </label>
+                      </div>
                     </div>
                   </div>
                 </fieldset>

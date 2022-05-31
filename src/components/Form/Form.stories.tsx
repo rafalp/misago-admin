@@ -13,6 +13,7 @@ import {
   FormFileInput,
   FormNumberInput,
   FormRadioSelect,
+  FormRadioSwitch,
   FormRow,
   FormSelect,
   FormSelectMultiple,
@@ -171,6 +172,27 @@ export const FormCheckboxLabelControl = () => {
   )
 }
 FormCheckboxLabelControl.storyName = "Checkbox Field With Label"
+
+export const FormRadioSwitchControl = () => {
+  const methods = useForm<BoolFormData, {}>({
+    defaultValues: { checked: true },
+  })
+
+  return (
+    <Form onSubmit={methods.handleSubmit(() => {})}>
+      <FormProvider {...methods}>
+        <FormRow
+          label="Example field"
+          name="checked"
+          control={<FormRadioSwitch on="Threads" off="Categories" />}
+        />
+      </FormProvider>
+      <hr />
+      <ButtonPrimary>Submit</ButtonPrimary>
+    </Form>
+  )
+}
+FormRadioSwitchControl.storyName = "Radio Switch Field"
 
 interface SelectFormData {
   choice: string

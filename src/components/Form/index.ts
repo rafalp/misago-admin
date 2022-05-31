@@ -7,6 +7,7 @@ import FormError from "./FormError"
 import FormHelp from "./FormHelp"
 import FormNumberInput from "./FormNumberInput"
 import FormRadioSelect from "./FormRadioSelect"
+import FormRadioSwitch from "./FormRadioSwitch"
 import FormRow from "./FormRow"
 import FormSelect from "./FormSelect"
 import FormSelectMultiple from "./FormSelectMultiple"
@@ -25,6 +26,7 @@ export {
   FormHelp,
   FormNumberInput,
   FormRadioSelect,
+  FormRadioSwitch,
   FormRow,
   FormSelect,
   FormSelectMultiple,

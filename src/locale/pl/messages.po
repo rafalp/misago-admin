@@ -29,19 +29,36 @@ msgstr ""
 msgid "client_error.network"
 msgstr ""
 
+#: toasts/Toast.tsx:24
+msgid "close"
+msgstr ""
+
+#: pages/Dashboard/Dashboard.tsx:8
+#: site.tsx:11
+msgid "dashboard"
+msgstr ""
+
+#: components/Form/FormRow.tsx:45
+msgid "field.optional"
+msgstr ""
+
+#: pages/GeneralSettings/GeneralSettingsForm.tsx:64
+msgid "form_contains_errors"
+msgstr ""
+
 #: App.tsx:9
 #~ msgid "login.submit"
 #~ msgstr "Logowanie"
 
-#: pages/Login/LoginForm.tsx:84
+#: pages/Login/LoginForm.tsx:85
 msgid "login_form.password"
 msgstr ""
 
-#: pages/Login/LoginForm.tsx:92
+#: pages/Login/LoginForm.tsx:93
 msgid "login_form.submit"
 msgstr ""
 
-#: pages/Login/LoginForm.tsx:76
+#: pages/Login/LoginForm.tsx:77
 msgid "login_form.username"
 msgstr ""
 
@@ -49,8 +66,84 @@ msgstr ""
 msgid "misago_admin"
 msgstr ""
 
+#: pages/GeneralSettings/GeneralSettingsForm.tsx:156
+msgid "save_changes"
+msgstr ""
+
+#: site.tsx:17
+msgid "settings"
+msgstr ""
+
+#: pages/GeneralSettings/GeneralSettingsForm.tsx:86
+msgid "settings.branding"
+msgstr ""
+
+#: pages/GeneralSettings/GeneralSettingsForm.tsx:82
+msgid "settings.change"
+msgstr ""
+
+#: pages/GeneralSettings/GeneralSettingsForm.tsx:104
+msgid "settings.forum_index"
+msgstr ""
+
+#: pages/GeneralSettings/GeneralSettingsForm.tsx:146
+msgid "settings.forum_index_categories"
+msgstr ""
+
+#: pages/GeneralSettings/GeneralSettingsForm.tsx:140
+msgid "settings.forum_index_content"
+msgstr ""
+
+#: pages/GeneralSettings/GeneralSettingsForm.tsx:123
+msgid "settings.forum_index_header"
+msgstr ""
+
+#: pages/GeneralSettings/GeneralSettingsForm.tsx:145
+msgid "settings.forum_index_threads"
+msgstr ""
+
+#: pages/GeneralSettings/GeneralSettingsForm.tsx:107
+msgid "settings.forum_index_title"
+msgstr ""
+
+#: pages/GeneralSettings/GeneralSettingsForm.tsx:89
+msgid "settings.forum_name"
+msgstr ""
+
+#: pages/GeneralSettings/GeneralSettings.tsx:18
+#: pages/GeneralSettings/GeneralSettings.tsx:23
+#: site.tsx:22
+msgid "settings.general"
+msgstr ""
+
+#: pages/GeneralSettings/GeneralSettingsForm.tsx:71
+msgid "settings.updated"
+msgstr ""
+
+#: validation/messages.ts:72
+msgid "type_error.integer"
+msgstr ""
+
 #: pages/Login/LoginErrorMessage.tsx:35
 msgid "value_error.all_fields_are_required"
 msgstr ""
 
-# Plugins locales
+#: validation/messages.ts:86
+msgid "value_error.max"
+msgstr ""
+
+#: validation/messages.ts:44
+msgid "value_error.max_length"
+msgstr ""
+
+#: validation/messages.ts:79
+msgid "value_error.min"
+msgstr ""
+
+#: validation/messages.ts:34
+msgid "value_error.min_length"
+msgstr ""
+
+#: validation/messages.ts:9
+msgid "value_error.missing"
+msgstr ""

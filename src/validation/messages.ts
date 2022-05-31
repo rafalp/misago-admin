@@ -77,14 +77,14 @@ export const numberValidationMessage = (
     case "min":
     case "value_error.any_str.min_length":
       return t({
-        id: "value_error.min_length",
+        id: "value_error.min",
         message: `This value should not be lower than ${min}.`,
       })
 
     case "max":
     case "value_error.any_str.max_length":
       return t({
-        id: "value_error.max_length",
+        id: "value_error.max",
         message: `This value should not be greater than ${max}.`,
       })
   }

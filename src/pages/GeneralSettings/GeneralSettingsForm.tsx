@@ -5,7 +5,12 @@ import React from "react"
 import { FormProvider, useForm } from "react-hook-form"
 import * as yup from "yup"
 import { ButtonPrimary } from "../../components/Button"
-import { Form, FormRow, FormTextInput } from "../../components/Form"
+import {
+  Form,
+  FormRow,
+  FormRadioSwitch,
+  FormTextInput,
+} from "../../components/Form"
 import {
   FormCard,
   FormCardHeader,
@@ -54,6 +59,7 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
                   forumName: data.forumName,
                   forumIndexTitle: data.forumIndexTitle,
                   forumIndexHeader: data.forumIndexHeader,
+                  forumIndexThreads: data.forumIndexThreads,
                 },
               },
             })
@@ -103,7 +109,11 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
             legend={<Trans id="settings.forum_index">Forum index</Trans>}
           >
             <FormRow
-              label={<Trans id="settings.forum_name">Forum index title</Trans>}
+              label={
+                <Trans id="settings.forum_index_title">
+                  Forum index title
+                </Trans>
+              }
               name="forumIndexTitle"
               control={
                 ready ? (
@@ -119,7 +129,9 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
             />
             <FormRow
               label={
-                <Trans id="settings.forum_name">Forum index header</Trans>
+                <Trans id="settings.forum_index_header">
+                  Forum index header
+                </Trans>
               }
               name="forumIndexHeader"
               control={
@@ -133,6 +145,27 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
                 textValidationMessage(value, error, { min: 0, max: 250 })
               }
               optional
+            />
+            <FormRow
+              label={
+                <Trans id="settings.forum_index_content">
+                  Forum index page
+                </Trans>
+              }
+              name="sc"
+              control={
+                <FormRadioSwitch
+                  on={<Trans id="settings.forum_index_threads">Threads</Trans>}
+                  off={
+                    <Trans id="settings.forum_index_categories">
+                      Categories
+                    </Trans>
+                  }
+                />
+              }
+              validationMessage={(value: string, error) =>
+                textValidationMessage(value, error, { min: 0, max: 250 })
+              }
             />
           </FormCardFieldset>
           <FormCardFooter>
