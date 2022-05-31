@@ -13,6 +13,7 @@ import {
   FormCardTitle,
   FormCardFooter,
 } from "../../components/FormCard"
+import { SkeletonSentence, SkeletonTextInput } from "../../components/Skeleton"
 import { useToasts } from "../../toasts"
 import { textValidationMessage } from "../../validation"
 import useGeneralSettingsMutation from "./useGeneralSettingsMutation"
@@ -32,23 +33,24 @@ const FormSchema = yup
   .required()
 
 interface GeneralSettingsFormProps {
-  settings: FormData
+  settings?: FormData | null
 }
 
 const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
   settings,
 }) => {
+  const ready = !!settings
   const toasts = useToasts()
   const [mutate, { loading }] = useGeneralSettingsMutation()
   const methods = useForm<FormData, {}>({
-    defaultValues: settings,
+    defaultValues: settings || {},
     resolver: yupResolver(FormSchema),
   })
 
   return (
     <FormCard>
       <Form
-        disabled={loading}
+        disabled={!ready || loading}
         onSubmit={methods.handleSubmit(async (data) => {
           try {
             const result = await mutate({
@@ -90,7 +92,15 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
             <FormRow
               label={<Trans id="settings.forum_name">Forum name</Trans>}
               name="forumName"
-              control={<FormTextInput />}
+              control={
+                ready ? (
+                  <FormTextInput />
+                ) : (
+                  <SkeletonTextInput>
+                    <SkeletonSentence words={[150, 120]} />
+                  </SkeletonTextInput>
+                )
+              }
               validationMessage={(value: string, error) =>
                 textValidationMessage(value, error, { min: 1, max: 250 })
               }
@@ -102,7 +112,15 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
             <FormRow
               label={<Trans id="settings.forum_name">Forum index title</Trans>}
               name="forumIndexTitle"
-              control={<FormTextInput />}
+              control={
+                ready ? (
+                  <FormTextInput />
+                ) : (
+                  <SkeletonTextInput>
+                    <SkeletonSentence words={[100, 140]} />
+                  </SkeletonTextInput>
+                )
+              }
               validationMessage={(value: string, error) =>
                 textValidationMessage(value, error, { min: 0, max: 250 })
               }
@@ -113,7 +131,15 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
                 <Trans id="settings.forum_name">Forum index header</Trans>
               }
               name="forumIndexHeader"
-              control={<FormTextInput />}
+              control={
+                ready ? (
+                  <FormTextInput />
+                ) : (
+                  <SkeletonTextInput>
+                    <SkeletonSentence words={[120, 120]} />
+                  </SkeletonTextInput>
+                )
+              }
               validationMessage={(value: string, error) =>
                 textValidationMessage(value, error, { min: 0, max: 250 })
               }
@@ -121,7 +147,7 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
             />
           </FormCardFieldset>
           <FormCardFooter>
-            <ButtonPrimary disabled={loading} spinner={loading}>
+            <ButtonPrimary disabled={!ready || loading} spinner={loading}>
               <Trans id="save_changes">Save changes</Trans>
             </ButtonPrimary>
           </FormCardFooter>

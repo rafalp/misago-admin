@@ -2149,3 +2149,607 @@ exports[`Storyshots Pages Login Page 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots Pages/Settings/General Loading 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row w-100"
+      >
+        <div
+          className="col-side"
+        >
+          [MISAGO]
+        </div>
+        <div
+          className="col-main d-flex justify-content-end align-items-center"
+        >
+          <span
+            className="navbar-text me-3"
+          >
+            JohnDoe
+          </span>
+          <button
+            className="btn btn-light btn-sm has-text"
+            onClick={[Function]}
+            type="button"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="layout-full"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-side"
+        >
+          <ul
+            className="nav flex-column nav-main"
+          >
+            <li
+              className="nav-item"
+            >
+              <a
+                aria-current="page"
+                className="nav-link active"
+                href="#/"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-home fa-fw"
+                />
+                Dashboard
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/settings"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cog fa-fw"
+                />
+                Settings
+              </a>
+              <ul
+                className="nav nav-sub flex-column"
+              >
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/general"
+                    onClick={[Function]}
+                  >
+                    General settings
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div
+          className="col-main"
+        >
+          <div
+            className="page-header"
+          >
+            <h1>
+              General settings
+            </h1>
+          </div>
+          <div
+            className="card form-card"
+          >
+            <form
+              onSubmit={[Function]}
+            >
+              <div
+                className="card-header form-card-header"
+              >
+                <strong
+                  className="card-title form-card-title"
+                >
+                  Change settings
+                </strong>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Forum branding
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-forumName"
+                    >
+                      Forum name
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "150px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                         
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "120px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Forum index
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-forumIndexTitle"
+                    >
+                      Forum index title
+                      <span
+                        className="badge bg-light text-dark"
+                      >
+                        Optional
+                      </span>
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "100px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                         
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "140px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-forumIndexHeader"
+                    >
+                      Forum index header
+                      <span
+                        className="badge bg-light text-dark"
+                      >
+                        Optional
+                      </span>
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "120px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                         
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "120px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-footer form-card-footer"
+              >
+                <button
+                  className="btn btn-primary has-text"
+                  disabled={true}
+                  type="submit"
+                >
+                  Save changes
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Pages/Settings/General Ready 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row w-100"
+      >
+        <div
+          className="col-side"
+        >
+          [MISAGO]
+        </div>
+        <div
+          className="col-main d-flex justify-content-end align-items-center"
+        >
+          <span
+            className="navbar-text me-3"
+          >
+            JohnDoe
+          </span>
+          <button
+            className="btn btn-light btn-sm has-text"
+            onClick={[Function]}
+            type="button"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="layout-full"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-side"
+        >
+          <ul
+            className="nav flex-column nav-main"
+          >
+            <li
+              className="nav-item"
+            >
+              <a
+                aria-current="page"
+                className="nav-link active"
+                href="#/"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-home fa-fw"
+                />
+                Dashboard
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/settings"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cog fa-fw"
+                />
+                Settings
+              </a>
+              <ul
+                className="nav nav-sub flex-column"
+              >
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/general"
+                    onClick={[Function]}
+                  >
+                    General settings
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div
+          className="col-main"
+        >
+          <div
+            className="page-header"
+          >
+            <h1>
+              General settings
+            </h1>
+          </div>
+          <div
+            className="card form-card"
+          >
+            <form
+              onSubmit={[Function]}
+            >
+              <div
+                className="card-header form-card-header"
+              >
+                <strong
+                  className="card-title form-card-title"
+                >
+                  Change settings
+                </strong>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Forum branding
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-forumName"
+                    >
+                      Forum name
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "150px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                         
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "120px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Forum index
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-forumIndexTitle"
+                    >
+                      Forum index title
+                      <span
+                        className="badge bg-light text-dark"
+                      >
+                        Optional
+                      </span>
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "100px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                         
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "140px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-forumIndexHeader"
+                    >
+                      Forum index header
+                      <span
+                        className="badge bg-light text-dark"
+                      >
+                        Optional
+                      </span>
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "120px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                         
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "120px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-footer form-card-footer"
+              >
+                <button
+                  className="btn btn-primary has-text"
+                  disabled={true}
+                  type="submit"
+                >
+                  Save changes
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;

@@ -1,6 +1,6 @@
 import { gql, useQuery } from "@apollo/client"
 
-const GENERAL_SETTINGS_QUERY = gql`
+export const GENERAL_SETTINGS_QUERY = gql`
   query GeneralSettings {
     settings {
       forumName

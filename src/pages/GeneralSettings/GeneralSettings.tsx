@@ -4,7 +4,6 @@ import Header from "../../components/Header"
 import WindowTitle from "../../components/WindowTitle"
 import { useToasts } from "../../toasts"
 import GeneralSettingsForm from "./GeneralSettingsForm"
-import GeneralSettingsFormLoader from "./GeneralSettingsFormLoader"
 import useGeneralSettingsQuery from "./useGeneralSettingsQuery"
 
 const GeneralSettings: React.FC = () => {
@@ -22,11 +21,10 @@ const GeneralSettings: React.FC = () => {
         })}
       />
       <Header title={<Trans id="settings.general">General settings</Trans>} />
-      {data && data.settings ? (
-        <GeneralSettingsForm settings={data.settings} />
-      ) : (
-        <GeneralSettingsFormLoader />
-      )}
+      <GeneralSettingsForm
+        key={data?.settings ? "ready" : "loading"}
+        settings={data?.settings}
+      />
     </>
   )
 }
