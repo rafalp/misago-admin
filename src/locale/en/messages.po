@@ -34,7 +34,7 @@ msgid "close"
 msgstr "Close"
 
 #: pages/Dashboard/Dashboard.tsx:8
-#: site.tsx:11
+#: site.tsx:13
 msgid "dashboard"
 msgstr "Dashboard"
 
@@ -42,7 +42,9 @@ msgstr "Dashboard"
 msgid "field.optional"
 msgstr "Optional"
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:64
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:69
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:69
+#: pages/SettingsUsers/SettingsUsersForm.tsx:71
 msgid "form_contains_errors"
 msgstr "Form contains errors."
 
@@ -66,59 +68,149 @@ msgstr "Username or e-mail"
 msgid "misago_admin"
 msgstr "Misago Administration"
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:156
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:171
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:194
+#: pages/SettingsUsers/SettingsUsersForm.tsx:176
 msgid "save_changes"
 msgstr "Save changes"
 
-#: site.tsx:17
+#: site.tsx:19
 msgid "settings"
 msgstr "Settings"
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:86
+#: pages/SettingsUsers/SettingsUsersForm.tsx:156
+msgid "settings.avatar_upload_max_size"
+msgstr "Maximum size of uploaded avatar"
+
+#: pages/SettingsUsers/SettingsUsersForm.tsx:168
+msgid "settings.avatar_upload_max_size.help"
+msgstr "Maximum allowed file size (in KB) for avatar uploads."
+
+#: pages/SettingsUsers/SettingsUsersForm.tsx:152
+msgid "settings.avatars"
+msgstr "Avatars"
+
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:91
 msgid "settings.branding"
 msgstr "Forum branding"
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:82
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:87
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:87
+#: pages/SettingsUsers/SettingsUsersForm.tsx:89
 msgid "settings.change"
 msgstr "Change settings"
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:104
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:105
 msgid "settings.forum_index"
 msgstr "Forum index"
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:146
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:155
 msgid "settings.forum_index_categories"
 msgstr "Categories"
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:140
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:143
 msgid "settings.forum_index_content"
 msgstr "Forum index page"
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:123
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:128
 msgid "settings.forum_index_header"
 msgstr "Forum index header"
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:145
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:152
 msgid "settings.forum_index_threads"
 msgstr "Threads"
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:107
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:109
 msgid "settings.forum_index_title"
 msgstr "Forum index title"
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:89
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:94
 msgid "settings.forum_name"
 msgstr "Forum name"
 
-#: pages/GeneralSettings/GeneralSettings.tsx:18
-#: pages/GeneralSettings/GeneralSettings.tsx:23
-#: site.tsx:22
+#: pages/SettingsGeneral/SettingsGeneral.tsx:18
+#: pages/SettingsGeneral/SettingsGeneral.tsx:23
+#: site.tsx:24
 msgid "settings.general"
 msgstr "General settings"
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:71
+#: pages/SettingsUsers/SettingsUsersForm.tsx:135
+msgid "settings.password_min_length"
+msgstr "Minimum required password length"
+
+#: pages/SettingsUsers/SettingsUsersForm.tsx:131
+msgid "settings.passwords"
+msgstr "Passwords"
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:123
+msgid "settings.post_min_length"
+msgstr "Minimum allowed post length"
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:91
+msgid "settings.posting"
+msgstr "Posting"
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:157
+msgid "settings.posts_per_page"
+msgstr "Number of posts displayed on a single thread page"
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:171
+msgid "settings.posts_per_page_orphans"
+msgstr "Maximum orphans"
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:183
+msgid "settings.posts_per_page_orphans.help"
+msgstr "If number of posts to be displayed on the last page is less or equal to number specified in this setting, those posts will instead be displayed on previous page, reducing total number of pages in a thread."
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:153
+msgid "settings.thread_pages"
+msgstr "Thread pages"
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:109
+msgid "settings.thread_title_max_length"
+msgstr "Maximum allowed thread title length"
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:95
+msgid "settings.thread_title_min_length"
+msgstr "Minimum allowed thread title length"
+
+#: pages/SettingsThreads/SettingsThreads.tsx:18
+#: pages/SettingsThreads/SettingsThreads.tsx:23
+#: site.tsx:34
+msgid "settings.threads"
+msgstr "Threads and posts"
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:137
+msgid "settings.threads_lists"
+msgstr "Threads lists"
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:141
+msgid "settings.threads_per_page"
+msgstr "Threads per page"
+
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:76
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:76
+#: pages/SettingsUsers/SettingsUsersForm.tsx:78
 msgid "settings.updated"
 msgstr "Settings updated."
+
+#: pages/SettingsUsers/SettingsUsersForm.tsx:114
+msgid "settings.username_max_length"
+msgstr "Maximum allowed user name length"
+
+#: pages/SettingsUsers/SettingsUsersForm.tsx:97
+msgid "settings.username_min_length"
+msgstr "Minimum allowed user name length"
+
+#: pages/SettingsUsers/SettingsUsersForm.tsx:93
+msgid "settings.usernames"
+msgstr "Usernames"
+
+#: pages/SettingsUsers/SettingsUsers.tsx:18
+#: pages/SettingsUsers/SettingsUsers.tsx:23
+#: site.tsx:29
+msgid "settings.users"
+msgstr "User accounts"
 
 #: validation/messages.ts:72
 msgid "type_error.integer"
@@ -128,7 +220,15 @@ msgstr "This value should be a number."
 msgid "value_error.all_fields_are_required"
 msgstr "Fill out all fields."
 
+#: validation/messages.ts:100
+msgid "value_error.greater_than"
+msgstr "This value should be greater than {min}."
+
 #: validation/messages.ts:86
+msgid "value_error.lower_than"
+msgstr "This value should be lower than {max}."
+
+#: validation/messages.ts:94
 msgid "value_error.max"
 msgstr "This value should not be greater than {max}."
 
@@ -136,7 +236,7 @@ msgstr "This value should not be greater than {max}."
 msgid "value_error.max_length"
 msgstr "{max, plural, one {This value should be no longer than # character (it has {0}).} other {This value should be no longer than # characters (it has {1}).}}"
 
-#: validation/messages.ts:79
+#: validation/messages.ts:80
 msgid "value_error.min"
 msgstr "This value should not be lower than {min}."
 

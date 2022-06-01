@@ -1,7 +1,7 @@
 import { MockedProvider } from "@apollo/client/testing"
 import { MockLayoutFull } from "../Storybook"
-import GeneralSettings from "."
-import { GENERAL_SETTINGS_QUERY } from "./useGeneralSettingsQuery"
+import SettingsGeneral from "."
+import { SETTINGS_GENERAL_QUERY } from "./useSettingsGeneralQuery"
 
 export default {
   title: "Pages/Settings/General",
@@ -10,13 +10,13 @@ export default {
   },
 }
 
-export const GeneralSettingsStory = () => (
+export const SettingsGeneralStory = () => (
   <MockLayoutFull>
     <MockedProvider
       mocks={[
         {
           request: {
-            query: GENERAL_SETTINGS_QUERY,
+            query: SETTINGS_GENERAL_QUERY,
           },
           result: {
             data: {
@@ -31,17 +31,17 @@ export const GeneralSettingsStory = () => (
         },
       ]}
     >
-      <GeneralSettings />
+      <SettingsGeneral />
     </MockedProvider>
   </MockLayoutFull>
 )
-GeneralSettingsStory.storyName = "Ready"
+SettingsGeneralStory.storyName = "Ready"
 
-export const GeneralSettingsLoadingStory = () => (
+export const SettingsGeneralLoadingStory = () => (
   <MockLayoutFull>
     <MockedProvider mocks={[]}>
-      <GeneralSettings />
+      <SettingsGeneral />
     </MockedProvider>
   </MockLayoutFull>
 )
-GeneralSettingsLoadingStory.storyName = "Loading"
+SettingsGeneralLoadingStory.storyName = "Loading"

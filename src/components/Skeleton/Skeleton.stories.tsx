@@ -1,14 +1,32 @@
-import { SkeletonSentence, SkeletonText, SkeletonTextInput } from "."
+import {
+  SkeletonInput,
+  SkeletonRadioSelect,
+  SkeletonSelectMultiple,
+  SkeletonSentence,
+  SkeletonText,
+} from "."
 
 export default {
   title: "Components/Skeletons",
 }
 
-export const Text = () => <SkeletonText width={80} />
-Text.storyName = "Text Skeleton"
+export const SkeletonTextStory = () => <SkeletonText width={80} />
+SkeletonTextStory.storyName = "Text Skeleton"
 
-export const Sentence = () => <SkeletonSentence words={[100, 40, 90]} />
-Sentence.storyName = "Sentence Skeleton"
+export const SkeletonSentenceStory = () => (
+  <SkeletonSentence words={[100, 40, 90]} />
+)
+SkeletonSentenceStory.storyName = "Sentence Skeleton"
 
-export const TextInput = () => <SkeletonTextInput words={[100, 40, 90]} />
-TextInput.storyName = "Text Input Skeleton"
+export const SkeletonInputStory = () => <SkeletonInput words={[100, 40, 90]} />
+SkeletonInputStory.storyName = "Input Skeleton"
+
+export const SkeletonSelectMultipleStory = () => (
+  <SkeletonSelectMultiple options={[[100, 50], [130], [120, 30]]} />
+)
+SkeletonSelectMultipleStory.storyName = "Select Multiple Skeleton"
+
+export const SkeletonRadioSelectStory = () => (
+  <SkeletonRadioSelect options={[[100, 50], [130], [120, 30]]} />
+)
+SkeletonRadioSelectStory.storyName = "Radio Select Skeleton"

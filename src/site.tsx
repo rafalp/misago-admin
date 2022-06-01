@@ -1,6 +1,8 @@
 import { Trans } from "@lingui/macro"
 import Dashboard from "./pages/Dashboard"
-import GeneralSettings from "./pages/GeneralSettings"
+import SettingsGeneral from "./pages/SettingsGeneral"
+import SettingsThreads from "./pages/SettingsThreads"
+import SettingsUsers from "./pages/SettingsUsers"
 import { MainNavItem, Route } from "./types"
 
 const MAIN_NAV: Array<MainNavItem> = [
@@ -20,6 +22,16 @@ const MAIN_NAV: Array<MainNavItem> = [
         key: "settings-general",
         link: "/settings/general",
         text: <Trans id="settings.general">General settings</Trans>,
+      },
+      {
+        key: "settings-users",
+        link: "/settings/users",
+        text: <Trans id="settings.users">User accounts</Trans>,
+      },
+      {
+        key: "settings-threads",
+        link: "/settings/threads",
+        text: <Trans id="settings.threads">Threads and posts</Trans>,
       },
     ],
   },
@@ -45,7 +57,17 @@ const ROUTES: Array<Route> = [
   {
     key: "settings-general",
     path: "/settings/general",
-    element: <GeneralSettings />,
+    element: <SettingsGeneral />,
+  },
+  {
+    key: "settings-users",
+    path: "/settings/users",
+    element: <SettingsUsers />,
+  },
+  {
+    key: "settings-threads",
+    path: "/settings/threads",
+    element: <SettingsThreads />,
   },
 ]
 

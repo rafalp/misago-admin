@@ -1748,50 +1748,7 @@ exports[`Storyshots Components/Icon Solid 1`] = `
 />
 `;
 
-exports[`Storyshots Components/Skeletons Sentence Skeleton 1`] = `
-<span
-  className="skeleton skeleton-sentence"
->
-  <span
-    aria-hidden="true"
-    className="skeleton skeleton-text"
-    style={
-      Object {
-        "width": "100px",
-      }
-    }
-  >
-     
-  </span>
-   
-  <span
-    aria-hidden="true"
-    className="skeleton skeleton-text"
-    style={
-      Object {
-        "width": "40px",
-      }
-    }
-  >
-     
-  </span>
-   
-  <span
-    aria-hidden="true"
-    className="skeleton skeleton-text"
-    style={
-      Object {
-        "width": "90px",
-      }
-    }
-  >
-     
-  </span>
-  
-</span>
-`;
-
-exports[`Storyshots Components/Skeletons Text Input Skeleton 1`] = `
+exports[`Storyshots Components/Skeletons Input Skeleton 1`] = `
 <div
   aria-hidden="true"
   className="form-control"
@@ -1837,6 +1794,275 @@ exports[`Storyshots Components/Skeletons Text Input Skeleton 1`] = `
     
   </span>
 </div>
+`;
+
+exports[`Storyshots Components/Skeletons Radio Select Skeleton 1`] = `
+<div
+  aria-hidden="true"
+  className="form-check-select"
+>
+  <div
+    className="form-check"
+  >
+    <span
+      className="form-check-input skeleton skeleton-radio"
+    />
+    <span
+      className="form-check-label"
+    >
+      <span
+        className="skeleton skeleton-sentence"
+      >
+        <span
+          aria-hidden="true"
+          className="skeleton skeleton-text"
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+           
+        </span>
+         
+        <span
+          aria-hidden="true"
+          className="skeleton skeleton-text"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+        >
+           
+        </span>
+        
+      </span>
+    </span>
+  </div>
+  <div
+    className="form-check"
+  >
+    <span
+      className="form-check-input skeleton skeleton-radio"
+    />
+    <span
+      className="form-check-label"
+    >
+      <span
+        className="skeleton skeleton-sentence"
+      >
+        <span
+          aria-hidden="true"
+          className="skeleton skeleton-text"
+          style={
+            Object {
+              "width": "130px",
+            }
+          }
+        >
+           
+        </span>
+        
+      </span>
+    </span>
+  </div>
+  <div
+    className="form-check"
+  >
+    <span
+      className="form-check-input skeleton skeleton-radio"
+    />
+    <span
+      className="form-check-label"
+    >
+      <span
+        className="skeleton skeleton-sentence"
+      >
+        <span
+          aria-hidden="true"
+          className="skeleton skeleton-text"
+          style={
+            Object {
+              "width": "120px",
+            }
+          }
+        >
+           
+        </span>
+         
+        <span
+          aria-hidden="true"
+          className="skeleton skeleton-text"
+          style={
+            Object {
+              "width": "30px",
+            }
+          }
+        >
+           
+        </span>
+        
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Skeletons Select Multiple Skeleton 1`] = `
+<div
+  aria-hidden="true"
+  className="form-check-select"
+>
+  <div
+    className="form-check"
+  >
+    <span
+      className="form-check-input skeleton skeleton-checkbox"
+    />
+    <span
+      className="form-check-label"
+    >
+      <span
+        className="skeleton skeleton-sentence"
+      >
+        <span
+          aria-hidden="true"
+          className="skeleton skeleton-text"
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+           
+        </span>
+         
+        <span
+          aria-hidden="true"
+          className="skeleton skeleton-text"
+          style={
+            Object {
+              "width": "50px",
+            }
+          }
+        >
+           
+        </span>
+        
+      </span>
+    </span>
+  </div>
+  <div
+    className="form-check"
+  >
+    <span
+      className="form-check-input skeleton skeleton-checkbox"
+    />
+    <span
+      className="form-check-label"
+    >
+      <span
+        className="skeleton skeleton-sentence"
+      >
+        <span
+          aria-hidden="true"
+          className="skeleton skeleton-text"
+          style={
+            Object {
+              "width": "130px",
+            }
+          }
+        >
+           
+        </span>
+        
+      </span>
+    </span>
+  </div>
+  <div
+    className="form-check"
+  >
+    <span
+      className="form-check-input skeleton skeleton-checkbox"
+    />
+    <span
+      className="form-check-label"
+    >
+      <span
+        className="skeleton skeleton-sentence"
+      >
+        <span
+          aria-hidden="true"
+          className="skeleton skeleton-text"
+          style={
+            Object {
+              "width": "120px",
+            }
+          }
+        >
+           
+        </span>
+         
+        <span
+          aria-hidden="true"
+          className="skeleton skeleton-text"
+          style={
+            Object {
+              "width": "30px",
+            }
+          }
+        >
+           
+        </span>
+        
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Skeletons Sentence Skeleton 1`] = `
+<span
+  className="skeleton skeleton-sentence"
+>
+  <span
+    aria-hidden="true"
+    className="skeleton skeleton-text"
+    style={
+      Object {
+        "width": "100px",
+      }
+    }
+  >
+     
+  </span>
+   
+  <span
+    aria-hidden="true"
+    className="skeleton skeleton-text"
+    style={
+      Object {
+        "width": "40px",
+      }
+    }
+  >
+     
+  </span>
+   
+  <span
+    aria-hidden="true"
+    className="skeleton skeleton-text"
+    style={
+      Object {
+        "width": "90px",
+      }
+    }
+  >
+     
+  </span>
+  
+</span>
 `;
 
 exports[`Storyshots Components/Skeletons Text Skeleton 1`] = `
@@ -1989,6 +2215,28 @@ exports[`Storyshots Layouts Full 1`] = `
                   onClick={[Function]}
                 >
                   General settings
+                </a>
+              </li>
+              <li
+                className="nav-item"
+              >
+                <a
+                  className="nav-link"
+                  href="#/settings/users"
+                  onClick={[Function]}
+                >
+                  User accounts
+                </a>
+              </li>
+              <li
+                className="nav-item"
+              >
+                <a
+                  className="nav-link"
+                  href="#/settings/threads"
+                  onClick={[Function]}
+                >
+                  Threads and posts
                 </a>
               </li>
             </ul>
@@ -2212,372 +2460,26 @@ Array [
                     General settings
                   </a>
                 </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div
-          className="col-main"
-        >
-          <div
-            className="page-header"
-          >
-            <h1>
-              General settings
-            </h1>
-          </div>
-          <div
-            className="card form-card"
-          >
-            <form
-              onSubmit={[Function]}
-            >
-              <div
-                className="card-header form-card-header"
-              >
-                <strong
-                  className="card-title form-card-title"
-                >
-                  Change settings
-                </strong>
-              </div>
-              <div
-                className="card-body form-card-fieldset"
-              >
-                <fieldset>
-                  <legend
-                    className="form-card-legend"
-                  >
-                    Forum branding
-                  </legend>
-                  <div
-                    className="form-row"
-                  >
-                    <label
-                      className="form-label"
-                      htmlFor="form-control-forumName"
-                    >
-                      Forum name
-                    </label>
-                    <div
-                      aria-hidden="true"
-                      className="form-control"
-                    >
-                      <span
-                        className="skeleton skeleton-sentence"
-                      >
-                        <span
-                          aria-hidden="true"
-                          className="skeleton skeleton-text"
-                          style={
-                            Object {
-                              "width": "130px",
-                            }
-                          }
-                        >
-                           
-                        </span>
-                         
-                        <span
-                          aria-hidden="true"
-                          className="skeleton skeleton-text"
-                          style={
-                            Object {
-                              "width": "70px",
-                            }
-                          }
-                        >
-                           
-                        </span>
-                        
-                      </span>
-                    </div>
-                  </div>
-                </fieldset>
-              </div>
-              <div
-                className="card-body form-card-fieldset"
-              >
-                <fieldset>
-                  <legend
-                    className="form-card-legend"
-                  >
-                    Forum index
-                  </legend>
-                  <div
-                    className="form-row"
-                  >
-                    <label
-                      className="form-label"
-                      htmlFor="form-control-forumIndexTitle"
-                    >
-                      Forum index title
-                      <span
-                        className="badge bg-light text-dark"
-                      >
-                        Optional
-                      </span>
-                    </label>
-                    <div
-                      aria-hidden="true"
-                      className="form-control"
-                    >
-                      <span
-                        className="skeleton skeleton-sentence"
-                      >
-                        <span
-                          aria-hidden="true"
-                          className="skeleton skeleton-text"
-                          style={
-                            Object {
-                              "width": "130px",
-                            }
-                          }
-                        >
-                           
-                        </span>
-                         
-                        <span
-                          aria-hidden="true"
-                          className="skeleton skeleton-text"
-                          style={
-                            Object {
-                              "width": "60px",
-                            }
-                          }
-                        >
-                           
-                        </span>
-                         
-                        <span
-                          aria-hidden="true"
-                          className="skeleton skeleton-text"
-                          style={
-                            Object {
-                              "width": "110px",
-                            }
-                          }
-                        >
-                           
-                        </span>
-                        
-                      </span>
-                    </div>
-                  </div>
-                  <div
-                    className="form-row"
-                  >
-                    <label
-                      className="form-label"
-                      htmlFor="form-control-forumIndexHeader"
-                    >
-                      Forum index header
-                      <span
-                        className="badge bg-light text-dark"
-                      >
-                        Optional
-                      </span>
-                    </label>
-                    <div
-                      aria-hidden="true"
-                      className="form-control"
-                    >
-                      <span
-                        className="skeleton skeleton-sentence"
-                      >
-                        <span
-                          aria-hidden="true"
-                          className="skeleton skeleton-text"
-                          style={
-                            Object {
-                              "width": "110px",
-                            }
-                          }
-                        >
-                           
-                        </span>
-                         
-                        <span
-                          aria-hidden="true"
-                          className="skeleton skeleton-text"
-                          style={
-                            Object {
-                              "width": "90px",
-                            }
-                          }
-                        >
-                           
-                        </span>
-                        
-                      </span>
-                    </div>
-                  </div>
-                  <div
-                    className="form-row"
-                  >
-                    <label
-                      className="form-label"
-                      htmlFor="form-control-forumIndexThreads"
-                    >
-                      Forum index page
-                    </label>
-                    <div
-                      className="form-check-select"
-                    >
-                      <div
-                        className="form-check"
-                      >
-                        <input
-                          checked={false}
-                          className="form-check-input"
-                          disabled={true}
-                          id="form-control-forumIndexThreads_on"
-                          name="forumIndexThreads"
-                          onBlur={[Function]}
-                          onChange={[Function]}
-                          type="radio"
-                        />
-                        <label
-                          className="form-check-label"
-                          htmlFor="form-control-forumIndexThreads_on"
-                        >
-                          Threads
-                        </label>
-                      </div>
-                      <div
-                        className="form-check"
-                      >
-                        <input
-                          checked={true}
-                          className="form-check-input"
-                          disabled={true}
-                          id="form-control-forumIndexThreads_off"
-                          name="forumIndexThreads"
-                          onBlur={[Function]}
-                          onChange={[Function]}
-                          type="radio"
-                        />
-                        <label
-                          className="form-check-label"
-                          htmlFor="form-control-forumIndexThreads_off"
-                        >
-                          Categories
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-              </div>
-              <div
-                className="card-footer form-card-footer"
-              >
-                <button
-                  className="btn btn-primary has-text"
-                  disabled={true}
-                  type="submit"
-                >
-                  Save changes
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>,
-]
-`;
-
-exports[`Storyshots Pages/Settings/General Ready 1`] = `
-Array [
-  <nav
-    className="navbar navbar-expand"
-  >
-    <div
-      className="container-fluid"
-    >
-      <div
-        className="row w-100"
-      >
-        <div
-          className="col-side"
-        >
-          [MISAGO]
-        </div>
-        <div
-          className="col-main d-flex justify-content-end align-items-center"
-        >
-          <span
-            className="navbar-text me-3"
-          >
-            JohnDoe
-          </span>
-          <button
-            className="btn btn-light btn-sm has-text"
-            onClick={[Function]}
-            type="button"
-          >
-            Logout
-          </button>
-        </div>
-      </div>
-    </div>
-  </nav>,
-  <div
-    className="layout-full"
-  >
-    <div
-      className="container-fluid"
-    >
-      <div
-        className="row"
-      >
-        <div
-          className="col-side"
-        >
-          <ul
-            className="nav flex-column nav-main"
-          >
-            <li
-              className="nav-item"
-            >
-              <a
-                aria-current="page"
-                className="nav-link active"
-                href="#/"
-                onClick={[Function]}
-              >
-                <i
-                  className="icon fas fa-home fa-fw"
-                />
-                Dashboard
-              </a>
-            </li>
-            <li
-              className="nav-item"
-            >
-              <a
-                className="nav-link"
-                href="#/settings"
-                onClick={[Function]}
-              >
-                <i
-                  className="icon fas fa-cog fa-fw"
-                />
-                Settings
-              </a>
-              <ul
-                className="nav nav-sub flex-column"
-              >
                 <li
                   className="nav-item"
                 >
                   <a
                     className="nav-link"
-                    href="#/settings/general"
+                    href="#/settings/users"
                     onClick={[Function]}
                   >
-                    General settings
+                    User accounts
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/threads"
+                    onClick={[Function]}
+                  >
+                    Threads and posts
                   </a>
                 </li>
               </ul>
@@ -2790,48 +2692,1896 @@ Array [
                       Forum index page
                     </label>
                     <div
+                      aria-hidden="true"
                       className="form-check-select"
                     >
                       <div
                         className="form-check"
                       >
-                        <input
-                          checked={false}
-                          className="form-check-input"
-                          disabled={true}
-                          id="form-control-forumIndexThreads_on"
-                          name="forumIndexThreads"
-                          onBlur={[Function]}
-                          onChange={[Function]}
-                          type="radio"
+                        <span
+                          className="form-check-input skeleton skeleton-radio"
                         />
-                        <label
+                        <span
                           className="form-check-label"
-                          htmlFor="form-control-forumIndexThreads_on"
                         >
-                          Threads
-                        </label>
+                          <span
+                            className="skeleton skeleton-sentence"
+                          >
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "90px",
+                                }
+                              }
+                            >
+                               
+                            </span>
+                            
+                          </span>
+                        </span>
                       </div>
                       <div
                         className="form-check"
                       >
-                        <input
-                          checked={true}
-                          className="form-check-input"
-                          disabled={true}
-                          id="form-control-forumIndexThreads_off"
-                          name="forumIndexThreads"
-                          onBlur={[Function]}
-                          onChange={[Function]}
-                          type="radio"
+                        <span
+                          className="form-check-input skeleton skeleton-radio"
                         />
-                        <label
+                        <span
                           className="form-check-label"
-                          htmlFor="form-control-forumIndexThreads_off"
                         >
-                          Categories
-                        </label>
+                          <span
+                            className="skeleton skeleton-sentence"
+                          >
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "120px",
+                                }
+                              }
+                            >
+                               
+                            </span>
+                            
+                          </span>
+                        </span>
                       </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-footer form-card-footer"
+              >
+                <button
+                  className="btn btn-primary has-text"
+                  disabled={true}
+                  type="submit"
+                >
+                  Save changes
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Pages/Settings/General Ready 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row w-100"
+      >
+        <div
+          className="col-side"
+        >
+          [MISAGO]
+        </div>
+        <div
+          className="col-main d-flex justify-content-end align-items-center"
+        >
+          <span
+            className="navbar-text me-3"
+          >
+            JohnDoe
+          </span>
+          <button
+            className="btn btn-light btn-sm has-text"
+            onClick={[Function]}
+            type="button"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="layout-full"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-side"
+        >
+          <ul
+            className="nav flex-column nav-main"
+          >
+            <li
+              className="nav-item"
+            >
+              <a
+                aria-current="page"
+                className="nav-link active"
+                href="#/"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-home fa-fw"
+                />
+                Dashboard
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/settings"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cog fa-fw"
+                />
+                Settings
+              </a>
+              <ul
+                className="nav nav-sub flex-column"
+              >
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/general"
+                    onClick={[Function]}
+                  >
+                    General settings
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/users"
+                    onClick={[Function]}
+                  >
+                    User accounts
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/threads"
+                    onClick={[Function]}
+                  >
+                    Threads and posts
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div
+          className="col-main"
+        >
+          <div
+            className="page-header"
+          >
+            <h1>
+              General settings
+            </h1>
+          </div>
+          <div
+            className="card form-card"
+          >
+            <form
+              onSubmit={[Function]}
+            >
+              <div
+                className="card-header form-card-header"
+              >
+                <strong
+                  className="card-title form-card-title"
+                >
+                  Change settings
+                </strong>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Forum branding
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-forumName"
+                    >
+                      Forum name
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "130px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                         
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "70px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Forum index
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-forumIndexTitle"
+                    >
+                      Forum index title
+                      <span
+                        className="badge bg-light text-dark"
+                      >
+                        Optional
+                      </span>
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "130px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                         
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "60px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                         
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "110px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-forumIndexHeader"
+                    >
+                      Forum index header
+                      <span
+                        className="badge bg-light text-dark"
+                      >
+                        Optional
+                      </span>
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "110px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                         
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "90px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-forumIndexThreads"
+                    >
+                      Forum index page
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-check-select"
+                    >
+                      <div
+                        className="form-check"
+                      >
+                        <span
+                          className="form-check-input skeleton skeleton-radio"
+                        />
+                        <span
+                          className="form-check-label"
+                        >
+                          <span
+                            className="skeleton skeleton-sentence"
+                          >
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "90px",
+                                }
+                              }
+                            >
+                               
+                            </span>
+                            
+                          </span>
+                        </span>
+                      </div>
+                      <div
+                        className="form-check"
+                      >
+                        <span
+                          className="form-check-input skeleton skeleton-radio"
+                        />
+                        <span
+                          className="form-check-label"
+                        >
+                          <span
+                            className="skeleton skeleton-sentence"
+                          >
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "120px",
+                                }
+                              }
+                            >
+                               
+                            </span>
+                            
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-footer form-card-footer"
+              >
+                <button
+                  className="btn btn-primary has-text"
+                  disabled={true}
+                  type="submit"
+                >
+                  Save changes
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Pages/Settings/Threads and posts Loading 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row w-100"
+      >
+        <div
+          className="col-side"
+        >
+          [MISAGO]
+        </div>
+        <div
+          className="col-main d-flex justify-content-end align-items-center"
+        >
+          <span
+            className="navbar-text me-3"
+          >
+            JohnDoe
+          </span>
+          <button
+            className="btn btn-light btn-sm has-text"
+            onClick={[Function]}
+            type="button"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="layout-full"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-side"
+        >
+          <ul
+            className="nav flex-column nav-main"
+          >
+            <li
+              className="nav-item"
+            >
+              <a
+                aria-current="page"
+                className="nav-link active"
+                href="#/"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-home fa-fw"
+                />
+                Dashboard
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/settings"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cog fa-fw"
+                />
+                Settings
+              </a>
+              <ul
+                className="nav nav-sub flex-column"
+              >
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/general"
+                    onClick={[Function]}
+                  >
+                    General settings
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/users"
+                    onClick={[Function]}
+                  >
+                    User accounts
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/threads"
+                    onClick={[Function]}
+                  >
+                    Threads and posts
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div
+          className="col-main"
+        >
+          <div
+            className="page-header"
+          >
+            <h1>
+              Threads and posts
+            </h1>
+          </div>
+          <div
+            className="card form-card"
+          >
+            <form
+              onSubmit={[Function]}
+            >
+              <div
+                className="card-header form-card-header"
+              >
+                <strong
+                  className="card-title form-card-title"
+                >
+                  Change settings
+                </strong>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Posting
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-threadTitleMinLength"
+                    >
+                      Minimum allowed thread title length
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-threadTitleMaxLength"
+                    >
+                      Maximum allowed thread title length
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-postMinLength"
+                    >
+                      Minimum allowed post length
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Threads lists
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-threadsPerPage"
+                    >
+                      Threads per page
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Thread pages
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-postsPerPage"
+                    >
+                      Number of posts displayed on a single thread page
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-postsPerPageOrphans"
+                    >
+                      Maximum orphans
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                    <div
+                      className="form-text"
+                      id="form-help-postsPerPageOrphans"
+                    >
+                      If number of posts to be displayed on the last page is less or equal to number specified in this setting, those posts will instead be displayed on previous page, reducing total number of pages in a thread.
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-footer form-card-footer"
+              >
+                <button
+                  className="btn btn-primary has-text"
+                  disabled={true}
+                  type="submit"
+                >
+                  Save changes
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Pages/Settings/Threads and posts Ready 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row w-100"
+      >
+        <div
+          className="col-side"
+        >
+          [MISAGO]
+        </div>
+        <div
+          className="col-main d-flex justify-content-end align-items-center"
+        >
+          <span
+            className="navbar-text me-3"
+          >
+            JohnDoe
+          </span>
+          <button
+            className="btn btn-light btn-sm has-text"
+            onClick={[Function]}
+            type="button"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="layout-full"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-side"
+        >
+          <ul
+            className="nav flex-column nav-main"
+          >
+            <li
+              className="nav-item"
+            >
+              <a
+                aria-current="page"
+                className="nav-link active"
+                href="#/"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-home fa-fw"
+                />
+                Dashboard
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/settings"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cog fa-fw"
+                />
+                Settings
+              </a>
+              <ul
+                className="nav nav-sub flex-column"
+              >
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/general"
+                    onClick={[Function]}
+                  >
+                    General settings
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/users"
+                    onClick={[Function]}
+                  >
+                    User accounts
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/threads"
+                    onClick={[Function]}
+                  >
+                    Threads and posts
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div
+          className="col-main"
+        >
+          <div
+            className="page-header"
+          >
+            <h1>
+              Threads and posts
+            </h1>
+          </div>
+          <div
+            className="card form-card"
+          >
+            <form
+              onSubmit={[Function]}
+            >
+              <div
+                className="card-header form-card-header"
+              >
+                <strong
+                  className="card-title form-card-title"
+                >
+                  Change settings
+                </strong>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Posting
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-threadTitleMinLength"
+                    >
+                      Minimum allowed thread title length
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-threadTitleMaxLength"
+                    >
+                      Maximum allowed thread title length
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-postMinLength"
+                    >
+                      Minimum allowed post length
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Threads lists
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-threadsPerPage"
+                    >
+                      Threads per page
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Thread pages
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-postsPerPage"
+                    >
+                      Number of posts displayed on a single thread page
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-postsPerPageOrphans"
+                    >
+                      Maximum orphans
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                    <div
+                      className="form-text"
+                      id="form-help-postsPerPageOrphans"
+                    >
+                      If number of posts to be displayed on the last page is less or equal to number specified in this setting, those posts will instead be displayed on previous page, reducing total number of pages in a thread.
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-footer form-card-footer"
+              >
+                <button
+                  className="btn btn-primary has-text"
+                  disabled={true}
+                  type="submit"
+                >
+                  Save changes
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Pages/Settings/User accounts Loading 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row w-100"
+      >
+        <div
+          className="col-side"
+        >
+          [MISAGO]
+        </div>
+        <div
+          className="col-main d-flex justify-content-end align-items-center"
+        >
+          <span
+            className="navbar-text me-3"
+          >
+            JohnDoe
+          </span>
+          <button
+            className="btn btn-light btn-sm has-text"
+            onClick={[Function]}
+            type="button"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="layout-full"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-side"
+        >
+          <ul
+            className="nav flex-column nav-main"
+          >
+            <li
+              className="nav-item"
+            >
+              <a
+                aria-current="page"
+                className="nav-link active"
+                href="#/"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-home fa-fw"
+                />
+                Dashboard
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/settings"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cog fa-fw"
+                />
+                Settings
+              </a>
+              <ul
+                className="nav nav-sub flex-column"
+              >
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/general"
+                    onClick={[Function]}
+                  >
+                    General settings
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/users"
+                    onClick={[Function]}
+                  >
+                    User accounts
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/threads"
+                    onClick={[Function]}
+                  >
+                    Threads and posts
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div
+          className="col-main"
+        >
+          <div
+            className="page-header"
+          >
+            <h1>
+              User accounts
+            </h1>
+          </div>
+          <div
+            className="card form-card"
+          >
+            <form
+              onSubmit={[Function]}
+            >
+              <div
+                className="card-header form-card-header"
+              >
+                <strong
+                  className="card-title form-card-title"
+                >
+                  Change settings
+                </strong>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Usernames
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-usernameMinLength"
+                    >
+                      Minimum allowed user name length
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-usernameMaxLength"
+                    >
+                      Maximum allowed user name length
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Passwords
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-passwordMinLength"
+                    >
+                      Minimum required password length
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Avatars
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-avatarUploadMaxSize"
+                    >
+                      Maximum size of uploaded avatar
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                    <div
+                      className="form-text"
+                      id="form-help-avatarUploadMaxSize"
+                    >
+                      Maximum allowed file size (in KB) for avatar uploads.
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-footer form-card-footer"
+              >
+                <button
+                  className="btn btn-primary has-text"
+                  disabled={true}
+                  type="submit"
+                >
+                  Save changes
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Pages/Settings/User accounts Ready 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row w-100"
+      >
+        <div
+          className="col-side"
+        >
+          [MISAGO]
+        </div>
+        <div
+          className="col-main d-flex justify-content-end align-items-center"
+        >
+          <span
+            className="navbar-text me-3"
+          >
+            JohnDoe
+          </span>
+          <button
+            className="btn btn-light btn-sm has-text"
+            onClick={[Function]}
+            type="button"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="layout-full"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-side"
+        >
+          <ul
+            className="nav flex-column nav-main"
+          >
+            <li
+              className="nav-item"
+            >
+              <a
+                aria-current="page"
+                className="nav-link active"
+                href="#/"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-home fa-fw"
+                />
+                Dashboard
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/settings"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cog fa-fw"
+                />
+                Settings
+              </a>
+              <ul
+                className="nav nav-sub flex-column"
+              >
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/general"
+                    onClick={[Function]}
+                  >
+                    General settings
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/users"
+                    onClick={[Function]}
+                  >
+                    User accounts
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/threads"
+                    onClick={[Function]}
+                  >
+                    Threads and posts
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div
+          className="col-main"
+        >
+          <div
+            className="page-header"
+          >
+            <h1>
+              User accounts
+            </h1>
+          </div>
+          <div
+            className="card form-card"
+          >
+            <form
+              onSubmit={[Function]}
+            >
+              <div
+                className="card-header form-card-header"
+              >
+                <strong
+                  className="card-title form-card-title"
+                >
+                  Change settings
+                </strong>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Usernames
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-usernameMinLength"
+                    >
+                      Minimum allowed user name length
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-usernameMaxLength"
+                    >
+                      Maximum allowed user name length
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Passwords
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-passwordMinLength"
+                    >
+                      Minimum required password length
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div
+                className="card-body form-card-fieldset"
+              >
+                <fieldset>
+                  <legend
+                    className="form-card-legend"
+                  >
+                    Avatars
+                  </legend>
+                  <div
+                    className="form-row"
+                  >
+                    <label
+                      className="form-label"
+                      htmlFor="form-control-avatarUploadMaxSize"
+                    >
+                      Maximum size of uploaded avatar
+                    </label>
+                    <div
+                      aria-hidden="true"
+                      className="form-control"
+                    >
+                      <span
+                        className="skeleton skeleton-sentence"
+                      >
+                        <span
+                          aria-hidden="true"
+                          className="skeleton skeleton-text"
+                          style={
+                            Object {
+                              "width": "40px",
+                            }
+                          }
+                        >
+                           
+                        </span>
+                        
+                      </span>
+                    </div>
+                    <div
+                      className="form-text"
+                      id="form-help-avatarUploadMaxSize"
+                    >
+                      Maximum allowed file size (in KB) for avatar uploads.
                     </div>
                   </div>
                 </fieldset>

@@ -1,0 +1,13 @@
+/* Add space between form controls */
+.form-row + .form-row {
+  margin-top: $form-rows-spacer;
+}
+
+/* Style fieldsets */
+.form-card-fieldset {
+  padding-bottom: $form-rows-spacer;
+}
+
+.form-card-fieldset + .form-card-fieldset {
+  border-top: $form-fieldset-border;
+}

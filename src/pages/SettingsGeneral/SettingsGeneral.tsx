@@ -3,12 +3,12 @@ import React from "react"
 import Header from "../../components/Header"
 import WindowTitle from "../../components/WindowTitle"
 import { useToasts } from "../../toasts"
-import GeneralSettingsForm from "./GeneralSettingsForm"
-import useGeneralSettingsQuery from "./useGeneralSettingsQuery"
+import SettingsGeneralForm from "./SettingsGeneralForm"
+import useSettingsGeneralQuery from "./useSettingsGeneralQuery"
 
-const GeneralSettings: React.FC = () => {
+const SettingsGeneral: React.FC = () => {
   const toasts = useToasts()
-  const { data, error } = useGeneralSettingsQuery()
+  const { data, error } = useSettingsGeneralQuery()
 
   toasts.useGraphQLErrorEffect(error)
 
@@ -21,7 +21,7 @@ const GeneralSettings: React.FC = () => {
         })}
       />
       <Header title={<Trans id="settings.general">General settings</Trans>} />
-      <GeneralSettingsForm
+      <SettingsGeneralForm
         key={data?.settings ? "ready" : "loading"}
         settings={data?.settings}
       />
@@ -29,4 +29,4 @@ const GeneralSettings: React.FC = () => {
   )
 }
 
-export default GeneralSettings
+export default SettingsGeneral

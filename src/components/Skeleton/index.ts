@@ -1,5 +1,13 @@
+import SkeletonInput from "./SkeletonInput"
+import SkeletonRadioSelect from "./SkeletonRadioSelect"
+import SkeletonSelectMultiple from "./SkeletonSelectMultiple"
 import SkeletonSentence from "./SkeletonSentence"
 import SkeletonText from "./SkeletonText"
-import SkeletonTextInput from "./SkeletonTextInput"
 
-export { SkeletonSentence, SkeletonText, SkeletonTextInput }
+export {
+  SkeletonInput,
+  SkeletonRadioSelect,
+  SkeletonSelectMultiple,
+  SkeletonSentence,
+  SkeletonText,
+}

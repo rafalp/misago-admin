@@ -75,17 +75,31 @@ export const numberValidationMessage = (
       })
 
     case "min":
+    case "value_error.number.not_ge":
     case "value_error.any_str.min_length":
       return t({
         id: "value_error.min",
         message: `This value should not be lower than ${min}.`,
       })
 
+    case "value_error.number.not_lt":
+      return t({
+        id: "value_error.lower_than",
+        message: `This value should be lower than ${max}.`,
+      })
+
     case "max":
+    case "value_error.number.not_le":
     case "value_error.any_str.max_length":
       return t({
         id: "value_error.max",
         message: `This value should not be greater than ${max}.`,
+      })
+
+    case "value_error.number.not_gt":
+      return t({
+        id: "value_error.greater_than",
+        message: `This value should be greater than ${min}.`,
       })
   }
 

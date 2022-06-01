@@ -1,14 +1,14 @@
 import React from "react"
 import SkeletonSentence from "./SkeletonSentence"
 
-interface SkeletonTextInputProps {
+interface SkeletonInputProps {
   words: Array<number>
 }
 
-const SkeletonTextInput: React.FC<SkeletonTextInputProps> = ({ words }) => (
+const SkeletonInput: React.FC<SkeletonInputProps> = ({ words }) => (
   <div aria-hidden="true" className="form-control">
     <SkeletonSentence words={words} />
   </div>
 )
 
-export default SkeletonTextInput
+export default SkeletonInput

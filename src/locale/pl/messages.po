@@ -34,7 +34,7 @@ msgid "close"
 msgstr ""
 
 #: pages/Dashboard/Dashboard.tsx:8
-#: site.tsx:11
+#: site.tsx:13
 msgid "dashboard"
 msgstr ""
 
@@ -42,7 +42,9 @@ msgstr ""
 msgid "field.optional"
 msgstr ""
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:64
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:69
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:69
+#: pages/SettingsUsers/SettingsUsersForm.tsx:71
 msgid "form_contains_errors"
 msgstr ""
 
@@ -66,58 +68,148 @@ msgstr ""
 msgid "misago_admin"
 msgstr ""
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:156
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:171
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:194
+#: pages/SettingsUsers/SettingsUsersForm.tsx:176
 msgid "save_changes"
 msgstr ""
 
-#: site.tsx:17
+#: site.tsx:19
 msgid "settings"
 msgstr ""
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:86
+#: pages/SettingsUsers/SettingsUsersForm.tsx:156
+msgid "settings.avatar_upload_max_size"
+msgstr ""
+
+#: pages/SettingsUsers/SettingsUsersForm.tsx:168
+msgid "settings.avatar_upload_max_size.help"
+msgstr ""
+
+#: pages/SettingsUsers/SettingsUsersForm.tsx:152
+msgid "settings.avatars"
+msgstr ""
+
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:91
 msgid "settings.branding"
 msgstr ""
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:82
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:87
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:87
+#: pages/SettingsUsers/SettingsUsersForm.tsx:89
 msgid "settings.change"
 msgstr ""
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:104
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:105
 msgid "settings.forum_index"
 msgstr ""
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:146
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:155
 msgid "settings.forum_index_categories"
 msgstr ""
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:140
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:143
 msgid "settings.forum_index_content"
 msgstr ""
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:123
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:128
 msgid "settings.forum_index_header"
 msgstr ""
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:145
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:152
 msgid "settings.forum_index_threads"
 msgstr ""
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:107
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:109
 msgid "settings.forum_index_title"
 msgstr ""
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:89
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:94
 msgid "settings.forum_name"
 msgstr ""
 
-#: pages/GeneralSettings/GeneralSettings.tsx:18
-#: pages/GeneralSettings/GeneralSettings.tsx:23
-#: site.tsx:22
+#: pages/SettingsGeneral/SettingsGeneral.tsx:18
+#: pages/SettingsGeneral/SettingsGeneral.tsx:23
+#: site.tsx:24
 msgid "settings.general"
 msgstr ""
 
-#: pages/GeneralSettings/GeneralSettingsForm.tsx:71
+#: pages/SettingsUsers/SettingsUsersForm.tsx:135
+msgid "settings.password_min_length"
+msgstr ""
+
+#: pages/SettingsUsers/SettingsUsersForm.tsx:131
+msgid "settings.passwords"
+msgstr ""
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:123
+msgid "settings.post_min_length"
+msgstr ""
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:91
+msgid "settings.posting"
+msgstr ""
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:157
+msgid "settings.posts_per_page"
+msgstr ""
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:171
+msgid "settings.posts_per_page_orphans"
+msgstr ""
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:183
+msgid "settings.posts_per_page_orphans.help"
+msgstr ""
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:153
+msgid "settings.thread_pages"
+msgstr ""
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:109
+msgid "settings.thread_title_max_length"
+msgstr ""
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:95
+msgid "settings.thread_title_min_length"
+msgstr ""
+
+#: pages/SettingsThreads/SettingsThreads.tsx:18
+#: pages/SettingsThreads/SettingsThreads.tsx:23
+#: site.tsx:34
+msgid "settings.threads"
+msgstr ""
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:137
+msgid "settings.threads_lists"
+msgstr ""
+
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:141
+msgid "settings.threads_per_page"
+msgstr ""
+
+#: pages/SettingsGeneral/SettingsGeneralForm.tsx:76
+#: pages/SettingsThreads/SettingsThreadsForm.tsx:76
+#: pages/SettingsUsers/SettingsUsersForm.tsx:78
 msgid "settings.updated"
+msgstr ""
+
+#: pages/SettingsUsers/SettingsUsersForm.tsx:114
+msgid "settings.username_max_length"
+msgstr ""
+
+#: pages/SettingsUsers/SettingsUsersForm.tsx:97
+msgid "settings.username_min_length"
+msgstr ""
+
+#: pages/SettingsUsers/SettingsUsersForm.tsx:93
+msgid "settings.usernames"
+msgstr ""
+
+#: pages/SettingsUsers/SettingsUsers.tsx:18
+#: pages/SettingsUsers/SettingsUsers.tsx:23
+#: site.tsx:29
+msgid "settings.users"
 msgstr ""
 
 #: validation/messages.ts:72
@@ -128,7 +220,15 @@ msgstr ""
 msgid "value_error.all_fields_are_required"
 msgstr ""
 
+#: validation/messages.ts:100
+msgid "value_error.greater_than"
+msgstr ""
+
 #: validation/messages.ts:86
+msgid "value_error.lower_than"
+msgstr ""
+
+#: validation/messages.ts:94
 msgid "value_error.max"
 msgstr ""
 
@@ -136,7 +236,7 @@ msgstr ""
 msgid "value_error.max_length"
 msgstr ""
 
-#: validation/messages.ts:79
+#: validation/messages.ts:80
 msgid "value_error.min"
 msgstr ""
 

@@ -33,3 +33,17 @@
 .skeleton-sentence {
   word-spacing: $skeleton-word-spacing;
 }
+
+/* Controls skeletons */
+.skeleton-radio, .skeleton-checkbox {
+  background: $skeleton-color;
+  border-color: $skeleton-color;
+}
+
+.skeleton-radio {
+  border-radius: 100%;
+}
+
+.skeleton-checkbox {
+  border-radius: 10%;
+}

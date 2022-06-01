@@ -32,7 +32,7 @@ const RadioSelect = React.forwardRef<HTMLInputElement, RadioSelectProps>(
       {options.map(({ value: choice, name: optionName }) => (
         <div className="form-check" key={`${id}_${choice}`}>
           <input
-            className={classnames("form-check-input", className, {
+            className={classnames("form-check-input", {
               "is-invalid": invalid,
             })}
             disabled={disabled}

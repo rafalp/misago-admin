@@ -18,11 +18,11 @@ import {
   FormCardTitle,
   FormCardFooter,
 } from "../../components/FormCard"
-import { SkeletonTextInput } from "../../components/Skeleton"
+import { SkeletonInput, SkeletonRadioSelect } from "../../components/Skeleton"
 import { useToasts } from "../../toasts"
 import { textValidationMessage } from "../../validation"
-import useGeneralSettingsMutation from "./useGeneralSettingsMutation"
-import { SettingsFormData } from "./useGeneralSettingsQuery"
+import useSettingsGeneralMutation from "./useSettingsGeneralMutation"
+import { SettingsGeneralFormData } from "./useSettingsGeneralQuery"
 
 const FormSchema = yup
   .object({
@@ -32,17 +32,17 @@ const FormSchema = yup
   })
   .required()
 
-interface GeneralSettingsFormProps {
-  settings?: SettingsFormData | null
+interface SettingsGeneralFormProps {
+  settings?: SettingsGeneralFormData | null
 }
 
-const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
+const SettingsGeneralForm: React.FC<SettingsGeneralFormProps> = ({
   settings,
 }) => {
   const ready = !!settings
   const toasts = useToasts()
-  const [mutate, { loading }] = useGeneralSettingsMutation()
-  const methods = useForm<SettingsFormData, {}>({
+  const [mutate, { loading }] = useSettingsGeneralMutation()
+  const methods = useForm<SettingsGeneralFormData, {}>({
     defaultValues: settings || {},
     resolver: yupResolver(FormSchema),
   })
@@ -94,11 +94,7 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
               label={<Trans id="settings.forum_name">Forum name</Trans>}
               name="forumName"
               control={
-                ready ? (
-                  <FormTextInput />
-                ) : (
-                  <SkeletonTextInput words={[130, 70]} />
-                )
+                ready ? <FormTextInput /> : <SkeletonInput words={[130, 70]} />
               }
               validationMessage={(value: string, error) =>
                 textValidationMessage(value, error, { min: 1, max: 250 })
@@ -119,7 +115,7 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
                 ready ? (
                   <FormTextInput />
                 ) : (
-                  <SkeletonTextInput words={[130, 60, 110]} />
+                  <SkeletonInput words={[130, 60, 110]} />
                 )
               }
               validationMessage={(value: string, error) =>
@@ -135,11 +131,7 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
               }
               name="forumIndexHeader"
               control={
-                ready ? (
-                  <FormTextInput />
-                ) : (
-                  <SkeletonTextInput words={[110, 90]} />
-                )
+                ready ? <FormTextInput /> : <SkeletonInput words={[110, 90]} />
               }
               validationMessage={(value: string, error) =>
                 textValidationMessage(value, error, { min: 0, max: 250 })
@@ -154,14 +146,20 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
               }
               name="forumIndexThreads"
               control={
-                <FormRadioSwitch
-                  on={<Trans id="settings.forum_index_threads">Threads</Trans>}
-                  off={
-                    <Trans id="settings.forum_index_categories">
-                      Categories
-                    </Trans>
-                  }
-                />
+                ready ? (
+                  <FormRadioSwitch
+                    on={
+                      <Trans id="settings.forum_index_threads">Threads</Trans>
+                    }
+                    off={
+                      <Trans id="settings.forum_index_categories">
+                        Categories
+                      </Trans>
+                    }
+                  />
+                ) : (
+                  <SkeletonRadioSelect options={[[90], [120]]} />
+                )
               }
               validationMessage={(value: string, error) =>
                 textValidationMessage(value, error, { min: 0, max: 250 })
@@ -179,4 +177,4 @@ const GeneralSettingsForm: React.FC<GeneralSettingsFormProps> = ({
   )
 }
 
-export default GeneralSettingsForm
+export default SettingsGeneralForm
