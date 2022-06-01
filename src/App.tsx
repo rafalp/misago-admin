@@ -7,12 +7,17 @@ import LayoutFull from "./layouts/LayoutFull"
 import LoginPage from "./pages/Login"
 import { ToastsProvider, ToastsContainer } from "./toasts"
 
+const basename =
+  typeof window !== "undefined"
+    ? (window["MISAGO_ADMIN_PATH"] as string | undefined)
+    : undefined
+
 const App: React.FC = () => {
   const { logout, user } = useAuth()
   if (!user) return <LoginPage />
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <ToastsProvider>
         <ToastsContainer />
         <Navbar logout={logout} user={user} />
