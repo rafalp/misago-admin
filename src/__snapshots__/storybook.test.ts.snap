@@ -1683,39 +1683,6 @@ exports[`Storyshots Components/Form Text Input Field Full Example 1`] = `
 </form>
 `;
 
-exports[`Storyshots Components/Header Basic 1`] = `
-<div
-  className="page-header"
->
-  <h1>
-    Page header
-  </h1>
-</div>
-`;
-
-exports[`Storyshots Components/Header With Parent 1`] = `
-<div
-  className="page-header"
->
-  <div
-    className="page-header-parent"
-  >
-    <a
-      href="#/parent"
-      onClick={[Function]}
-    >
-      Parent title
-      <i
-        className="icon fas fa-chevron-right"
-      />
-    </a>
-  </div>
-  <h1>
-    Page header
-  </h1>
-</div>
-`;
-
 exports[`Storyshots Components/Icon Fixed Width 1`] = `
 Array [
   <i
@@ -1748,6 +1715,48 @@ exports[`Storyshots Components/Icon Solid 1`] = `
 />
 `;
 
+exports[`Storyshots Components/Page Header Basic 1`] = `
+<div
+  className="page-header"
+>
+  <h1>
+    <span
+      className="page-header-title"
+    >
+      Users
+    </span>
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Components/Page Header With Parent 1`] = `
+<div
+  className="page-header"
+>
+  <h1>
+    <a
+      className="page-header-parent"
+      href="#/"
+      onClick={[Function]}
+    >
+      Settings
+    </a>
+    <span
+      className="page-header-divider"
+    >
+      <i
+        className="icon fas fa-chevron-right fa-fw"
+      />
+    </span>
+    <span
+      className="page-header-title"
+    >
+      Users
+    </span>
+  </h1>
+</div>
+`;
+
 exports[`Storyshots Components/Skeletons Input Skeleton 1`] = `
 <div
   aria-hidden="true"
@@ -1764,9 +1773,7 @@ exports[`Storyshots Components/Skeletons Input Skeleton 1`] = `
           "width": "100px",
         }
       }
-    >
-       
-    </span>
+    />
      
     <span
       aria-hidden="true"
@@ -1776,9 +1783,7 @@ exports[`Storyshots Components/Skeletons Input Skeleton 1`] = `
           "width": "40px",
         }
       }
-    >
-       
-    </span>
+    />
      
     <span
       aria-hidden="true"
@@ -1788,9 +1793,7 @@ exports[`Storyshots Components/Skeletons Input Skeleton 1`] = `
           "width": "90px",
         }
       }
-    >
-       
-    </span>
+    />
     
   </span>
 </div>
@@ -1821,9 +1824,7 @@ exports[`Storyshots Components/Skeletons Radio Select Skeleton 1`] = `
               "width": "100px",
             }
           }
-        >
-           
-        </span>
+        />
          
         <span
           aria-hidden="true"
@@ -1833,9 +1834,7 @@ exports[`Storyshots Components/Skeletons Radio Select Skeleton 1`] = `
               "width": "50px",
             }
           }
-        >
-           
-        </span>
+        />
         
       </span>
     </span>
@@ -1860,9 +1859,7 @@ exports[`Storyshots Components/Skeletons Radio Select Skeleton 1`] = `
               "width": "130px",
             }
           }
-        >
-           
-        </span>
+        />
         
       </span>
     </span>
@@ -1887,9 +1884,7 @@ exports[`Storyshots Components/Skeletons Radio Select Skeleton 1`] = `
               "width": "120px",
             }
           }
-        >
-           
-        </span>
+        />
          
         <span
           aria-hidden="true"
@@ -1899,9 +1894,7 @@ exports[`Storyshots Components/Skeletons Radio Select Skeleton 1`] = `
               "width": "30px",
             }
           }
-        >
-           
-        </span>
+        />
         
       </span>
     </span>
@@ -1934,9 +1927,7 @@ exports[`Storyshots Components/Skeletons Select Multiple Skeleton 1`] = `
               "width": "100px",
             }
           }
-        >
-           
-        </span>
+        />
          
         <span
           aria-hidden="true"
@@ -1946,9 +1937,7 @@ exports[`Storyshots Components/Skeletons Select Multiple Skeleton 1`] = `
               "width": "50px",
             }
           }
-        >
-           
-        </span>
+        />
         
       </span>
     </span>
@@ -1973,9 +1962,7 @@ exports[`Storyshots Components/Skeletons Select Multiple Skeleton 1`] = `
               "width": "130px",
             }
           }
-        >
-           
-        </span>
+        />
         
       </span>
     </span>
@@ -2000,9 +1987,7 @@ exports[`Storyshots Components/Skeletons Select Multiple Skeleton 1`] = `
               "width": "120px",
             }
           }
-        >
-           
-        </span>
+        />
          
         <span
           aria-hidden="true"
@@ -2012,9 +1997,7 @@ exports[`Storyshots Components/Skeletons Select Multiple Skeleton 1`] = `
               "width": "30px",
             }
           }
-        >
-           
-        </span>
+        />
         
       </span>
     </span>
@@ -2034,9 +2017,7 @@ exports[`Storyshots Components/Skeletons Sentence Skeleton 1`] = `
         "width": "100px",
       }
     }
-  >
-     
-  </span>
+  />
    
   <span
     aria-hidden="true"
@@ -2046,9 +2027,7 @@ exports[`Storyshots Components/Skeletons Sentence Skeleton 1`] = `
         "width": "40px",
       }
     }
-  >
-     
-  </span>
+  />
    
   <span
     aria-hidden="true"
@@ -2058,9 +2037,7 @@ exports[`Storyshots Components/Skeletons Sentence Skeleton 1`] = `
         "width": "90px",
       }
     }
-  >
-     
-  </span>
+  />
   
 </span>
 `;
@@ -2074,9 +2051,7 @@ exports[`Storyshots Components/Skeletons Text Skeleton 1`] = `
       "width": "80px",
     }
   }
->
-   
-</span>
+/>
 `;
 
 exports[`Storyshots Components/Toasts Error Toast 1`] = `
@@ -2214,7 +2189,7 @@ exports[`Storyshots Layouts Full 1`] = `
                   href="#/settings/general"
                   onClick={[Function]}
                 >
-                  General settings
+                  General
                 </a>
               </li>
               <li
@@ -2457,7 +2432,7 @@ Array [
                     href="#/settings/general"
                     onClick={[Function]}
                   >
-                    General settings
+                    General
                   </a>
                 </li>
                 <li
@@ -2493,7 +2468,25 @@ Array [
             className="page-header"
           >
             <h1>
-              General settings
+              <a
+                className="page-header-parent"
+                href="#/settings"
+                onClick={[Function]}
+              >
+                Settings
+              </a>
+              <span
+                className="page-header-divider"
+              >
+                <i
+                  className="icon fas fa-chevron-right fa-fw"
+                />
+              </span>
+              <span
+                className="page-header-title"
+              >
+                General
+              </span>
             </h1>
           </div>
           <div
@@ -2544,9 +2537,7 @@ Array [
                               "width": "130px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                          
                         <span
                           aria-hidden="true"
@@ -2556,9 +2547,7 @@ Array [
                               "width": "70px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -2603,9 +2592,7 @@ Array [
                               "width": "130px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                          
                         <span
                           aria-hidden="true"
@@ -2615,9 +2602,7 @@ Array [
                               "width": "60px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                          
                         <span
                           aria-hidden="true"
@@ -2627,9 +2612,7 @@ Array [
                               "width": "110px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -2663,9 +2646,7 @@ Array [
                               "width": "110px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                          
                         <span
                           aria-hidden="true"
@@ -2675,9 +2656,7 @@ Array [
                               "width": "90px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -2715,9 +2694,7 @@ Array [
                                   "width": "90px",
                                 }
                               }
-                            >
-                               
-                            </span>
+                            />
                             
                           </span>
                         </span>
@@ -2742,9 +2719,7 @@ Array [
                                   "width": "120px",
                                 }
                               }
-                            >
-                               
-                            </span>
+                            />
                             
                           </span>
                         </span>
@@ -2862,7 +2837,7 @@ Array [
                     href="#/settings/general"
                     onClick={[Function]}
                   >
-                    General settings
+                    General
                   </a>
                 </li>
                 <li
@@ -2898,7 +2873,25 @@ Array [
             className="page-header"
           >
             <h1>
-              General settings
+              <a
+                className="page-header-parent"
+                href="#/settings"
+                onClick={[Function]}
+              >
+                Settings
+              </a>
+              <span
+                className="page-header-divider"
+              >
+                <i
+                  className="icon fas fa-chevron-right fa-fw"
+                />
+              </span>
+              <span
+                className="page-header-title"
+              >
+                General
+              </span>
             </h1>
           </div>
           <div
@@ -2949,9 +2942,7 @@ Array [
                               "width": "130px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                          
                         <span
                           aria-hidden="true"
@@ -2961,9 +2952,7 @@ Array [
                               "width": "70px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -3008,9 +2997,7 @@ Array [
                               "width": "130px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                          
                         <span
                           aria-hidden="true"
@@ -3020,9 +3007,7 @@ Array [
                               "width": "60px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                          
                         <span
                           aria-hidden="true"
@@ -3032,9 +3017,7 @@ Array [
                               "width": "110px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -3068,9 +3051,7 @@ Array [
                               "width": "110px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                          
                         <span
                           aria-hidden="true"
@@ -3080,9 +3061,7 @@ Array [
                               "width": "90px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -3120,9 +3099,7 @@ Array [
                                   "width": "90px",
                                 }
                               }
-                            >
-                               
-                            </span>
+                            />
                             
                           </span>
                         </span>
@@ -3147,9 +3124,7 @@ Array [
                                   "width": "120px",
                                 }
                               }
-                            >
-                               
-                            </span>
+                            />
                             
                           </span>
                         </span>
@@ -3267,7 +3242,7 @@ Array [
                     href="#/settings/general"
                     onClick={[Function]}
                   >
-                    General settings
+                    General
                   </a>
                 </li>
                 <li
@@ -3303,7 +3278,25 @@ Array [
             className="page-header"
           >
             <h1>
-              Threads and posts
+              <a
+                className="page-header-parent"
+                href="#/settings"
+                onClick={[Function]}
+              >
+                Settings
+              </a>
+              <span
+                className="page-header-divider"
+              >
+                <i
+                  className="icon fas fa-chevron-right fa-fw"
+                />
+              </span>
+              <span
+                className="page-header-title"
+              >
+                Threads and posts
+              </span>
             </h1>
           </div>
           <div
@@ -3354,9 +3347,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -3385,9 +3376,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -3416,9 +3405,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -3458,9 +3445,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -3500,9 +3485,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -3531,9 +3514,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -3655,7 +3636,7 @@ Array [
                     href="#/settings/general"
                     onClick={[Function]}
                   >
-                    General settings
+                    General
                   </a>
                 </li>
                 <li
@@ -3691,7 +3672,25 @@ Array [
             className="page-header"
           >
             <h1>
-              Threads and posts
+              <a
+                className="page-header-parent"
+                href="#/settings"
+                onClick={[Function]}
+              >
+                Settings
+              </a>
+              <span
+                className="page-header-divider"
+              >
+                <i
+                  className="icon fas fa-chevron-right fa-fw"
+                />
+              </span>
+              <span
+                className="page-header-title"
+              >
+                Threads and posts
+              </span>
             </h1>
           </div>
           <div
@@ -3742,9 +3741,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -3773,9 +3770,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -3804,9 +3799,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -3846,9 +3839,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -3888,9 +3879,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -3919,9 +3908,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -4043,7 +4030,7 @@ Array [
                     href="#/settings/general"
                     onClick={[Function]}
                   >
-                    General settings
+                    General
                   </a>
                 </li>
                 <li
@@ -4079,7 +4066,25 @@ Array [
             className="page-header"
           >
             <h1>
-              User accounts
+              <a
+                className="page-header-parent"
+                href="#/settings"
+                onClick={[Function]}
+              >
+                Settings
+              </a>
+              <span
+                className="page-header-divider"
+              >
+                <i
+                  className="icon fas fa-chevron-right fa-fw"
+                />
+              </span>
+              <span
+                className="page-header-title"
+              >
+                User accounts
+              </span>
             </h1>
           </div>
           <div
@@ -4130,9 +4135,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -4161,9 +4164,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -4203,9 +4204,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -4245,9 +4244,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -4369,7 +4366,7 @@ Array [
                     href="#/settings/general"
                     onClick={[Function]}
                   >
-                    General settings
+                    General
                   </a>
                 </li>
                 <li
@@ -4405,7 +4402,25 @@ Array [
             className="page-header"
           >
             <h1>
-              User accounts
+              <a
+                className="page-header-parent"
+                href="#/settings"
+                onClick={[Function]}
+              >
+                Settings
+              </a>
+              <span
+                className="page-header-divider"
+              >
+                <i
+                  className="icon fas fa-chevron-right fa-fw"
+                />
+              </span>
+              <span
+                className="page-header-title"
+              >
+                User accounts
+              </span>
             </h1>
           </div>
           <div
@@ -4456,9 +4471,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -4487,9 +4500,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -4529,9 +4540,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
@@ -4571,9 +4580,7 @@ Array [
                               "width": "40px",
                             }
                           }
-                        >
-                           
-                        </span>
+                        />
                         
                       </span>
                     </div>
