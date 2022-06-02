@@ -1,17 +1,11 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2022-02-19 15:23+0100\n"
+"POT-Creation-Date: 2022-06-02 22:53+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: en\n"
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Plural-Forms: \n"
 
 #: pages/Login/LoginErrorMessage.tsx:19
 msgid "auth_error.invalid_credentials"
@@ -48,10 +42,6 @@ msgstr "Optional"
 msgid "form_contains_errors"
 msgstr "Form contains errors."
 
-#: App.tsx:9
-#~ msgid "login.submit"
-#~ msgstr "Login"
-
 #: pages/Login/LoginForm.tsx:85
 msgid "login_form.password"
 msgstr "Password"
@@ -66,7 +56,7 @@ msgstr "Username or e-mail"
 
 #: components/WindowTitle/WindowTitle.tsx:15
 msgid "misago_admin"
-msgstr "Misago Administration"
+msgstr "Misago Admin"
 
 #: pages/SettingsGeneral/SettingsGeneralForm.tsx:171
 #: pages/SettingsThreads/SettingsThreadsForm.tsx:194
@@ -74,6 +64,12 @@ msgstr "Misago Administration"
 msgid "save_changes"
 msgstr "Save changes"
 
+#: pages/SettingsGeneral/SettingsGeneral.tsx:22
+#: pages/SettingsGeneral/SettingsGeneral.tsx:31
+#: pages/SettingsThreads/SettingsThreads.tsx:22
+#: pages/SettingsThreads/SettingsThreads.tsx:31
+#: pages/SettingsUsers/SettingsUsers.tsx:22
+#: pages/SettingsUsers/SettingsUsers.tsx:31
 #: site.tsx:19
 msgid "settings"
 msgstr "Settings"
@@ -129,10 +125,10 @@ msgid "settings.forum_name"
 msgstr "Forum name"
 
 #: pages/SettingsGeneral/SettingsGeneral.tsx:18
-#: pages/SettingsGeneral/SettingsGeneral.tsx:23
+#: pages/SettingsGeneral/SettingsGeneral.tsx:28
 #: site.tsx:24
 msgid "settings.general"
-msgstr "General settings"
+msgstr "General"
 
 #: pages/SettingsUsers/SettingsUsersForm.tsx:135
 msgid "settings.password_min_length"
@@ -175,7 +171,7 @@ msgid "settings.thread_title_min_length"
 msgstr "Minimum allowed thread title length"
 
 #: pages/SettingsThreads/SettingsThreads.tsx:18
-#: pages/SettingsThreads/SettingsThreads.tsx:23
+#: pages/SettingsThreads/SettingsThreads.tsx:28
 #: site.tsx:34
 msgid "settings.threads"
 msgstr "Threads and posts"
@@ -207,7 +203,7 @@ msgid "settings.usernames"
 msgstr "Usernames"
 
 #: pages/SettingsUsers/SettingsUsers.tsx:18
-#: pages/SettingsUsers/SettingsUsers.tsx:23
+#: pages/SettingsUsers/SettingsUsers.tsx:28
 #: site.tsx:29
 msgid "settings.users"
 msgstr "User accounts"

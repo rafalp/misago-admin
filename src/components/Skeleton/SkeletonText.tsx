@@ -9,9 +9,7 @@ const SkeletonText: React.FC<SkeletonTextProps> = ({ width }) => (
     aria-hidden="true"
     className="skeleton skeleton-text"
     style={{ width: width + "px" }}
-  >
-    &nbsp;
-  </span>
+  />
 )
 
 export default SkeletonText

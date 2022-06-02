@@ -24,6 +24,8 @@
 /* Text and sentence skeletons */
 .skeleton-text {
   display: inline-block;
+  min-height: 1em;
+  vertical-align: middle;
 
   background: $skeleton-color;
   border-radius: $skeleton-radius;

@@ -21,7 +21,7 @@ const MAIN_NAV: Array<MainNavItem> = [
       {
         key: "settings-general",
         link: "/settings/general",
-        text: <Trans id="settings.general">General settings</Trans>,
+        text: <Trans id="settings.general">General</Trans>,
       },
       {
         key: "settings-users",

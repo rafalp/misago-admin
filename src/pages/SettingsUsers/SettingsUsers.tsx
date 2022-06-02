@@ -1,6 +1,6 @@
 import { Trans, t } from "@lingui/macro"
 import React from "react"
-import Header from "../../components/Header"
+import PageHeader from "../../components/PageHeader"
 import WindowTitle from "../../components/WindowTitle"
 import { useToasts } from "../../toasts"
 import SettingsUsersForm from "./SettingsUsersForm"
@@ -19,8 +19,18 @@ const SettingsUsers: React.FC = () => {
           id: "settings.users",
           message: "User accounts",
         })}
+        parent={t({
+          id: "settings",
+          message: "Settings",
+        })}
       />
-      <Header title={<Trans id="settings.users">User accounts</Trans>} />
+      <PageHeader
+        title={<Trans id="settings.users">User accounts</Trans>}
+        parent={{
+          link: "/settings",
+          title: <Trans id="settings">Settings</Trans>,
+        }}
+      />
       <SettingsUsersForm
         key={data?.settings ? "ready" : "loading"}
         constraints={data?.constraints}

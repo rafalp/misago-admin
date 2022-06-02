@@ -1,6 +1,6 @@
 import { Trans, t } from "@lingui/macro"
 import React from "react"
-import Header from "../../components/Header"
+import PageHeader from "../../components/PageHeader"
 import WindowTitle from "../../components/WindowTitle"
 import { useToasts } from "../../toasts"
 import SettingsGeneralForm from "./SettingsGeneralForm"
@@ -17,10 +17,20 @@ const SettingsGeneral: React.FC = () => {
       <WindowTitle
         title={t({
           id: "settings.general",
-          message: "General settings",
+          message: "General",
+        })}
+        parent={t({
+          id: "settings",
+          message: "Settings",
         })}
       />
-      <Header title={<Trans id="settings.general">General settings</Trans>} />
+      <PageHeader
+        title={<Trans id="settings.general">General</Trans>}
+        parent={{
+          link: "/settings",
+          title: <Trans id="settings">Settings</Trans>,
+        }}
+      />
       <SettingsGeneralForm
         key={data?.settings ? "ready" : "loading"}
         settings={data?.settings}

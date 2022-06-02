@@ -74,6 +74,12 @@ msgstr ""
 msgid "save_changes"
 msgstr ""
 
+#: pages/SettingsGeneral/SettingsGeneral.tsx:22
+#: pages/SettingsGeneral/SettingsGeneral.tsx:31
+#: pages/SettingsThreads/SettingsThreads.tsx:22
+#: pages/SettingsThreads/SettingsThreads.tsx:31
+#: pages/SettingsUsers/SettingsUsers.tsx:22
+#: pages/SettingsUsers/SettingsUsers.tsx:31
 #: site.tsx:19
 msgid "settings"
 msgstr ""
@@ -129,7 +135,7 @@ msgid "settings.forum_name"
 msgstr ""
 
 #: pages/SettingsGeneral/SettingsGeneral.tsx:18
-#: pages/SettingsGeneral/SettingsGeneral.tsx:23
+#: pages/SettingsGeneral/SettingsGeneral.tsx:28
 #: site.tsx:24
 msgid "settings.general"
 msgstr ""
@@ -175,7 +181,7 @@ msgid "settings.thread_title_min_length"
 msgstr ""
 
 #: pages/SettingsThreads/SettingsThreads.tsx:18
-#: pages/SettingsThreads/SettingsThreads.tsx:23
+#: pages/SettingsThreads/SettingsThreads.tsx:28
 #: site.tsx:34
 msgid "settings.threads"
 msgstr ""
@@ -207,7 +213,7 @@ msgid "settings.usernames"
 msgstr ""
 
 #: pages/SettingsUsers/SettingsUsers.tsx:18
-#: pages/SettingsUsers/SettingsUsers.tsx:23
+#: pages/SettingsUsers/SettingsUsers.tsx:28
 #: site.tsx:29
 msgid "settings.users"
 msgstr ""
