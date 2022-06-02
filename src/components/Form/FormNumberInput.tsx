@@ -6,7 +6,7 @@ import { useFormContext } from "./Form"
 import { useFormFieldContext } from "./FormField"
 import { buildErrorId, buildFieldId, buildHelpId } from "./buildId"
 
-interface FormNumberInputProps {
+type FormNumberInputProps = {
   className?: string
   max?: string | number
   min?: string | number

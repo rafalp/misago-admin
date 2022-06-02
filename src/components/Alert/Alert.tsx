@@ -1,7 +1,7 @@
 import classnames from "classnames"
 import React from "react"
 
-interface AlertProps {
+type AlertProps = {
   children: React.ReactNode
   className?: string | null
 }

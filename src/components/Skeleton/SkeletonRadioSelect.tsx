@@ -1,7 +1,7 @@
 import React from "react"
 import SkeletonSentence from "./SkeletonSentence"
 
-interface SkeletonRadioSelectProps {
+type SkeletonRadioSelectProps = {
   options: Array<Array<number>>
 }
 

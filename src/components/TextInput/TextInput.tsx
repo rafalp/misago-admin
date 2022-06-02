@@ -1,7 +1,7 @@
 import classnames from "classnames"
 import React from "react"
 
-interface TextInputProps {
+type TextInputProps = {
   className?: string | null
   describedBy?: string
   disabled?: boolean

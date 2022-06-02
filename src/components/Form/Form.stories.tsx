@@ -25,7 +25,7 @@ export default {
   title: "Components/Form",
 }
 
-interface TextFormData {
+type TextFormData = {
   message: string
 }
 
@@ -123,7 +123,7 @@ export const FormTextAreaControl = () => {
 }
 FormTextAreaControl.storyName = "Text Area Input Field"
 
-interface BoolFormData {
+type BoolFormData = {
   checked: boolean
 }
 
@@ -194,7 +194,7 @@ export const FormRadioSwitchControl = () => {
 }
 FormRadioSwitchControl.storyName = "Radio Switch Field"
 
-interface SelectFormData {
+type SelectFormData = {
   choice: string
 }
 
@@ -257,7 +257,7 @@ export const FormRadioSelectControl = () => {
 }
 FormRadioSelectControl.storyName = "Radio Select Field"
 
-interface SelectMultipleFormData {
+type SelectMultipleFormData = {
   choices: Array<string>
 }
 
@@ -290,7 +290,7 @@ export const FormSelectMultipleControl = () => {
 }
 FormSelectMultipleControl.storyName = "Select Multiple Field"
 
-interface FileFormData {
+type FileFormData = {
   file: File | null
 }
 
@@ -337,7 +337,7 @@ export const FormDisabled = () => {
 }
 FormDisabled.storyName = "Disabled"
 
-interface NumberFormData {
+type NumberFormData = {
   age: string | number | null
 }
 

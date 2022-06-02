@@ -1,7 +1,7 @@
 import { t } from "@lingui/macro"
 import React from "react"
 
-interface WindowTitleProps {
+type WindowTitleProps = {
   title?: string | null
   parent?: string | null
 }

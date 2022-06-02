@@ -2,7 +2,7 @@ import React from "react"
 import { ButtonLight } from "../Button"
 import Container from "../Container"
 
-interface NavbarProps {
+type NavbarProps = {
   user: {
     name: string
   }

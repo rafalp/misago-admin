@@ -1,6 +1,6 @@
 import React from "react"
 
-interface FormData {
+type FormData = {
   disabled?: boolean
   id?: string
 }
@@ -9,7 +9,7 @@ const FormContext = React.createContext<FormData>({ disabled: false })
 
 const useFormContext = () => React.useContext(FormContext)
 
-interface FormProps {
+type FormProps = {
   children: React.ReactNode
   className?: string
   disabled?: boolean

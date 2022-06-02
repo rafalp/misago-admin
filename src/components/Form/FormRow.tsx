@@ -10,7 +10,7 @@ import FormHelp from "./FormHelp"
 import FormValidationMessage from "./FormValidationMessage"
 import { buildErrorId, buildFieldId, buildHelpId } from "./buildId"
 
-interface FormRowProps {
+type FormRowProps = {
   className?: string | null
   control: React.ReactNode
   help?: React.ReactNode

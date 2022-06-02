@@ -1,7 +1,7 @@
 import classnames from "classnames"
 import React from "react"
 
-interface FileInputProps {
+type FileInputProps = {
   accept?: string
   className?: string | null
   describedBy?: string

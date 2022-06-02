@@ -4,7 +4,7 @@ import * as plurals from "make-plural/plurals"
 import React from "react"
 import Loading from "./pages/Loading"
 
-interface LocaleProviderProps {
+type LocaleProviderProps = {
   children: React.ReactNode
   language: string
 }

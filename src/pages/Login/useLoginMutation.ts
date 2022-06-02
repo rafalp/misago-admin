@@ -15,7 +15,7 @@ const LOGIN_MUTATION = gql`
   }
 `
 
-interface LoginData {
+type LoginData = {
   login: {
     token: string
     errors: Array<ApiError>

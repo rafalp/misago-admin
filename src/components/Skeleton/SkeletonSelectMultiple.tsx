@@ -1,7 +1,7 @@
 import React from "react"
 import SkeletonSentence from "./SkeletonSentence"
 
-interface SkeletonSelectMultipleProps {
+type SkeletonSelectMultipleProps = {
   options: Array<Array<number>>
 }
 

@@ -5,7 +5,7 @@ import { useFormContext } from "./Form"
 import { useFormFieldContext } from "./FormField"
 import { buildFieldId } from "./buildId"
 
-interface FormRadioSelectProps {
+type FormRadioSelectProps = {
   className?: string
   options: Array<{ value: string; name: React.ReactNode }>
 }

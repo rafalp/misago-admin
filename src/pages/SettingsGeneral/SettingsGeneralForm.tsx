@@ -32,7 +32,7 @@ const FormSchema = yup
   })
   .required()
 
-interface SettingsGeneralFormProps {
+type SettingsGeneralFormProps = {
   settings?: SettingsGeneralFormData | null
 }
 

@@ -1,7 +1,7 @@
 import React from "react"
 import SkeletonSentence from "./SkeletonSentence"
 
-interface SkeletonInputProps {
+type SkeletonInputProps = {
   words: Array<number>
 }
 

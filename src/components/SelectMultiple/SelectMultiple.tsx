@@ -1,7 +1,7 @@
 import classnames from "classnames"
 import React from "react"
 
-interface SelectMultipleProps {
+type SelectMultipleProps = {
   className?: string | null
   disabled?: boolean
   id?: string

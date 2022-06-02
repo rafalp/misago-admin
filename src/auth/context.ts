@@ -1,7 +1,7 @@
 import React from "react"
 import { AuthenticatedUser } from "./types"
 
-interface AuthContextData {
+type AuthContextData = {
   user: AuthenticatedUser | null
   login: (token: string) => void
   logout: () => void

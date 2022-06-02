@@ -1,6 +1,6 @@
 import React from "react"
 
-interface MainNavItemProps {
+type MainNavItemProps = {
   children: React.ReactNode
 }
 

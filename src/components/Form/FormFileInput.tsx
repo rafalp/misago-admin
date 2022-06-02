@@ -6,7 +6,7 @@ import { useFormContext } from "./Form"
 import { useFormFieldContext } from "./FormField"
 import { buildErrorId, buildFieldId, buildHelpId } from "./buildId"
 
-interface FormFileInputProps {
+type FormFileInputProps = {
   accept?: string
   className?: string
 }

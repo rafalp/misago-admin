@@ -15,14 +15,14 @@ const UPDATE_THREADS_SETTINGS_MUTATION = gql`
   }
 `
 
-interface UpdateSettingsThreadsData {
+type UpdateSettingsThreadsData = {
   settingsUpdate: {
     updated: boolean
     errors: Array<ApiError>
   }
 }
 
-interface UpdateSettingsThreadsInput {
+type UpdateSettingsThreadsInput = {
   input: SettingsThreadsFormData
 }
 

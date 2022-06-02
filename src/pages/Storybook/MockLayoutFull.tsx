@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar"
 import LayoutFull from "../../layouts/LayoutFull"
 import { MAIN_NAV } from "../../site"
 
-interface MockLayoutFullProps {
+type MockLayoutFullProps = {
   children: React.ReactNode
 }
 

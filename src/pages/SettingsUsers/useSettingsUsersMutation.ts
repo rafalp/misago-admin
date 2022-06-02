@@ -15,14 +15,14 @@ const UPDATE_USERS_SETTINGS_MUTATION = gql`
   }
 `
 
-interface UpdateSettingsUsersData {
+type UpdateSettingsUsersData = {
   settingsUpdate: {
     updated: boolean
     errors: Array<ApiError>
   }
 }
 
-interface UpdateSettingsUsersInput {
+type UpdateSettingsUsersInput = {
   input: SettingsUsersFormData
 }
 

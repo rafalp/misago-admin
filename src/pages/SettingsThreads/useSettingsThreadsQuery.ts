@@ -13,7 +13,7 @@ export const SETTINGS_THREADS_QUERY = gql`
   }
 `
 
-export interface SettingsThreadsFormData {
+export type SettingsThreadsFormData = {
   postMinLength: number
   postsPerPage: number
   postsPerPageOrphans: number
@@ -22,7 +22,7 @@ export interface SettingsThreadsFormData {
   threadsPerPage: number
 }
 
-interface SettingsThreadsData {
+type SettingsThreadsData = {
   settings: SettingsThreadsFormData | null
 }
 

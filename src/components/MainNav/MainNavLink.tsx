@@ -3,7 +3,7 @@ import React from "react"
 import { NavLink } from "react-router-dom"
 import Icon from "../Icon"
 
-interface MainNavLinkProps {
+type MainNavLinkProps = {
   icon?: string
   link: string
   text: React.ReactNode

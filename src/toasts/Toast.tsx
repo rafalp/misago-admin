@@ -2,7 +2,7 @@ import { t } from "@lingui/macro"
 import classnames from "classnames"
 import React from "react"
 
-interface ToastProps {
+type ToastProps = {
   type: string
   message: React.ReactNode
   show?: boolean

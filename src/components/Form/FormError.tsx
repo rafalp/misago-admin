@@ -1,6 +1,6 @@
 import React from "react"
 
-interface FormErrorProps {
+type FormErrorProps = {
   children: React.ReactNode
   id?: string
 }

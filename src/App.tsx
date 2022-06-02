@@ -8,7 +8,9 @@ import LoginPage from "./pages/Login"
 import { ToastsProvider, ToastsContainer } from "./toasts"
 
 declare global {
-  interface Window { MISAGO_ADMIN_PATH?: string; }
+  interface Window {
+    MISAGO_ADMIN_PATH?: string
+  }
 }
 
 const App: React.FC = () => {

@@ -1,7 +1,7 @@
 import React from "react"
 import Container from "../../components/Container"
 
-interface LayoutMinimalProps {
+type LayoutMinimalProps = {
   children: React.ReactNode
 }
 

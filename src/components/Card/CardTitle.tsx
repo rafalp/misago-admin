@@ -1,7 +1,7 @@
 import classnames from "classnames"
 import React from "react"
 
-interface CardTitleProps {
+type CardTitleProps = {
   children: React.ReactNode
   className?: string
 }

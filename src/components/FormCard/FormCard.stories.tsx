@@ -26,7 +26,7 @@ export default {
   title: "Components/Form Card",
 }
 
-interface MinimalFormData {
+type MinimalFormData = {
   username: string
   email: string
   title: string
@@ -100,7 +100,7 @@ export const Minimal = () => {
   )
 }
 
-interface ComplexFormData {
+type ComplexFormData = {
   username: string
   email: string
   title: string

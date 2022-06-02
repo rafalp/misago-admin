@@ -4,7 +4,7 @@ import { AuthContext } from "./context"
 import { clearAuthToken, setAuthToken } from "./token"
 import useAuthQuery from "./useAuthQuery"
 
-interface AuthProviderProps {
+type AuthProviderProps = {
   children: React.ReactNode
 }
 

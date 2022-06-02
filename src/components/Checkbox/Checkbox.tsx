@@ -1,7 +1,7 @@
 import classnames from "classnames"
 import React from "react"
 
-interface CheckboxProps {
+type CheckboxProps = {
   checked?: boolean
   className?: string | null
   describedBy?: string

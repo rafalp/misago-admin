@@ -1,7 +1,7 @@
 import classnames from "classnames"
 import React from "react"
 
-interface FormHelpProps {
+type FormHelpProps = {
   children: React.ReactNode
   className?: string | null
   id?: string

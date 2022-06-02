@@ -1,7 +1,7 @@
 import classnames from "classnames"
 import React from "react"
 
-interface RadioSwitchProps {
+type RadioSwitchProps = {
   checked?: boolean
   className?: string | null
   disabled?: boolean

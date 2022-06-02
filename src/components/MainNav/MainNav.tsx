@@ -4,7 +4,7 @@ import MainNavItem from "./MainNavItem"
 import MainNavLink from "./MainNavLink"
 import MainNavSubNav from "./MainNavSubNav"
 
-interface MainNavProps {
+type MainNavProps = {
   items: Array<MainNavItemType>
 }
 

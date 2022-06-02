@@ -1,6 +1,6 @@
 import React from "react"
 
-interface SkeletonTextProps {
+type SkeletonTextProps = {
   width: number
 }
 

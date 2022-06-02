@@ -15,7 +15,7 @@ export const requiredValidationMessage = (
   return error.message
 }
 
-interface TextConstraints {
+type TextConstraints = {
   min?: number
   max?: number
 }
@@ -53,7 +53,7 @@ export const textValidationMessage = (
   return requiredValidationMessage(value, error)
 }
 
-interface NumberConstraints {
+type NumberConstraints = {
   min?: number
   max?: number
 }

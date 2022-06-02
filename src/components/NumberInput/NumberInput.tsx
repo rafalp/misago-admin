@@ -1,7 +1,7 @@
 import classnames from "classnames"
 import React from "react"
 
-interface NumberInputProps {
+type NumberInputProps = {
   className?: string | null
   describedBy?: string
   disabled?: boolean

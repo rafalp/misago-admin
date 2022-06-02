@@ -2,7 +2,7 @@ import classnames from "classnames"
 import React from "react"
 import { CardBody } from "../Card"
 
-interface FormCardFieldsetProps {
+type FormCardFieldsetProps = {
   children: React.ReactNode
   className?: string
   legend: React.ReactNode

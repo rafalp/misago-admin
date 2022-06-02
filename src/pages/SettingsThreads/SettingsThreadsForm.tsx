@@ -30,7 +30,7 @@ const FormSchema = yup
   })
   .required()
 
-interface SettingsThreadsFormProps {
+type SettingsThreadsFormProps = {
   settings?: SettingsThreadsFormData | null
 }
 

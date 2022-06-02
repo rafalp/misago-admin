@@ -1,7 +1,7 @@
 import React from "react"
 import { Card, CardBody } from "../../components/Card"
 
-interface LoginFormCardProps {
+type LoginFormCardProps = {
   children: React.ReactNode
 }
 

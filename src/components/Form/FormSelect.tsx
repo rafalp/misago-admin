@@ -6,7 +6,7 @@ import { useFormContext } from "./Form"
 import { useFormFieldContext } from "./FormField"
 import { buildErrorId, buildFieldId, buildHelpId } from "./buildId"
 
-interface FormSelectProps {
+type FormSelectProps = {
   className?: string
   options: Array<{ value: string; name: React.ReactNode }>
 }

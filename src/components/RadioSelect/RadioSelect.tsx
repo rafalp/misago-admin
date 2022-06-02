@@ -1,7 +1,7 @@
 import classnames from "classnames"
 import React from "react"
 
-interface RadioSelectProps {
+type RadioSelectProps = {
   className?: string | null
   disabled?: boolean
   id?: string

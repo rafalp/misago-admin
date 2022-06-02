@@ -14,14 +14,14 @@ export const SETTINGS_USERS_QUERY = gql`
   }
 `
 
-export interface SettingsUsersFormData {
+export type SettingsUsersFormData = {
   avatarUploadMaxSize: number
   passwordMinLength: number
   usernameMinLength: number
   usernameMaxLength: number
 }
 
-interface SettingsUsersData {
+type SettingsUsersData = {
   settings: SettingsUsersFormData | null
   constraints: { passwordMaxLength: number } | null
 }

@@ -3,7 +3,7 @@ import React from "react"
 import Icon from "../Icon"
 import Spinner from "../Spinner"
 
-interface ButtonProps {
+type ButtonProps = {
   children: React.ReactNode
   className?: string | null
   disabled?: boolean

@@ -1,4 +1,4 @@
-export interface AuthenticatedUser {
+export type AuthenticatedUser = {
   id: string
   name: string
 }

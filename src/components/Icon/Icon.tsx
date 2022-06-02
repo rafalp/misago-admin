@@ -1,7 +1,7 @@
 import classnames from "classnames"
 import React from "react"
 
-interface IconProps {
+type IconProps = {
   fixedWidth?: boolean
   name: string
 }

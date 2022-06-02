@@ -3,7 +3,7 @@ import React from "react"
 import ClientError from "../components/ClientError"
 import { ToastsContext, ToastData } from "./context"
 
-interface ToastsProviderProps {
+type ToastsProviderProps = {
   children: React.ReactNode
 }
 

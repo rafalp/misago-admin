@@ -15,14 +15,14 @@ const UPDATE_GENERAL_SETTINGS_MUTATION = gql`
   }
 `
 
-interface UpdateSettingsGeneralData {
+type UpdateSettingsGeneralData = {
   settingsUpdate: {
     updated: boolean
     errors: Array<ApiError>
   }
 }
 
-interface UpdateSettingsGeneralInput {
+type UpdateSettingsGeneralInput = {
   input: SettingsGeneralFormData
 }
 

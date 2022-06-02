@@ -9,7 +9,7 @@ const AUTH_QUERY = gql`
   }
 `
 
-interface AuthData {
+type AuthData = {
   auth: {
     id: string
     name: string

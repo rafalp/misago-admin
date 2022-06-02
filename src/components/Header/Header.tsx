@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import Icon from "../Icon"
 
-interface HeaderProps {
+type HeaderProps = {
   title: React.ReactNode
   parentTitle?: React.ReactNode
   parentUrl?: string

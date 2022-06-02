@@ -5,7 +5,7 @@ import { useFormContext } from "./Form"
 import { useFormFieldContext } from "./FormField"
 import { buildFieldId } from "./buildId"
 
-interface FormRadioSwitchProps {
+type FormRadioSwitchProps = {
   className?: string
   on: React.ReactNode
   off: React.ReactNode

@@ -6,7 +6,7 @@ import { useFormContext } from "./Form"
 import { useFormFieldContext } from "./FormField"
 import { buildErrorId, buildFieldId, buildHelpId } from "./buildId"
 
-interface FormCheckboxProps {
+type FormCheckboxProps = {
   className?: string
   maxLength?: number
   placeholder?: string

@@ -4,7 +4,7 @@ import { useFormContext } from "./Form"
 import { useFormFieldContext } from "./FormField"
 import { buildFieldId } from "./buildId"
 
-interface FormCheckboxLabelProps {
+type FormCheckboxLabelProps = {
   className?: string | null
   children: React.ReactNode
   label: React.ReactNode

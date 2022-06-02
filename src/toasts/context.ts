@@ -1,14 +1,14 @@
 import { ApolloError } from "@apollo/client"
 import React from "react"
 
-export interface ToastData {
+export type ToastData = {
   id: string
   type: string
   message: React.ReactNode
   show: boolean
 }
 
-interface ToastsContextData {
+type ToastsContextData = {
   toasts: Array<ToastData>
   toast(type: string, message: React.ReactNode): void
   hide(id: string): void

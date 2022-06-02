@@ -1,6 +1,6 @@
 import React from "react"
 
-interface ContainerProps {
+type ContainerProps = {
   children: React.ReactNode
 }
 

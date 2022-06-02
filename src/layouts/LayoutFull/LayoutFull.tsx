@@ -3,7 +3,7 @@ import Container from "../../components/Container"
 import MainNav from "../../components/MainNav"
 import { MainNavItem } from "../../types"
 
-interface LayoutFullProps {
+type LayoutFullProps = {
   children: React.ReactNode
   navItems: Array<MainNavItem>
 }

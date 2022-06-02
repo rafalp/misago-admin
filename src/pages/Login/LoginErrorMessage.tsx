@@ -1,7 +1,7 @@
 import { t } from "@lingui/macro"
 import React from "react"
 
-interface LoginErrorMessageProps {
+type LoginErrorMessageProps = {
   children(message: string): React.ReactElement
   error: {
     type: string

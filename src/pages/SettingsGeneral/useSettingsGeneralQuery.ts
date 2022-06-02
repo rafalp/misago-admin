@@ -11,14 +11,14 @@ export const SETTINGS_GENERAL_QUERY = gql`
   }
 `
 
-export interface SettingsGeneralFormData {
+export type SettingsGeneralFormData = {
   forumName: string
   forumIndexTitle: string
   forumIndexHeader: string
   forumIndexThreads: boolean
 }
 
-interface SettingsGeneralData {
+type SettingsGeneralData = {
   settings: SettingsGeneralFormData | null
 }
 

@@ -1,6 +1,6 @@
 import React from "react"
 
-interface LoginFormErrorProps {
+type LoginFormErrorProps = {
   children: React.ReactNode
 }
 

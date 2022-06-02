@@ -3,7 +3,7 @@ import { t } from "@lingui/macro"
 import React from "react"
 import { ApiError } from "../../types"
 
-interface ClientErrorProps {
+type ClientErrorProps = {
   children(error: ApiError): React.ReactElement
   error?: ApolloError | null
 }

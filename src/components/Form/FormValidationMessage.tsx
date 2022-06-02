@@ -2,7 +2,7 @@ import React from "react"
 import { useFormContext as useHookFormContext } from "react-hook-form"
 import { ValidationError } from "../../validation"
 
-interface FormValidationMessageProps {
+type FormValidationMessageProps = {
   name: string
   validationMessage: (value: any, error: ValidationError) => string | null
 }

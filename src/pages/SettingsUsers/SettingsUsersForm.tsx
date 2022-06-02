@@ -28,7 +28,7 @@ const FormSchema = yup
   })
   .required()
 
-interface SettingsUsersFormProps {
+type SettingsUsersFormProps = {
   constraints?: {
     passwordMaxLength: number
   } | null
