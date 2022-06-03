@@ -1,0 +1,12 @@
+/* Extra typography tweaks and styles */
+
+/* Remove underline from block links */
+a.row, a.d-block, a.d-flex {
+  text-decoration: none;
+}
+
+/* Item title class */
+.text-title {
+  color: $text-title;
+  font-weight: bold;
+}

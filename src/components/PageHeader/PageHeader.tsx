@@ -15,7 +15,9 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, parent }) => (
     <h1>
       {parent && (
         <>
-          <Link className="page-header-parent" to={parent.link}>{parent.title}</Link>
+          <Link className="page-header-parent" to={parent.link}>
+            {parent.title}
+          </Link>
           <span className="page-header-divider">
             <Icon name="fas fa-chevron-right" fixedWidth />
           </span>

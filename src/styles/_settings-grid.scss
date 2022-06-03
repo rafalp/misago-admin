@@ -1,0 +1,26 @@
+/* Make settings grid items evenly spaced */
+.settings-grid {
+  padding: $settings-grid-gutter / 2;
+  overflow: hidden;
+}
+
+.settings-grid-item {
+  display: flex;
+  padding: $settings-grid-gutter / 2;
+
+  text-decoration: none;
+}
+
+.settings-grid-item:hover {
+  background-color: $settings-grid-hover-bg;
+  border-radius: $settings-grid-border-radius;
+}
+
+.settings-grid-icon {
+  width: auto;
+  padding-right: $settings-grid-gutter;
+}
+
+.settings-grid .text-muted {
+  font-size: $small-font-size;
+}

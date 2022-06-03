@@ -1,9 +1,10 @@
 import { Trans } from "@lingui/macro"
 import Dashboard from "./pages/Dashboard"
+import Settings from "./pages/Settings"
 import SettingsGeneral from "./pages/SettingsGeneral"
 import SettingsThreads from "./pages/SettingsThreads"
 import SettingsUsers from "./pages/SettingsUsers"
-import { MainNavItem, Route } from "./types"
+import { MainNavItem, SettingsGroup, Route } from "./types"
 
 const MAIN_NAV: Array<MainNavItem> = [
   {
@@ -37,12 +38,6 @@ const MAIN_NAV: Array<MainNavItem> = [
   },
 ]
 
-const Settings = () => (
-  <div>
-    <h1>SETTINGS PAGE</h1>
-  </div>
-)
-
 const ROUTES: Array<Route> = [
   {
     key: "dashboard",
@@ -71,4 +66,44 @@ const ROUTES: Array<Route> = [
   },
 ]
 
-export { MAIN_NAV, ROUTES }
+const SETTINGS_GROUPS: Array<SettingsGroup> = [
+  {
+    key: "general",
+    icon: "fas fa-cog",
+    color: "#3a86ff",
+    link: "/settings/general",
+    name: <Trans id="settings.general">General</Trans>,
+    description: (
+      <Trans id="settings.general.description">
+        Setup forum details like name, title, home page or footer.
+      </Trans>
+    ),
+  },
+  {
+    key: "users",
+    icon: "fas fa-user",
+    color: "#8ac926",
+    link: "/settings/users",
+    name: <Trans id="settings.users">User accounts</Trans>,
+    description: (
+      <Trans id="settings.users.description">
+        Customize user accounts defaults and available features.
+      </Trans>
+    ),
+  },
+  {
+    key: "threads",
+    icon: "fas fa-comment-alt",
+    color: "#ffca3a",
+    link: "/settings/threads",
+    name: <Trans id="settings.threads">Threads and posts</Trans>,
+    description: (
+      <Trans id="settings.threads.description">
+        Change the way that threads and posts are displayed or edit posting
+        constraints.
+      </Trans>
+    ),
+  },
+]
+
+export { MAIN_NAV, ROUTES, SETTINGS_GROUPS }

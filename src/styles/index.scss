@@ -2,6 +2,10 @@
 
 @import "~@fortawesome/fontawesome-free/css/all.css";
 
+// Bootstrap functions
+
+@import "~bootstrap/scss/functions";
+
 // Misago variables
 
 @import "variables";
@@ -10,7 +14,6 @@
 
 // Bootstrap configuration
 
-@import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/utilities";
@@ -47,6 +50,8 @@
 
 // Misago components
 
+@import "typography";
+@import "grid";
 @import "skeletons";
 @import "forms";
 @import "buttons";
@@ -54,9 +59,11 @@
 @import "nav";
 @import "layouts";
 @import "loader";
+@import "stamp";
 @import "toasts";
 
-// Misago pages
+// Misago pages and page-specific components
 
 @import "loading-page";
 @import "login-page";
+@import "settings-grid";

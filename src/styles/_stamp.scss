@@ -1,0 +1,14 @@
+.stamp {
+  display: inline-block;
+  width: $stamp-size;
+  height: $stamp-size;
+
+  line-height: $stamp-size;
+  font-size: $stamp-icon;
+  
+  background-color: var(--color-theme);
+  border-radius: $stamp-border-radius;
+  color: $stamp-color;
+  text-align: center;
+  vertical-align: middle;
+}

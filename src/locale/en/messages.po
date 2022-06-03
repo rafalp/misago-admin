@@ -6,6 +6,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
 
 #: pages/Login/LoginErrorMessage.tsx:19
 msgid "auth_error.invalid_credentials"
@@ -28,7 +34,7 @@ msgid "close"
 msgstr "Close"
 
 #: pages/Dashboard/Dashboard.tsx:8
-#: site.tsx:13
+#: site.tsx:14
 msgid "dashboard"
 msgstr "Dashboard"
 
@@ -64,13 +70,15 @@ msgstr "Misago Admin"
 msgid "save_changes"
 msgstr "Save changes"
 
+#: pages/Settings/Settings.tsx:12
+#: pages/Settings/Settings.tsx:17
 #: pages/SettingsGeneral/SettingsGeneral.tsx:22
 #: pages/SettingsGeneral/SettingsGeneral.tsx:31
 #: pages/SettingsThreads/SettingsThreads.tsx:22
 #: pages/SettingsThreads/SettingsThreads.tsx:31
 #: pages/SettingsUsers/SettingsUsers.tsx:22
 #: pages/SettingsUsers/SettingsUsers.tsx:31
-#: site.tsx:19
+#: site.tsx:20
 msgid "settings"
 msgstr "Settings"
 
@@ -126,9 +134,14 @@ msgstr "Forum name"
 
 #: pages/SettingsGeneral/SettingsGeneral.tsx:18
 #: pages/SettingsGeneral/SettingsGeneral.tsx:28
-#: site.tsx:24
+#: site.tsx:25
+#: site.tsx:75
 msgid "settings.general"
 msgstr "General"
+
+#: site.tsx:77
+msgid "settings.general.description"
+msgstr "Setup forum details like name, title, home page or footer."
 
 #: pages/SettingsUsers/SettingsUsersForm.tsx:135
 msgid "settings.password_min_length"
@@ -172,9 +185,14 @@ msgstr "Minimum allowed thread title length"
 
 #: pages/SettingsThreads/SettingsThreads.tsx:18
 #: pages/SettingsThreads/SettingsThreads.tsx:28
-#: site.tsx:34
+#: site.tsx:35
+#: site.tsx:99
 msgid "settings.threads"
 msgstr "Threads and posts"
+
+#: site.tsx:101
+msgid "settings.threads.description"
+msgstr "Change the way that threads and posts are displayed or edit posting constraints."
 
 #: pages/SettingsThreads/SettingsThreadsForm.tsx:137
 msgid "settings.threads_lists"
@@ -204,9 +222,14 @@ msgstr "Usernames"
 
 #: pages/SettingsUsers/SettingsUsers.tsx:18
 #: pages/SettingsUsers/SettingsUsers.tsx:28
-#: site.tsx:29
+#: site.tsx:30
+#: site.tsx:87
 msgid "settings.users"
 msgstr "User accounts"
+
+#: site.tsx:89
+msgid "settings.users.description"
+msgstr "Customize user accounts defaults and available features."
 
 #: validation/messages.ts:72
 msgid "type_error.integer"

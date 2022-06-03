@@ -25,3 +25,12 @@ export type Route = {
   path: string
   element: React.ReactNode
 }
+
+export type SettingsGroup = {
+  key: string
+  icon: string
+  color: string
+  link: string
+  name: React.ReactNode
+  description?: React.ReactNode
+}

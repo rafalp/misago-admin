@@ -206,6 +206,21 @@ exports[`Storyshots Components Spinner 1`] = `
 />
 `;
 
+exports[`Storyshots Components Stamp 1`] = `
+<span
+  className="stamp"
+  style={
+    Object {
+      "--color-theme": "#4361ee",
+    }
+  }
+>
+  <i
+    className="icon fas fa-cog fa-fw"
+  />
+</span>
+`;
+
 exports[`Storyshots Components/Alert Error 1`] = `
 <div
   className="alert alert-danger"
@@ -2341,6 +2356,281 @@ exports[`Storyshots Pages Login Page 1`] = `
     </div>
   </div>
 </div>
+`;
+
+exports[`Storyshots Pages/Settings Settings Groups 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row w-100"
+      >
+        <div
+          className="col-side"
+        >
+          [MISAGO]
+        </div>
+        <div
+          className="col-main d-flex justify-content-end align-items-center"
+        >
+          <span
+            className="navbar-text me-3"
+          >
+            JohnDoe
+          </span>
+          <button
+            className="btn btn-light btn-sm has-text"
+            onClick={[Function]}
+            type="button"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="layout-full"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-side"
+        >
+          <ul
+            className="nav flex-column nav-main"
+          >
+            <li
+              className="nav-item"
+            >
+              <a
+                aria-current="page"
+                className="nav-link active"
+                href="#/"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-home fa-fw"
+                />
+                Dashboard
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/settings"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cog fa-fw"
+                />
+                Settings
+              </a>
+              <ul
+                className="nav nav-sub flex-column"
+              >
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/general"
+                    onClick={[Function]}
+                  >
+                    General
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/users"
+                    onClick={[Function]}
+                  >
+                    User accounts
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/threads"
+                    onClick={[Function]}
+                  >
+                    Threads and posts
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div
+          className="col-main"
+        >
+          <div
+            className="page-header"
+          >
+            <h1>
+              <span
+                className="page-header-title"
+              >
+                Settings
+              </span>
+            </h1>
+          </div>
+          <div
+            className="card settings-grid-card"
+          >
+            <div
+              className="card-body settings-grid"
+            >
+              <div
+                className="row"
+              >
+                <div
+                  className="col-12 col-md-6"
+                >
+                  <a
+                    className="settings-grid-item"
+                    href="#/settings/general"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="settings-grid-icon"
+                    >
+                      <span
+                        className="stamp"
+                        style={
+                          Object {
+                            "--color-theme": "#3a86ff",
+                          }
+                        }
+                      >
+                        <i
+                          className="icon fas fa-cog fa-fw"
+                        />
+                      </span>
+                    </div>
+                    <div
+                      className="settings-grid-content"
+                    >
+                      <div
+                        className="text-title"
+                      >
+                        General
+                      </div>
+                      <div
+                        className="text-muted"
+                      >
+                        Setup forum details like name, title, home page or footer.
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  className="col-12 col-md-6"
+                >
+                  <a
+                    className="settings-grid-item"
+                    href="#/settings/users"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="settings-grid-icon"
+                    >
+                      <span
+                        className="stamp"
+                        style={
+                          Object {
+                            "--color-theme": "#8ac926",
+                          }
+                        }
+                      >
+                        <i
+                          className="icon fas fa-user fa-fw"
+                        />
+                      </span>
+                    </div>
+                    <div
+                      className="settings-grid-content"
+                    >
+                      <div
+                        className="text-title"
+                      >
+                        User accounts
+                      </div>
+                      <div
+                        className="text-muted"
+                      >
+                        Customize user accounts defaults and available features.
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div
+                className="row"
+              >
+                <div
+                  className="col-12 col-md-6"
+                >
+                  <a
+                    className="settings-grid-item"
+                    href="#/settings/threads"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="settings-grid-icon"
+                    >
+                      <span
+                        className="stamp"
+                        style={
+                          Object {
+                            "--color-theme": "#ffca3a",
+                          }
+                        }
+                      >
+                        <i
+                          className="icon fas fa-comment-alt fa-fw"
+                        />
+                      </span>
+                    </div>
+                    <div
+                      className="settings-grid-content"
+                    >
+                      <div
+                        className="text-title"
+                      >
+                        Threads and posts
+                      </div>
+                      <div
+                        className="text-muted"
+                      >
+                        Change the way that threads and posts are displayed or edit posting constraints.
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
 `;
 
 exports[`Storyshots Pages/Settings/General Loading 1`] = `

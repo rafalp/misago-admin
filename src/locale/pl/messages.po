@@ -34,7 +34,7 @@ msgid "close"
 msgstr ""
 
 #: pages/Dashboard/Dashboard.tsx:8
-#: site.tsx:13
+#: site.tsx:14
 msgid "dashboard"
 msgstr ""
 
@@ -74,13 +74,15 @@ msgstr ""
 msgid "save_changes"
 msgstr ""
 
+#: pages/Settings/Settings.tsx:12
+#: pages/Settings/Settings.tsx:17
 #: pages/SettingsGeneral/SettingsGeneral.tsx:22
 #: pages/SettingsGeneral/SettingsGeneral.tsx:31
 #: pages/SettingsThreads/SettingsThreads.tsx:22
 #: pages/SettingsThreads/SettingsThreads.tsx:31
 #: pages/SettingsUsers/SettingsUsers.tsx:22
 #: pages/SettingsUsers/SettingsUsers.tsx:31
-#: site.tsx:19
+#: site.tsx:20
 msgid "settings"
 msgstr ""
 
@@ -136,8 +138,13 @@ msgstr ""
 
 #: pages/SettingsGeneral/SettingsGeneral.tsx:18
 #: pages/SettingsGeneral/SettingsGeneral.tsx:28
-#: site.tsx:24
+#: site.tsx:25
+#: site.tsx:75
 msgid "settings.general"
+msgstr ""
+
+#: site.tsx:77
+msgid "settings.general.description"
 msgstr ""
 
 #: pages/SettingsUsers/SettingsUsersForm.tsx:135
@@ -182,8 +189,13 @@ msgstr ""
 
 #: pages/SettingsThreads/SettingsThreads.tsx:18
 #: pages/SettingsThreads/SettingsThreads.tsx:28
-#: site.tsx:34
+#: site.tsx:35
+#: site.tsx:99
 msgid "settings.threads"
+msgstr ""
+
+#: site.tsx:101
+msgid "settings.threads.description"
 msgstr ""
 
 #: pages/SettingsThreads/SettingsThreadsForm.tsx:137
@@ -214,8 +226,13 @@ msgstr ""
 
 #: pages/SettingsUsers/SettingsUsers.tsx:18
 #: pages/SettingsUsers/SettingsUsers.tsx:28
-#: site.tsx:29
+#: site.tsx:30
+#: site.tsx:87
 msgid "settings.users"
+msgstr ""
+
+#: site.tsx:89
+msgid "settings.users.description"
 msgstr ""
 
 #: validation/messages.ts:72

@@ -1,0 +1,4 @@
+/* Remove right padding from icon column, which is always first */
+.col-icon {
+  padding-right: 0;
+}
