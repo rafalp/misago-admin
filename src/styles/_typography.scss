@@ -10,3 +10,8 @@ a.row, a.d-block, a.d-flex {
   color: $text-title;
   font-weight: bold;
 }
+
+a:hover .text-title,
+a.text-title:hover {
+  text-decoration: underline;
+}
