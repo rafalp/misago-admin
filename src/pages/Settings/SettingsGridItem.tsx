@@ -13,7 +13,7 @@ const SettingsGridItem: React.FC<SettingsGroup> = ({
   <div className="col-12 col-md-6">
     <Link className="settings-grid-item" to={link}>
       <div className="settings-grid-icon">
-        <Stamp color={color} icon={icon} large />
+        <Stamp color={color} icon={icon} />
       </div>
       <div className="settings-grid-content">
         <div className="text-title">{name}</div>

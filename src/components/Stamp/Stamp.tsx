@@ -6,7 +6,7 @@ type StampProps = {
   icon: string
 }
 
-const Stamp: React.FC<StampProps> = ({ color, icon, large }) => {
+const Stamp: React.FC<StampProps> = ({ color, icon }) => {
   const style = { "--color-theme": color } as React.CSSProperties
 
   return (

@@ -1,5 +1,4 @@
-`ROUTES`
-======
+# `ROUTES`
 
 `ROUTES` is an array of `Route` items defining admin dashboard routes:
 

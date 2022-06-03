@@ -1,5 +1,4 @@
-`MAIN_NAV`
-========
+# `MAIN_NAV`
 
 `MAIN_NAV` is an array of `MainNav` items defining admin dashboard main menu:
 
