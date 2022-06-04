@@ -10,6 +10,7 @@ type FormCheckboxProps = {
   className?: string
   maxLength?: number
   placeholder?: string
+  switchRole?: boolean
 }
 
 const FormCheckbox: React.FC<FormCheckboxProps> = (props) => {

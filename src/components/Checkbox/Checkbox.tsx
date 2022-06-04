@@ -10,6 +10,7 @@ type CheckboxProps = {
   invalid?: boolean
   name?: string
   required?: boolean
+  switchRole?: boolean
   onBlur?: React.FocusEventHandler<HTMLInputElement>
   onChange?: React.ChangeEventHandler<HTMLInputElement>
 }
@@ -25,6 +26,7 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
       invalid,
       name,
       required,
+      switchRole,
       onBlur,
       onChange,
     },
@@ -40,6 +42,7 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
       name={name}
       ref={ref}
       required={required}
+      role={switchRole ? "switch" : undefined}
       type="checkbox"
       checked={checked}
       onBlur={onBlur}

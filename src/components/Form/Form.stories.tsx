@@ -173,6 +173,31 @@ export const FormCheckboxLabelControl = () => {
 }
 FormCheckboxLabelControl.storyName = "Checkbox Field With Label"
 
+export const FormToggleSwitchControl = () => {
+  const methods = useForm<BoolFormData, {}>({
+    defaultValues: { checked: false },
+  })
+
+  return (
+    <Form onSubmit={methods.handleSubmit(() => {})}>
+      <FormProvider {...methods}>
+        <FormRow
+          label="Example field"
+          name="checked"
+          control={
+            <FormCheckboxLabel label="Accept terms and services" toggle>
+              <FormCheckbox switchRole />
+            </FormCheckboxLabel>
+          }
+        />
+      </FormProvider>
+      <hr />
+      <ButtonPrimary>Submit</ButtonPrimary>
+    </Form>
+  )
+}
+FormToggleSwitchControl.storyName = "Toggle Field With Label"
+
 export const FormRadioSwitchControl = () => {
   const methods = useForm<BoolFormData, {}>({
     defaultValues: { checked: true },

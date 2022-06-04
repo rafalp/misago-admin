@@ -1698,6 +1698,50 @@ exports[`Storyshots Components/Form Text Input Field Full Example 1`] = `
 </form>
 `;
 
+exports[`Storyshots Components/Form Toggle Field With Label 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-row"
+  >
+    <label
+      className="form-label"
+      htmlFor="form-control-checked"
+    >
+      Example field
+    </label>
+    <div
+      className="form-check form-switch"
+    >
+      <input
+        aria-describedby=""
+        className="form-check-input"
+        id="form-control-checked"
+        name="checked"
+        onBlur={[Function]}
+        onChange={[Function]}
+        role="switch"
+        type="checkbox"
+      />
+      <label
+        className="form-check-label"
+        htmlFor="form-control-checked"
+      >
+        Accept terms and services
+      </label>
+    </div>
+  </div>
+  <hr />
+  <button
+    className="btn btn-primary has-text"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
+
 exports[`Storyshots Components/Icon Fixed Width 1`] = `
 Array [
   <i
