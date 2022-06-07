@@ -1,5 +1,6 @@
 import { Trans } from "@lingui/macro"
 import Dashboard from "./pages/Dashboard"
+import Plugins from "./pages/Plugins"
 import Settings from "./pages/Settings"
 import SettingsGeneral from "./pages/SettingsGeneral"
 import SettingsThreads from "./pages/SettingsThreads"
@@ -36,6 +37,12 @@ const MAIN_NAV: Array<MainNavItem> = [
       },
     ],
   },
+  {
+    key: "plugins",
+    icon: "fas fa-cubes",
+    link: "/plugins",
+    text: <Trans id="plugins">Plugins</Trans>,
+  },
 ]
 
 const ROUTES: Array<Route> = [
@@ -63,6 +70,11 @@ const ROUTES: Array<Route> = [
     key: "settings-threads",
     path: "/settings/threads",
     element: <SettingsThreads />,
+  },
+  {
+    key: "plugins",
+    path: "/plugins",
+    element: <Plugins />,
   },
 ]
 
