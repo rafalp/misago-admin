@@ -34,7 +34,7 @@ msgid "close"
 msgstr "Close"
 
 #: pages/Dashboard/Dashboard.tsx:8
-#: site.tsx:14
+#: site.tsx:15
 msgid "dashboard"
 msgstr "Dashboard"
 
@@ -64,21 +64,63 @@ msgstr "Username or e-mail"
 msgid "misago_admin"
 msgstr "Misago Admin"
 
+#: pages/Plugins/PluginsList.tsx:82
+msgid "plugin.admin"
+msgstr "Admin"
+
+#: pages/Plugins/PluginsList.tsx:91
+msgid "plugin.client"
+msgstr "Client"
+
+#: pages/Plugins/Plugins.tsx:20
+#: pages/Plugins/Plugins.tsx:25
+#: site.tsx:44
+msgid "plugins"
+msgstr "Plugins"
+
+#: pages/Plugins/PluginsList.tsx:83
+msgid "plugins.admin.tooltip"
+msgstr "Extends admin control panel"
+
+#: pages/Plugins/PluginsList.tsx:119
+msgid "plugins.author.tooltip"
+msgstr "Author"
+
+#: pages/Plugins/PluginsList.tsx:92
+msgid "plugins.client.tooltip"
+msgstr "Extends client UI"
+
+#: pages/Plugins/PluginsList.tsx:74
+msgid "plugins.directory.tooltip"
+msgstr "Plugin directory"
+
+#: pages/Plugins/PluginsList.tsx:19
+msgid "plugins.empty"
+msgstr "No plugins are currently enabled."
+
+#: pages/Plugins/PluginsList.tsx:110
+msgid "plugins.license.tooltip"
+msgstr "License"
+
+#: pages/Plugins/PluginsList.tsx:101
+msgid "plugins.version.tooltip"
+msgstr "Version"
+
 #: pages/SettingsGeneral/SettingsGeneralForm.tsx:171
 #: pages/SettingsThreads/SettingsThreadsForm.tsx:194
 #: pages/SettingsUsers/SettingsUsersForm.tsx:176
 msgid "save_changes"
 msgstr "Save changes"
 
-#: pages/Settings/Settings.tsx:12
-#: pages/Settings/Settings.tsx:17
+#: pages/Settings/Settings.tsx:11
+#: pages/Settings/Settings.tsx:16
 #: pages/SettingsGeneral/SettingsGeneral.tsx:22
 #: pages/SettingsGeneral/SettingsGeneral.tsx:31
 #: pages/SettingsThreads/SettingsThreads.tsx:22
 #: pages/SettingsThreads/SettingsThreads.tsx:31
 #: pages/SettingsUsers/SettingsUsers.tsx:22
 #: pages/SettingsUsers/SettingsUsers.tsx:31
-#: site.tsx:20
+#: site.tsx:21
 msgid "settings"
 msgstr "Settings"
 
@@ -134,12 +176,12 @@ msgstr "Forum name"
 
 #: pages/SettingsGeneral/SettingsGeneral.tsx:18
 #: pages/SettingsGeneral/SettingsGeneral.tsx:28
-#: site.tsx:25
-#: site.tsx:75
+#: site.tsx:26
+#: site.tsx:87
 msgid "settings.general"
 msgstr "General"
 
-#: site.tsx:77
+#: site.tsx:89
 msgid "settings.general.description"
 msgstr "Setup forum details like name, title, home page or footer."
 
@@ -185,12 +227,12 @@ msgstr "Minimum allowed thread title length"
 
 #: pages/SettingsThreads/SettingsThreads.tsx:18
 #: pages/SettingsThreads/SettingsThreads.tsx:28
-#: site.tsx:35
-#: site.tsx:99
+#: site.tsx:36
+#: site.tsx:111
 msgid "settings.threads"
 msgstr "Threads and posts"
 
-#: site.tsx:101
+#: site.tsx:113
 msgid "settings.threads.description"
 msgstr "Change the way that threads and posts are displayed or edit posting constraints."
 
@@ -222,12 +264,12 @@ msgstr "Usernames"
 
 #: pages/SettingsUsers/SettingsUsers.tsx:18
 #: pages/SettingsUsers/SettingsUsers.tsx:28
-#: site.tsx:30
-#: site.tsx:87
+#: site.tsx:31
+#: site.tsx:99
 msgid "settings.users"
 msgstr "User accounts"
 
-#: site.tsx:89
+#: site.tsx:101
 msgid "settings.users.description"
 msgstr "Customize user accounts defaults and available features."
 

@@ -1,4 +1,13 @@
-import { Card, CardBody, CardFooter, CardHeader, CardList, CardListItem, CardTitle } from "."
+import {
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  CardList,
+  CardListEmpty,
+  CardListItem,
+  CardTitle,
+} from "."
 
 export default {
   title: "Components/Card",
@@ -32,6 +41,15 @@ export const ListStory = () => (
   </Card>
 )
 ListStory.storyName = "List"
+
+export const EmptyListStory = () => (
+  <Card>
+    <CardList>
+      <CardListEmpty message="This list is empty." />
+    </CardList>
+  </Card>
+)
+EmptyListStory.storyName = "Empty List"
 
 export const HeaderFooterListStory = () => (
   <Card>

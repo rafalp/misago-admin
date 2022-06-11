@@ -23,7 +23,8 @@ export const PluginsStory = () => (
               plugins: [
                 {
                   name: "Create Demo Categories",
-                  description: "Adds \"createdemocategories\" command to Misago's CLI.",
+                  description:
+                    'Adds "createdemocategories" command to Misago\'s CLI.',
                   license: "BSD-3",
                   icon: "fas fa-folder",
                   color: "#6a4c93",
@@ -31,20 +32,21 @@ export const PluginsStory = () => (
                   author: "Rafał Pitoń",
                   homepage: {
                     domain: "misago-project.org",
-                    url: "https://misago-project.org"
+                    url: "https://misago-project.org",
                   },
                   repo: {
                     domain: "github.com",
                     icon: "fab fa-github",
-                    url: "https://github.com/rafalp/misago-local-dev/tree/main/plugins/setupcategories"
+                    url: "https://github.com/rafalp/misago-local-dev/tree/main/plugins/setupcategories",
                   },
                   directory: "setupcategories",
                   admin: false,
-                  client: false
+                  client: false,
                 },
                 {
                   name: "Data Faker",
-                  description: "Adds mock data generation commands to Misago's CLI.",
+                  description:
+                    "Adds mock data generation commands to Misago's CLI.",
                   license: "BSD-3",
                   icon: "fas fa-dice",
                   color: "#0466c8",
@@ -52,16 +54,16 @@ export const PluginsStory = () => (
                   author: "Rafał Pitoń",
                   homepage: {
                     domain: "misago-project.org",
-                    url: "https://misago-project.org"
+                    url: "https://misago-project.org",
                   },
                   repo: {
                     domain: "github.com",
                     icon: "fab fa-github",
-                    url: "https://github.com/rafalp/misago-local-dev/tree/main/plugins/datafaker"
+                    url: "https://github.com/rafalp/misago-local-dev/tree/main/plugins/datafaker",
                   },
                   directory: "datafaker",
                   admin: true,
-                  client: true
+                  client: true,
                 },
                 {
                   name: "topposters",
@@ -75,7 +77,7 @@ export const PluginsStory = () => (
                   repo: null,
                   directory: "topposters",
                   admin: false,
-                  client: false
+                  client: false,
                 },
               ],
             },
@@ -97,3 +99,25 @@ export const PluginsLoadingStory = () => (
   </MockLayoutFull>
 )
 PluginsLoadingStory.storyName = "Loading"
+
+export const PluginsEmptyStory = () => (
+  <MockLayoutFull>
+    <MockedProvider
+      mocks={[
+        {
+          request: {
+            query: PLUGINS_QUERY,
+          },
+          result: {
+            data: {
+              plugins: [],
+            },
+          },
+        },
+      ]}
+    >
+      <Plugins />
+    </MockedProvider>
+  </MockLayoutFull>
+)
+PluginsEmptyStory.storyName = "Empty"

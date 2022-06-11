@@ -85,6 +85,15 @@ $min-contrast-ratio:   3 !default;
 $body-bg:                     $white !default;
 $body-color:                  $black !default;
 
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875 !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
+
+$text-muted:                  $gray-600 !default;
 
 // Components
 //
@@ -102,29 +111,6 @@ $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 
 $text-title:                  $black !default;
 
-// Toasts
-
-$toast-danger-bg:             $red !default;
-$toast-danger-border:         1px solid $red !default;
-$toast-danger-color:          $white !default;
-
-$toast-success-bg:            $green !default;
-$toast-success-border:        1px solid $green !default;
-$toast-success-color:         $white !default;
-
-// Buttons + Forms
-//
-// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
-
-$input-btn-border-width:      2px !default;
-
-// Forms
-
-$input-bg:                    $white !default;
-
-$form-fieldset-border:        1px solid $gray-300 !default;
-$form-rows-spacer:            1rem !default;
-
 // Cards
 
 $card-border-color:                 $gray-300 !default;
@@ -135,6 +121,27 @@ $card-cap-color:                    $body-color !default;
 $card-foot-bg:                      $white !default;
 $card-foot-border:                  1px solid $gray-200 !default;
 $card-foot-color:                   $body-color !default;
+
+// Loaders
+
+$loader-color:                $gray-500 !default;
+$loader-size:                 1rem !default;
+
+// Toasts
+
+$toast-danger-bg:             $red !default;
+$toast-danger-border:         1px solid $red !default;
+$toast-danger-color:          $white !default;
+
+$toast-success-bg:            $green !default;
+$toast-success-border:        1px solid $green !default;
+$toast-success-color:         $white !default;
+
+// Attribute list
+
+$attrs-list-spacing:          $spacer !default;
+$attrs-list-color:            $text-muted !default;
+$attrs-list-size:             $font-size-sm !default;
 
 // Stamps
 
@@ -149,12 +156,24 @@ $skeleton-color:                    $gray-300 !default;
 $skeleton-radius:                   0.1rem !default;
 $skeleton-word-spacing:             0.5rem !default;
 
-// Loaders
+// Buttons + Forms
 //
-// Style Loader component.
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$loader-color:                $gray-500 !default;
-$loader-size:                 1rem !default;
+$input-btn-border-width:      2px !default;
+
+$input-bg:                    $white !default;
+
+$form-fieldset-border:        1px solid $gray-300 !default;
+$form-rows-spacer:            1rem !default;
+
+// Empty list message
+$empty-list-padding:          $spacer * 2;
+$empty-list-color:            $gray-700 !default;
+$empty-list-size:             $font-size-lg !default;
+$empty-list-icon-color:       $gray-600 !default;
+$empty-list-icon-size:        1.5rem !default;
+$empty-list-icon-margin:      $spacer !default;
 
 // Login form
 //

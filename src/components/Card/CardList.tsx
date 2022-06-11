@@ -7,7 +7,11 @@ type CardListProps = {
 }
 
 const CardList: React.FC<CardListProps> = ({ children, className }) => (
-  <div className={classnames("card-list list-group list-group-flush", className)}>{children}</div>
+  <div
+    className={classnames("card-list list-group list-group-flush", className)}
+  >
+    {children}
+  </div>
 )
 
 export default CardList

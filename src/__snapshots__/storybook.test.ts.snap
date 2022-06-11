@@ -1,5 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Components Attributes list 1`] = `
+<ul
+  className="attrs-list"
+>
+  <li
+    className="attrs-list-item"
+  >
+    <span
+      className="attr-bg"
+    >
+      <i
+        className="icon far fa-check-square fa-fw"
+      />
+       
+      Hello world
+    </span>
+  </li>
+  <li
+    className="attrs-list-item"
+  >
+    <span
+      className="attr-bg"
+    >
+      <i
+        className="icon far fa-user fa-fw"
+      />
+       
+      John Doe
+    </span>
+  </li>
+  <li
+    className="attrs-list-item"
+  >
+    <span
+      className="attr-bg"
+      title="18 Jan 2022"
+    >
+      <i
+        className="icon far fa-clock fa-fw"
+      />
+       
+      15 days ago
+    </span>
+  </li>
+</ul>
+`;
+
 exports[`Storyshots Components Container 1`] = `
 <div
   className="container-fluid"
@@ -354,7 +401,7 @@ exports[`Storyshots Components/Button With Icon 1`] = `
 </button>
 `;
 
-exports[`Storyshots Components/Card Minimal 1`] = `
+exports[`Storyshots Components/Card Basic 1`] = `
 <div
   className="card"
 >
@@ -366,7 +413,30 @@ exports[`Storyshots Components/Card Minimal 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Card With Header And Footer 1`] = `
+exports[`Storyshots Components/Card Empty List 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card-list list-group list-group-flush"
+  >
+    <div
+      className="card-list-item list-group-item empty-list"
+    >
+      <i
+        className="icon far fa-lightbulb"
+      />
+      <div
+        className="empty-list-message"
+      >
+        This list is empty.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Card Header and Footer 1`] = `
 <div
   className="card"
 >
@@ -383,6 +453,72 @@ exports[`Storyshots Components/Card With Header And Footer 1`] = `
     className="card-body"
   >
     This is some text within a card body
+  </div>
+  <div
+    className="card-footer"
+  >
+    Card Footer
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Card List 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card-list list-group list-group-flush"
+  >
+    <div
+      className="card-list-item list-group-item"
+    >
+      Lorem ipsum
+    </div>
+    <div
+      className="card-list-item list-group-item"
+    >
+      Dolor met
+    </div>
+    <div
+      className="card-list-item list-group-item"
+    >
+      Sit amet
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Card List with Header and Footer 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card-header"
+  >
+    <strong
+      className="card-title"
+    >
+      Card Title
+    </strong>
+  </div>
+  <div
+    className="card-list list-group list-group-flush"
+  >
+    <div
+      className="card-list-item list-group-item"
+    >
+      Lorem ipsum
+    </div>
+    <div
+      className="card-list-item list-group-item"
+    >
+      Dolor met
+    </div>
+    <div
+      className="card-list-item list-group-item"
+    >
+      Sit amet
+    </div>
   </div>
   <div
     className="card-footer"
@@ -2275,6 +2411,20 @@ exports[`Storyshots Layouts Full 1`] = `
               </li>
             </ul>
           </li>
+          <li
+            className="nav-item"
+          >
+            <a
+              className="nav-link"
+              href="#/plugins"
+              onClick={[Function]}
+            >
+              <i
+                className="icon fas fa-cubes fa-fw"
+              />
+              Plugins
+            </a>
+          </li>
         </ul>
       </div>
       <div
@@ -2402,6 +2552,1851 @@ exports[`Storyshots Pages Login Page 1`] = `
 </div>
 `;
 
+exports[`Storyshots Pages/Plugins Empty 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row w-100"
+      >
+        <div
+          className="col-side"
+        >
+          [MISAGO]
+        </div>
+        <div
+          className="col-main d-flex justify-content-end align-items-center"
+        >
+          <span
+            className="navbar-text me-3"
+          >
+            JohnDoe
+          </span>
+          <button
+            className="btn btn-light btn-sm has-text"
+            onClick={[Function]}
+            type="button"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="layout-full"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-side"
+        >
+          <ul
+            className="nav flex-column nav-main"
+          >
+            <li
+              className="nav-item"
+            >
+              <a
+                aria-current="page"
+                className="nav-link active"
+                href="#/"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-home fa-fw"
+                />
+                Dashboard
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/settings"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cog fa-fw"
+                />
+                Settings
+              </a>
+              <ul
+                className="nav nav-sub flex-column"
+              >
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/general"
+                    onClick={[Function]}
+                  >
+                    General
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/users"
+                    onClick={[Function]}
+                  >
+                    User accounts
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/threads"
+                    onClick={[Function]}
+                  >
+                    Threads and posts
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/plugins"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cubes fa-fw"
+                />
+                Plugins
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          className="col-main"
+        >
+          <div
+            className="page-header"
+          >
+            <h1>
+              <span
+                className="page-header-title"
+              >
+                Plugins
+              </span>
+            </h1>
+          </div>
+          <div
+            className="card"
+          >
+            <div
+              className="card-list list-group list-group-flush"
+            >
+              <div
+                className="card-list-item list-group-item"
+              >
+                <div
+                  className="row gx-3"
+                >
+                  <div
+                    className="col col col-auto"
+                    style={
+                      Object {
+                        "width": undefined,
+                      }
+                    }
+                  >
+                    <span
+                      className="stamp"
+                      style={
+                        Object {
+                          "--color-theme": "#457b9d",
+                        }
+                      }
+                    >
+                      <i
+                        className="icon fas fa-cube fa-fw"
+                      />
+                    </span>
+                  </div>
+                  <div
+                    className="col col"
+                    style={
+                      Object {
+                        "width": undefined,
+                      }
+                    }
+                  >
+                    <div
+                      className="row gx-2"
+                    >
+                      <div
+                        className="col col"
+                        style={
+                          Object {
+                            "width": undefined,
+                          }
+                        }
+                      >
+                        <div
+                          className="text-title"
+                        >
+                          <span
+                            className="skeleton skeleton-sentence"
+                          >
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "100px",
+                                }
+                              }
+                            />
+                             
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "80px",
+                                }
+                              }
+                            />
+                            
+                          </span>
+                        </div>
+                        <div
+                          className="text-muted"
+                        >
+                          <small>
+                            <span
+                              className="skeleton skeleton-sentence"
+                            >
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "70px",
+                                  }
+                                }
+                              />
+                               
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "110px",
+                                  }
+                                }
+                              />
+                               
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "80px",
+                                  }
+                                }
+                              />
+                              
+                            </span>
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                    <ul
+                      className="attrs-list"
+                    >
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon far fa-folder fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "90px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon fas fa-code fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "30px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon fas fa-medal fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "40px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon far fa-user fa-fw"
+                          />
+                           
+                          <span
+                            className="skeleton skeleton-sentence"
+                          >
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "70px",
+                                }
+                              }
+                            />
+                             
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "80px",
+                                }
+                              }
+                            />
+                            
+                          </span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="card-list-item list-group-item"
+              >
+                <div
+                  className="row gx-3"
+                >
+                  <div
+                    className="col col col-auto"
+                    style={
+                      Object {
+                        "width": undefined,
+                      }
+                    }
+                  >
+                    <span
+                      className="stamp"
+                      style={
+                        Object {
+                          "--color-theme": "#2d6a4f",
+                        }
+                      }
+                    >
+                      <i
+                        className="icon fas fa-cube fa-fw"
+                      />
+                    </span>
+                  </div>
+                  <div
+                    className="col col"
+                    style={
+                      Object {
+                        "width": undefined,
+                      }
+                    }
+                  >
+                    <div
+                      className="row gx-2"
+                    >
+                      <div
+                        className="col col"
+                        style={
+                          Object {
+                            "width": undefined,
+                          }
+                        }
+                      >
+                        <div
+                          className="text-title"
+                        >
+                          <span
+                            className="skeleton skeleton-sentence"
+                          >
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "60px",
+                                }
+                              }
+                            />
+                             
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "120px",
+                                }
+                              }
+                            />
+                            
+                          </span>
+                        </div>
+                        <div
+                          className="text-muted"
+                        >
+                          <small>
+                            <span
+                              className="skeleton skeleton-sentence"
+                            >
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "50px",
+                                  }
+                                }
+                              />
+                               
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "100px",
+                                  }
+                                }
+                              />
+                               
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "30px",
+                                  }
+                                }
+                              />
+                               
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "80px",
+                                  }
+                                }
+                              />
+                              
+                            </span>
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                    <ul
+                      className="attrs-list"
+                    >
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon far fa-folder fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "80px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon fas fa-code fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "40px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon fas fa-medal fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "30px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon far fa-user fa-fw"
+                          />
+                           
+                          <span
+                            className="skeleton skeleton-sentence"
+                          >
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "90px",
+                                }
+                              }
+                            />
+                             
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "60px",
+                                }
+                              }
+                            />
+                            
+                          </span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Pages/Plugins Loading 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row w-100"
+      >
+        <div
+          className="col-side"
+        >
+          [MISAGO]
+        </div>
+        <div
+          className="col-main d-flex justify-content-end align-items-center"
+        >
+          <span
+            className="navbar-text me-3"
+          >
+            JohnDoe
+          </span>
+          <button
+            className="btn btn-light btn-sm has-text"
+            onClick={[Function]}
+            type="button"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="layout-full"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-side"
+        >
+          <ul
+            className="nav flex-column nav-main"
+          >
+            <li
+              className="nav-item"
+            >
+              <a
+                aria-current="page"
+                className="nav-link active"
+                href="#/"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-home fa-fw"
+                />
+                Dashboard
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/settings"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cog fa-fw"
+                />
+                Settings
+              </a>
+              <ul
+                className="nav nav-sub flex-column"
+              >
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/general"
+                    onClick={[Function]}
+                  >
+                    General
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/users"
+                    onClick={[Function]}
+                  >
+                    User accounts
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/threads"
+                    onClick={[Function]}
+                  >
+                    Threads and posts
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/plugins"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cubes fa-fw"
+                />
+                Plugins
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          className="col-main"
+        >
+          <div
+            className="page-header"
+          >
+            <h1>
+              <span
+                className="page-header-title"
+              >
+                Plugins
+              </span>
+            </h1>
+          </div>
+          <div
+            className="card"
+          >
+            <div
+              className="card-list list-group list-group-flush"
+            >
+              <div
+                className="card-list-item list-group-item"
+              >
+                <div
+                  className="row gx-3"
+                >
+                  <div
+                    className="col col col-auto"
+                    style={
+                      Object {
+                        "width": undefined,
+                      }
+                    }
+                  >
+                    <span
+                      className="stamp"
+                      style={
+                        Object {
+                          "--color-theme": "#457b9d",
+                        }
+                      }
+                    >
+                      <i
+                        className="icon fas fa-cube fa-fw"
+                      />
+                    </span>
+                  </div>
+                  <div
+                    className="col col"
+                    style={
+                      Object {
+                        "width": undefined,
+                      }
+                    }
+                  >
+                    <div
+                      className="row gx-2"
+                    >
+                      <div
+                        className="col col"
+                        style={
+                          Object {
+                            "width": undefined,
+                          }
+                        }
+                      >
+                        <div
+                          className="text-title"
+                        >
+                          <span
+                            className="skeleton skeleton-sentence"
+                          >
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "100px",
+                                }
+                              }
+                            />
+                             
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "80px",
+                                }
+                              }
+                            />
+                            
+                          </span>
+                        </div>
+                        <div
+                          className="text-muted"
+                        >
+                          <small>
+                            <span
+                              className="skeleton skeleton-sentence"
+                            >
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "70px",
+                                  }
+                                }
+                              />
+                               
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "110px",
+                                  }
+                                }
+                              />
+                               
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "80px",
+                                  }
+                                }
+                              />
+                              
+                            </span>
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                    <ul
+                      className="attrs-list"
+                    >
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon far fa-folder fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "90px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon fas fa-code fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "30px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon fas fa-medal fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "40px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon far fa-user fa-fw"
+                          />
+                           
+                          <span
+                            className="skeleton skeleton-sentence"
+                          >
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "70px",
+                                }
+                              }
+                            />
+                             
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "80px",
+                                }
+                              }
+                            />
+                            
+                          </span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="card-list-item list-group-item"
+              >
+                <div
+                  className="row gx-3"
+                >
+                  <div
+                    className="col col col-auto"
+                    style={
+                      Object {
+                        "width": undefined,
+                      }
+                    }
+                  >
+                    <span
+                      className="stamp"
+                      style={
+                        Object {
+                          "--color-theme": "#2d6a4f",
+                        }
+                      }
+                    >
+                      <i
+                        className="icon fas fa-cube fa-fw"
+                      />
+                    </span>
+                  </div>
+                  <div
+                    className="col col"
+                    style={
+                      Object {
+                        "width": undefined,
+                      }
+                    }
+                  >
+                    <div
+                      className="row gx-2"
+                    >
+                      <div
+                        className="col col"
+                        style={
+                          Object {
+                            "width": undefined,
+                          }
+                        }
+                      >
+                        <div
+                          className="text-title"
+                        >
+                          <span
+                            className="skeleton skeleton-sentence"
+                          >
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "60px",
+                                }
+                              }
+                            />
+                             
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "120px",
+                                }
+                              }
+                            />
+                            
+                          </span>
+                        </div>
+                        <div
+                          className="text-muted"
+                        >
+                          <small>
+                            <span
+                              className="skeleton skeleton-sentence"
+                            >
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "50px",
+                                  }
+                                }
+                              />
+                               
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "100px",
+                                  }
+                                }
+                              />
+                               
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "30px",
+                                  }
+                                }
+                              />
+                               
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "80px",
+                                  }
+                                }
+                              />
+                              
+                            </span>
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                    <ul
+                      className="attrs-list"
+                    >
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon far fa-folder fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "80px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon fas fa-code fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "40px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon fas fa-medal fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "30px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon far fa-user fa-fw"
+                          />
+                           
+                          <span
+                            className="skeleton skeleton-sentence"
+                          >
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "90px",
+                                }
+                              }
+                            />
+                             
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "60px",
+                                }
+                              }
+                            />
+                            
+                          </span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Pages/Plugins Ready 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row w-100"
+      >
+        <div
+          className="col-side"
+        >
+          [MISAGO]
+        </div>
+        <div
+          className="col-main d-flex justify-content-end align-items-center"
+        >
+          <span
+            className="navbar-text me-3"
+          >
+            JohnDoe
+          </span>
+          <button
+            className="btn btn-light btn-sm has-text"
+            onClick={[Function]}
+            type="button"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="layout-full"
+  >
+    <div
+      className="container-fluid"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-side"
+        >
+          <ul
+            className="nav flex-column nav-main"
+          >
+            <li
+              className="nav-item"
+            >
+              <a
+                aria-current="page"
+                className="nav-link active"
+                href="#/"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-home fa-fw"
+                />
+                Dashboard
+              </a>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/settings"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cog fa-fw"
+                />
+                Settings
+              </a>
+              <ul
+                className="nav nav-sub flex-column"
+              >
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/general"
+                    onClick={[Function]}
+                  >
+                    General
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/users"
+                    onClick={[Function]}
+                  >
+                    User accounts
+                  </a>
+                </li>
+                <li
+                  className="nav-item"
+                >
+                  <a
+                    className="nav-link"
+                    href="#/settings/threads"
+                    onClick={[Function]}
+                  >
+                    Threads and posts
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/plugins"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cubes fa-fw"
+                />
+                Plugins
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          className="col-main"
+        >
+          <div
+            className="page-header"
+          >
+            <h1>
+              <span
+                className="page-header-title"
+              >
+                Plugins
+              </span>
+            </h1>
+          </div>
+          <div
+            className="card"
+          >
+            <div
+              className="card-list list-group list-group-flush"
+            >
+              <div
+                className="card-list-item list-group-item"
+              >
+                <div
+                  className="row gx-3"
+                >
+                  <div
+                    className="col col col-auto"
+                    style={
+                      Object {
+                        "width": undefined,
+                      }
+                    }
+                  >
+                    <span
+                      className="stamp"
+                      style={
+                        Object {
+                          "--color-theme": "#457b9d",
+                        }
+                      }
+                    >
+                      <i
+                        className="icon fas fa-cube fa-fw"
+                      />
+                    </span>
+                  </div>
+                  <div
+                    className="col col"
+                    style={
+                      Object {
+                        "width": undefined,
+                      }
+                    }
+                  >
+                    <div
+                      className="row gx-2"
+                    >
+                      <div
+                        className="col col"
+                        style={
+                          Object {
+                            "width": undefined,
+                          }
+                        }
+                      >
+                        <div
+                          className="text-title"
+                        >
+                          <span
+                            className="skeleton skeleton-sentence"
+                          >
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "100px",
+                                }
+                              }
+                            />
+                             
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "80px",
+                                }
+                              }
+                            />
+                            
+                          </span>
+                        </div>
+                        <div
+                          className="text-muted"
+                        >
+                          <small>
+                            <span
+                              className="skeleton skeleton-sentence"
+                            >
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "70px",
+                                  }
+                                }
+                              />
+                               
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "110px",
+                                  }
+                                }
+                              />
+                               
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "80px",
+                                  }
+                                }
+                              />
+                              
+                            </span>
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                    <ul
+                      className="attrs-list"
+                    >
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon far fa-folder fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "90px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon fas fa-code fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "30px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon fas fa-medal fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "40px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon far fa-user fa-fw"
+                          />
+                           
+                          <span
+                            className="skeleton skeleton-sentence"
+                          >
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "70px",
+                                }
+                              }
+                            />
+                             
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "80px",
+                                }
+                              }
+                            />
+                            
+                          </span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="card-list-item list-group-item"
+              >
+                <div
+                  className="row gx-3"
+                >
+                  <div
+                    className="col col col-auto"
+                    style={
+                      Object {
+                        "width": undefined,
+                      }
+                    }
+                  >
+                    <span
+                      className="stamp"
+                      style={
+                        Object {
+                          "--color-theme": "#2d6a4f",
+                        }
+                      }
+                    >
+                      <i
+                        className="icon fas fa-cube fa-fw"
+                      />
+                    </span>
+                  </div>
+                  <div
+                    className="col col"
+                    style={
+                      Object {
+                        "width": undefined,
+                      }
+                    }
+                  >
+                    <div
+                      className="row gx-2"
+                    >
+                      <div
+                        className="col col"
+                        style={
+                          Object {
+                            "width": undefined,
+                          }
+                        }
+                      >
+                        <div
+                          className="text-title"
+                        >
+                          <span
+                            className="skeleton skeleton-sentence"
+                          >
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "60px",
+                                }
+                              }
+                            />
+                             
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "120px",
+                                }
+                              }
+                            />
+                            
+                          </span>
+                        </div>
+                        <div
+                          className="text-muted"
+                        >
+                          <small>
+                            <span
+                              className="skeleton skeleton-sentence"
+                            >
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "50px",
+                                  }
+                                }
+                              />
+                               
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "100px",
+                                  }
+                                }
+                              />
+                               
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "30px",
+                                  }
+                                }
+                              />
+                               
+                              <span
+                                aria-hidden="true"
+                                className="skeleton skeleton-text"
+                                style={
+                                  Object {
+                                    "width": "80px",
+                                  }
+                                }
+                              />
+                              
+                            </span>
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                    <ul
+                      className="attrs-list"
+                    >
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon far fa-folder fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "80px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon fas fa-code fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "40px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon fas fa-medal fa-fw"
+                          />
+                           
+                          <span
+                            aria-hidden="true"
+                            className="skeleton skeleton-text"
+                            style={
+                              Object {
+                                "width": "30px",
+                              }
+                            }
+                          />
+                        </span>
+                      </li>
+                      <li
+                        className="attrs-list-item"
+                      >
+                        <span
+                          className="attr-bg"
+                        >
+                          <i
+                            className="icon far fa-user fa-fw"
+                          />
+                           
+                          <span
+                            className="skeleton skeleton-sentence"
+                          >
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "90px",
+                                }
+                              }
+                            />
+                             
+                            <span
+                              aria-hidden="true"
+                              className="skeleton skeleton-text"
+                              style={
+                                Object {
+                                  "width": "60px",
+                                }
+                              }
+                            />
+                            
+                          </span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
 exports[`Storyshots Pages/Settings Settings Groups 1`] = `
 Array [
   <nav
@@ -2517,6 +4512,20 @@ Array [
                   </a>
                 </li>
               </ul>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/plugins"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cubes fa-fw"
+                />
+                Plugins
+              </a>
             </li>
           </ul>
         </div>
@@ -2792,6 +4801,20 @@ Array [
                   </a>
                 </li>
               </ul>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/plugins"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cubes fa-fw"
+                />
+                Plugins
+              </a>
             </li>
           </ul>
         </div>
@@ -3198,6 +5221,20 @@ Array [
                 </li>
               </ul>
             </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/plugins"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cubes fa-fw"
+                />
+                Plugins
+              </a>
+            </li>
           </ul>
         </div>
         <div
@@ -3603,6 +5640,20 @@ Array [
                 </li>
               </ul>
             </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/plugins"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cubes fa-fw"
+                />
+                Plugins
+              </a>
+            </li>
           </ul>
         </div>
         <div
@@ -3996,6 +6047,20 @@ Array [
                   </a>
                 </li>
               </ul>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/plugins"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cubes fa-fw"
+                />
+                Plugins
+              </a>
             </li>
           </ul>
         </div>
@@ -4391,6 +6456,20 @@ Array [
                 </li>
               </ul>
             </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/plugins"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cubes fa-fw"
+                />
+                Plugins
+              </a>
+            </li>
           </ul>
         </div>
         <div
@@ -4726,6 +6805,20 @@ Array [
                   </a>
                 </li>
               </ul>
+            </li>
+            <li
+              className="nav-item"
+            >
+              <a
+                className="nav-link"
+                href="#/plugins"
+                onClick={[Function]}
+              >
+                <i
+                  className="icon fas fa-cubes fa-fw"
+                />
+                Plugins
+              </a>
             </li>
           </ul>
         </div>

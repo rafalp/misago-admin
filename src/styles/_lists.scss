@@ -1,0 +1,19 @@
+/* Style empty list message */
+.empty-list {
+  display: flex;
+  align-self: center;
+
+  padding: $empty-list-padding;
+
+  color: $empty-list-color;
+  font-size: $empty-list-size;
+  text-align: center;
+  line-height: $empty-list-icon-size;
+
+  .icon {
+    margin-right: $empty-list-icon-margin;
+
+    color: $empty-list-icon-color;
+    font-size: $empty-list-icon-size;
+  }
+}

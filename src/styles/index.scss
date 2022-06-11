@@ -33,7 +33,6 @@
 @import "~bootstrap/scss/nav";
 @import "~bootstrap/scss/navbar";
 @import "~bootstrap/scss/card";
-@import "~bootstrap/scss/badge";
 @import "~bootstrap/scss/alert";
 @import "~bootstrap/scss/list-group";
 @import "~bootstrap/scss/close";
@@ -52,6 +51,7 @@
 // Misago components
 
 @import "typography";
+@import "attrs-list";
 @import "grid";
 @import "skeletons";
 @import "forms";
@@ -59,6 +59,7 @@
 @import "card";
 @import "nav";
 @import "layouts";
+@import "lists";
 @import "loader";
 @import "stamp";
 @import "toasts";

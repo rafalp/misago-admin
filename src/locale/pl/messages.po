@@ -34,7 +34,7 @@ msgid "close"
 msgstr ""
 
 #: pages/Dashboard/Dashboard.tsx:8
-#: site.tsx:14
+#: site.tsx:15
 msgid "dashboard"
 msgstr ""
 
@@ -68,21 +68,63 @@ msgstr ""
 msgid "misago_admin"
 msgstr ""
 
+#: pages/Plugins/PluginsList.tsx:82
+msgid "plugin.admin"
+msgstr ""
+
+#: pages/Plugins/PluginsList.tsx:91
+msgid "plugin.client"
+msgstr ""
+
+#: pages/Plugins/Plugins.tsx:20
+#: pages/Plugins/Plugins.tsx:25
+#: site.tsx:44
+msgid "plugins"
+msgstr ""
+
+#: pages/Plugins/PluginsList.tsx:83
+msgid "plugins.admin.tooltip"
+msgstr ""
+
+#: pages/Plugins/PluginsList.tsx:119
+msgid "plugins.author.tooltip"
+msgstr ""
+
+#: pages/Plugins/PluginsList.tsx:92
+msgid "plugins.client.tooltip"
+msgstr ""
+
+#: pages/Plugins/PluginsList.tsx:74
+msgid "plugins.directory.tooltip"
+msgstr ""
+
+#: pages/Plugins/PluginsList.tsx:19
+msgid "plugins.empty"
+msgstr ""
+
+#: pages/Plugins/PluginsList.tsx:110
+msgid "plugins.license.tooltip"
+msgstr ""
+
+#: pages/Plugins/PluginsList.tsx:101
+msgid "plugins.version.tooltip"
+msgstr ""
+
 #: pages/SettingsGeneral/SettingsGeneralForm.tsx:171
 #: pages/SettingsThreads/SettingsThreadsForm.tsx:194
 #: pages/SettingsUsers/SettingsUsersForm.tsx:176
 msgid "save_changes"
 msgstr ""
 
-#: pages/Settings/Settings.tsx:12
-#: pages/Settings/Settings.tsx:17
+#: pages/Settings/Settings.tsx:11
+#: pages/Settings/Settings.tsx:16
 #: pages/SettingsGeneral/SettingsGeneral.tsx:22
 #: pages/SettingsGeneral/SettingsGeneral.tsx:31
 #: pages/SettingsThreads/SettingsThreads.tsx:22
 #: pages/SettingsThreads/SettingsThreads.tsx:31
 #: pages/SettingsUsers/SettingsUsers.tsx:22
 #: pages/SettingsUsers/SettingsUsers.tsx:31
-#: site.tsx:20
+#: site.tsx:21
 msgid "settings"
 msgstr ""
 
@@ -138,12 +180,12 @@ msgstr ""
 
 #: pages/SettingsGeneral/SettingsGeneral.tsx:18
 #: pages/SettingsGeneral/SettingsGeneral.tsx:28
-#: site.tsx:25
-#: site.tsx:75
+#: site.tsx:26
+#: site.tsx:87
 msgid "settings.general"
 msgstr ""
 
-#: site.tsx:77
+#: site.tsx:89
 msgid "settings.general.description"
 msgstr ""
 
@@ -189,12 +231,12 @@ msgstr ""
 
 #: pages/SettingsThreads/SettingsThreads.tsx:18
 #: pages/SettingsThreads/SettingsThreads.tsx:28
-#: site.tsx:35
-#: site.tsx:99
+#: site.tsx:36
+#: site.tsx:111
 msgid "settings.threads"
 msgstr ""
 
-#: site.tsx:101
+#: site.tsx:113
 msgid "settings.threads.description"
 msgstr ""
 
@@ -226,12 +268,12 @@ msgstr ""
 
 #: pages/SettingsUsers/SettingsUsers.tsx:18
 #: pages/SettingsUsers/SettingsUsers.tsx:28
-#: site.tsx:30
-#: site.tsx:87
+#: site.tsx:31
+#: site.tsx:99
 msgid "settings.users"
 msgstr ""
 
-#: site.tsx:89
+#: site.tsx:101
 msgid "settings.users.description"
 msgstr ""
 

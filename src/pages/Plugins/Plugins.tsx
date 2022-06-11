@@ -1,9 +1,11 @@
 import { Trans, t } from "@lingui/macro"
 import React from "react"
+import { Card } from "../../components/Card"
 import PageHeader from "../../components/PageHeader"
 import WindowTitle from "../../components/WindowTitle"
 import { useToasts } from "../../toasts"
 import PluginsList from "./PluginsList"
+import PluginsLoading from "./PluginsLoading"
 import usePluginsQuery from "./usePluginsQuery"
 
 const Plugins: React.FC = () => {
@@ -21,7 +23,13 @@ const Plugins: React.FC = () => {
         })}
       />
       <PageHeader title={<Trans id="plugins">Plugins</Trans>} />
-      {data?.plugins && <PluginsList plugins={data.plugins} />}
+      <Card>
+        {data?.plugins ? (
+          <PluginsList plugins={data.plugins} />
+        ) : (
+          <PluginsLoading />
+        )}
+      </Card>
     </>
   )
 }
