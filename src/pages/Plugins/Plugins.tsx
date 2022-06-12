@@ -1,6 +1,5 @@
 import { Trans, t } from "@lingui/macro"
 import React from "react"
-import { Card } from "../../components/Card"
 import PageHeader from "../../components/PageHeader"
 import WindowTitle from "../../components/WindowTitle"
 import { useToasts } from "../../toasts"
