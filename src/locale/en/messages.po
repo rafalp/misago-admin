@@ -64,33 +64,33 @@ msgstr "Username or e-mail"
 msgid "misago_admin"
 msgstr "Misago Admin"
 
-#: pages/Plugins/PluginsList.tsx:82
+#: pages/Plugins/PluginsListItem.tsx:38
 msgid "plugin.admin"
 msgstr "Admin"
 
-#: pages/Plugins/PluginsList.tsx:91
+#: pages/Plugins/PluginsListItem.tsx:47
 msgid "plugin.client"
 msgstr "Client"
 
-#: pages/Plugins/Plugins.tsx:20
-#: pages/Plugins/Plugins.tsx:25
+#: pages/Plugins/Plugins.tsx:19
+#: pages/Plugins/Plugins.tsx:24
 #: site.tsx:44
 msgid "plugins"
 msgstr "Plugins"
 
-#: pages/Plugins/PluginsList.tsx:83
+#: pages/Plugins/PluginsListItem.tsx:39
 msgid "plugins.admin.tooltip"
 msgstr "Extends admin control panel"
 
-#: pages/Plugins/PluginsList.tsx:119
+#: pages/Plugins/PluginsListItem.tsx:75
 msgid "plugins.author.tooltip"
 msgstr "Author"
 
-#: pages/Plugins/PluginsList.tsx:92
+#: pages/Plugins/PluginsListItem.tsx:48
 msgid "plugins.client.tooltip"
 msgstr "Extends client UI"
 
-#: pages/Plugins/PluginsList.tsx:74
+#: pages/Plugins/PluginsListItem.tsx:30
 msgid "plugins.directory.tooltip"
 msgstr "Plugin directory"
 
@@ -98,11 +98,11 @@ msgstr "Plugin directory"
 msgid "plugins.empty"
 msgstr "No plugins are currently enabled."
 
-#: pages/Plugins/PluginsList.tsx:110
+#: pages/Plugins/PluginsListItem.tsx:66
 msgid "plugins.license.tooltip"
 msgstr "License"
 
-#: pages/Plugins/PluginsList.tsx:101
+#: pages/Plugins/PluginsListItem.tsx:57
 msgid "plugins.version.tooltip"
 msgstr "Version"
 

@@ -68,33 +68,33 @@ msgstr ""
 msgid "misago_admin"
 msgstr ""
 
-#: pages/Plugins/PluginsList.tsx:82
+#: pages/Plugins/PluginsListItem.tsx:38
 msgid "plugin.admin"
 msgstr ""
 
-#: pages/Plugins/PluginsList.tsx:91
+#: pages/Plugins/PluginsListItem.tsx:47
 msgid "plugin.client"
 msgstr ""
 
-#: pages/Plugins/Plugins.tsx:20
-#: pages/Plugins/Plugins.tsx:25
+#: pages/Plugins/Plugins.tsx:19
+#: pages/Plugins/Plugins.tsx:24
 #: site.tsx:44
 msgid "plugins"
 msgstr ""
 
-#: pages/Plugins/PluginsList.tsx:83
+#: pages/Plugins/PluginsListItem.tsx:39
 msgid "plugins.admin.tooltip"
 msgstr ""
 
-#: pages/Plugins/PluginsList.tsx:119
+#: pages/Plugins/PluginsListItem.tsx:75
 msgid "plugins.author.tooltip"
 msgstr ""
 
-#: pages/Plugins/PluginsList.tsx:92
+#: pages/Plugins/PluginsListItem.tsx:48
 msgid "plugins.client.tooltip"
 msgstr ""
 
-#: pages/Plugins/PluginsList.tsx:74
+#: pages/Plugins/PluginsListItem.tsx:30
 msgid "plugins.directory.tooltip"
 msgstr ""
 
@@ -102,11 +102,11 @@ msgstr ""
 msgid "plugins.empty"
 msgstr ""
 
-#: pages/Plugins/PluginsList.tsx:110
+#: pages/Plugins/PluginsListItem.tsx:66
 msgid "plugins.license.tooltip"
 msgstr ""
 
-#: pages/Plugins/PluginsList.tsx:101
+#: pages/Plugins/PluginsListItem.tsx:57
 msgid "plugins.version.tooltip"
 msgstr ""
 
