@@ -1,95 +1,123 @@
 import React from "react"
 import AttrsList from "../../components/AttrsList"
-import { CardList, CardListItem } from "../../components/Card"
+import { Card, CardBody, CardFooter } from "../../components/Card"
+import CardsGrid from "../../components/CardsGrid"
+import Icon from "../../components/Icon"
 import { SkeletonSentence, SkeletonText } from "../../components/Skeleton"
 import Stamp from "../../components/Stamp"
 import { Col, Row } from "../../grid"
 
 const PluginsLoading: React.FC = () => (
-  <CardList>
-    <CardListItem>
-      <Row spacing="half">
-        <Col>
-          <Stamp color="#457b9d" icon="fas fa-cube" />
-        </Col>
-        <Col width="max">
-          <Row spacing="quarter">
+  <CardsGrid
+    items={[
+      <Card>
+        <CardBody>
+          <Row spacing="half">
+            <Col>
+              <Stamp color="#9b59b6" icon="fas fa-cube" />
+            </Col>
             <Col width="max">
-              <div className="text-title">
+              <h5 className="item-title">
                 <SkeletonSentence words={[100, 80]} />
-              </div>
-              <div className="text-muted">
-                <small>
-                  <SkeletonSentence words={[70, 110, 80]} />
-                </small>
-              </div>
+              </h5>
+              <p className="item-description">
+                <SkeletonSentence words={[70, 110, 80]} />
+              </p>
+              <AttrsList
+                items={[
+                  {
+                    icon: "far fa-folder",
+                    text: <SkeletonText width={90} />,
+                  },
+                  {
+                    icon: "fas fa-code",
+                    text: <SkeletonText width={30} />,
+                  },
+                  {
+                    icon: "fas fa-medal",
+                    text: <SkeletonText width={40} />,
+                  },
+                  {
+                    icon: "far fa-user",
+                    text: <SkeletonSentence words={[70, 80]} />,
+                  },
+                ]}
+              />
             </Col>
           </Row>
-          <AttrsList
-            items={[
-              {
-                icon: "far fa-folder",
-                text: <SkeletonText width={90} />,
-              },
-              {
-                icon: "fas fa-code",
-                text: <SkeletonText width={30} />,
-              },
-              {
-                icon: "fas fa-medal",
-                text: <SkeletonText width={40} />,
-              },
-              {
-                icon: "far fa-user",
-                text: <SkeletonSentence words={[70, 80]} />,
-              },
-            ]}
-          />
-        </Col>
-      </Row>
-    </CardListItem>
-    <CardListItem>
-      <Row spacing="half">
-        <Col>
-          <Stamp color="#2d6a4f" icon="fas fa-cube" />
-        </Col>
-        <Col width="max">
-          <Row spacing="quarter">
+        </CardBody>
+        <CardFooter>
+          <Row>
+            <div className="col-12 col-md-6">
+              <div className="btn btn-light btn-sm has-text w-100 text-truncate">
+                <Icon name="fas fa-link" />
+                <SkeletonText width={90} />
+              </div>
+            </div>
+            <div className="col-12 col-md-6">
+              <div className="btn btn-light btn-sm has-text w-100 text-truncate">
+                <Icon name="fas fa-code-branch" />
+                <SkeletonText width={100} />
+              </div>
+            </div>
+          </Row>
+        </CardFooter>
+      </Card>,
+      <Card>
+        <CardBody>
+          <Row spacing="half">
+            <Col>
+              <Stamp color="#2ecc71" icon="fas fa-cube" />
+            </Col>
             <Col width="max">
-              <div className="text-title">
+              <h5 className="item-title">
                 <SkeletonSentence words={[60, 120]} />
-              </div>
-              <div className="text-muted">
-                <small>
-                  <SkeletonSentence words={[50, 100, 30, 80]} />
-                </small>
-              </div>
+              </h5>
+              <p className="item-description">
+                <SkeletonSentence words={[100, 50, 30, 80]} />
+              </p>
+              <AttrsList
+                items={[
+                  {
+                    icon: "far fa-folder",
+                    text: <SkeletonText width={80} />,
+                  },
+                  {
+                    icon: "fas fa-code",
+                    text: <SkeletonText width={40} />,
+                  },
+                  {
+                    icon: "fas fa-medal",
+                    text: <SkeletonText width={30} />,
+                  },
+                  {
+                    icon: "far fa-user",
+                    text: <SkeletonSentence words={[90, 60]} />,
+                  },
+                ]}
+              />
             </Col>
           </Row>
-          <AttrsList
-            items={[
-              {
-                icon: "far fa-folder",
-                text: <SkeletonText width={80} />,
-              },
-              {
-                icon: "fas fa-code",
-                text: <SkeletonText width={40} />,
-              },
-              {
-                icon: "fas fa-medal",
-                text: <SkeletonText width={30} />,
-              },
-              {
-                icon: "far fa-user",
-                text: <SkeletonSentence words={[90, 60]} />,
-              },
-            ]}
-          />
-        </Col>
-      </Row>
-    </CardListItem>
-  </CardList>
+        </CardBody>
+        <CardFooter>
+          <Row>
+            <div className="col-12 col-md-6">
+              <div className="btn btn-light btn-sm has-text w-100 text-truncate">
+                <Icon name="fas fa-link" />
+                <SkeletonText width={100} />
+              </div>
+            </div>
+            <div className="col-12 col-md-6">
+              <div className="btn btn-light btn-sm has-text w-100 text-truncate">
+                <Icon name="fas fa-code-branch" />
+                <SkeletonText width={80} />
+              </div>
+            </div>
+          </Row>
+        </CardFooter>
+      </Card>,
+    ]}
+  />
 )
 
 export default PluginsLoading

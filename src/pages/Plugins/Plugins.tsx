@@ -23,13 +23,11 @@ const Plugins: React.FC = () => {
         })}
       />
       <PageHeader title={<Trans id="plugins">Plugins</Trans>} />
-      <Card>
-        {data?.plugins ? (
-          <PluginsList plugins={data.plugins} />
-        ) : (
-          <PluginsLoading />
-        )}
-      </Card>
+      {data?.plugins ? (
+        <PluginsList plugins={data.plugins} />
+      ) : (
+        <PluginsLoading />
+      )}
     </>
   )
 }

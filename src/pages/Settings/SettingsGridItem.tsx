@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import { Card, CardBody } from "../../components/Card"
 import Stamp from "../../components/Stamp"
+import { Col, Row } from "../../grid"
 import { SettingsGroup } from "../../types"
 
 const SettingsGridItem: React.FC<SettingsGroup> = ({
@@ -10,17 +12,21 @@ const SettingsGridItem: React.FC<SettingsGroup> = ({
   name,
   description,
 }) => (
-  <div className="col-12 col-md-6">
-    <Link className="settings-grid-item" to={link}>
-      <div className="settings-grid-icon">
-        <Stamp color={color} icon={icon} />
-      </div>
-      <div className="settings-grid-content">
-        <div className="text-title">{name}</div>
-        {description && <div className="text-muted">{description}</div>}
-      </div>
-    </Link>
-  </div>
+  <Card>
+    <CardBody>
+      <Link className="card-fill-link" to={link}>
+        <Row spacing="half">
+          <Col>
+            <Stamp color={color} icon={icon} />
+          </Col>
+          <Col width="max">
+            <h5 className="item-title">{name}</h5>
+            {description && <p className="item-description">{description}</p>}
+          </Col>
+        </Row>
+      </Link>
+    </CardBody>
+  </Card>
 )
 
 export default SettingsGridItem

@@ -95,6 +95,9 @@ $font-size-lg:                $font-size-base * 1.25 !default;
 
 $text-muted:                  $gray-600 !default;
 
+$item-title:                  $black !default;
+$item-description:            $gray-600 !default;
+
 // Components
 //
 // Define common padding and border radius sizes and more.
@@ -108,8 +111,6 @@ $box-shadow:                  0 .25rem 0.75rem rgba($gray-600, .35) !default;
 $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
-
-$text-title:                  $black !default;
 
 // Cards
 
@@ -167,14 +168,6 @@ $input-bg:                    $white !default;
 $form-fieldset-border:        1px solid $gray-300 !default;
 $form-rows-spacer:            1rem !default;
 
-// Empty list message
-$empty-list-padding:          $spacer * 2;
-$empty-list-color:            $gray-700 !default;
-$empty-list-size:             $font-size-lg !default;
-$empty-list-icon-color:       $gray-600 !default;
-$empty-list-icon-size:        1.5rem !default;
-$empty-list-icon-margin:      $spacer !default;
-
 // Login form
 //
 // Style Loader component.
@@ -193,10 +186,27 @@ $login-form-error:            $red !default;
 
 $col-side-width:              250px;
 
-// Settings grid
+// Card body items
 //
-// Grid of settings groups
+// Used to display item's details in card body
 
-$settings-grid-gutter:          $spacer !default;
-$settings-grid-border-radius:   $border-radius-sm !default;
-$settings-grid-hover-bg:        $gray-100 !default;
+$card-item-title-color:               $item-title;
+$card-item-title-size:                $font-size-base;
+$card-item-description-color:         $text-muted;
+$card-item-description-size:          $font-size-base;
+$card-item-spacing:                   $spacer / 2;
+
+$card-fill-link-radius:               $border-radius-sm !default;
+$card-fill-link-hover-bg:             $gray-100 !default;
+$card-fill-link-active-bg:            $gray-100 !default;
+
+// Empty list message
+
+$empty-list-padding:          $spacer * 2;
+
+$empty-list-color:            $gray-700 !default;
+$empty-list-size:             $font-size-lg !default;
+
+$empty-list-icon-color:       $gray-800 !default;
+$empty-list-icon-size:        1.5rem !default;
+$empty-list-icon-margin:      $spacer !default;

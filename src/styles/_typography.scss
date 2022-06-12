@@ -6,8 +6,8 @@ a.row, a.d-block, a.d-flex {
 }
 
 /* Item title class */
-.text-title {
-  color: $text-title;
+.item-title {
+  color: $item-title;
   font-weight: bold;
 
   small {
@@ -16,7 +16,11 @@ a.row, a.d-block, a.d-flex {
   }
 }
 
-a:hover .text-title,
-a.text-title:hover {
+a:hover .item-title,
+a.item-title:hover {
   text-decoration: underline;
+}
+
+.item-description {
+  color: $item-description;
 }
