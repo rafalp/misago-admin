@@ -1,0 +1,27 @@
+/* Link that looks like a card */
+.link-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: $card-height;
+  word-wrap: break-word;
+  background-color: $link-card-bg;
+  background-clip: border-box;
+  border: $link-card-border-width solid $link-card-border-color;
+  @include border-radius($link-card-border-radius);
+  box-shadow: $link-card-box-shadow;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    background-color: $link-card-hover-bg;
+    border-color: $link-card-hover-border-color;
+    box-shadow: $link-card-hover-box-shadow;
+  }
+
+  &:active {
+    background-color: $link-card-active-bg;
+    border-color: $link-card-active-border-color;
+    box-shadow: $link-card-active-box-shadow;
+  }
+}

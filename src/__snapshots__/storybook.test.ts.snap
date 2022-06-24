@@ -55,6 +55,20 @@ exports[`Storyshots Components Container 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components Link Card 1`] = `
+<a
+  className="link-card"
+  href="#/"
+  onClick={[Function]}
+>
+  <div
+    className="card-body link-card-body"
+  >
+    Hello world
+  </div>
+</a>
+`;
+
 exports[`Storyshots Components Loader 1`] = `
 <div
   className="loader"
@@ -1908,6 +1922,75 @@ exports[`Storyshots Components/Icon Solid 1`] = `
 <i
   className="icon fas fa-address-card"
 />
+`;
+
+exports[`Storyshots Components/Media Object Minimal 1`] = `
+<div
+  className="row gx-3 media-object"
+>
+  <div
+    className="col-auto media-object-media"
+  >
+    <span
+      className="stamp"
+      style={
+        Object {
+          "--color-theme": "#4361ee",
+        }
+      }
+    >
+      <i
+        className="icon fas fa-cog fa-fw"
+      />
+    </span>
+  </div>
+  <div
+    className="col media-object-body"
+  >
+    <h5
+      className="item-title"
+    >
+      Hello world!
+    </h5>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Media Object With Description 1`] = `
+<div
+  className="row gx-3 media-object"
+>
+  <div
+    className="col-auto media-object-media"
+  >
+    <span
+      className="stamp"
+      style={
+        Object {
+          "--color-theme": "#4361ee",
+        }
+      }
+    >
+      <i
+        className="icon fas fa-cog fa-fw"
+      />
+    </span>
+  </div>
+  <div
+    className="col media-object-body"
+  >
+    <h5
+      className="item-title"
+    >
+      Hello world!
+    </h5>
+    <p
+      className="item-description"
+    >
+      Lorem ipsum dolor met sit amet elit.
+    </p>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Components/Page Header Basic 1`] = `
@@ -4798,126 +4881,98 @@ Array [
               <div
                 className="col-12 col-lg-6 mb-4"
               >
-                <div
-                  className="card"
+                <a
+                  className="link-card"
+                  href="#/settings/general"
+                  onClick={[Function]}
                 >
                   <div
-                    className="card-body"
+                    className="card-body link-card-body"
                   >
-                    <a
-                      className="card-fill-link"
-                      href="#/settings/general"
-                      onClick={[Function]}
+                    <div
+                      className="row gx-3 media-object"
                     >
                       <div
-                        className="row gx-3"
+                        className="col-auto media-object-media"
                       >
-                        <div
-                          className="col-auto"
+                        <span
+                          className="stamp"
                           style={
                             Object {
-                              "width": undefined,
+                              "--color-theme": "#3a86ff",
                             }
                           }
                         >
-                          <span
-                            className="stamp"
-                            style={
-                              Object {
-                                "--color-theme": "#3a86ff",
-                              }
-                            }
-                          >
-                            <i
-                              className="icon fas fa-cog fa-fw"
-                            />
-                          </span>
-                        </div>
-                        <div
-                          className="col"
-                          style={
-                            Object {
-                              "width": undefined,
-                            }
-                          }
-                        >
-                          <h5
-                            className="item-title"
-                          >
-                            General
-                          </h5>
-                          <p
-                            className="item-description"
-                          >
-                            Setup forum details like name, title, home page or footer.
-                          </p>
-                        </div>
+                          <i
+                            className="icon fas fa-cog fa-fw"
+                          />
+                        </span>
                       </div>
-                    </a>
+                      <div
+                        className="col media-object-body"
+                      >
+                        <h5
+                          className="item-title"
+                        >
+                          General
+                        </h5>
+                        <p
+                          className="item-description"
+                        >
+                          Setup forum details like name, title, home page or footer.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div
                 className="col-12 col-lg-6 mb-4"
               >
-                <div
-                  className="card"
+                <a
+                  className="link-card"
+                  href="#/settings/users"
+                  onClick={[Function]}
                 >
                   <div
-                    className="card-body"
+                    className="card-body link-card-body"
                   >
-                    <a
-                      className="card-fill-link"
-                      href="#/settings/users"
-                      onClick={[Function]}
+                    <div
+                      className="row gx-3 media-object"
                     >
                       <div
-                        className="row gx-3"
+                        className="col-auto media-object-media"
                       >
-                        <div
-                          className="col-auto"
+                        <span
+                          className="stamp"
                           style={
                             Object {
-                              "width": undefined,
+                              "--color-theme": "#8ac926",
                             }
                           }
                         >
-                          <span
-                            className="stamp"
-                            style={
-                              Object {
-                                "--color-theme": "#8ac926",
-                              }
-                            }
-                          >
-                            <i
-                              className="icon fas fa-user fa-fw"
-                            />
-                          </span>
-                        </div>
-                        <div
-                          className="col"
-                          style={
-                            Object {
-                              "width": undefined,
-                            }
-                          }
-                        >
-                          <h5
-                            className="item-title"
-                          >
-                            User accounts
-                          </h5>
-                          <p
-                            className="item-description"
-                          >
-                            Customize user accounts defaults and available features.
-                          </p>
-                        </div>
+                          <i
+                            className="icon fas fa-user fa-fw"
+                          />
+                        </span>
                       </div>
-                    </a>
+                      <div
+                        className="col media-object-body"
+                      >
+                        <h5
+                          className="item-title"
+                        >
+                          User accounts
+                        </h5>
+                        <p
+                          className="item-description"
+                        >
+                          Customize user accounts defaults and available features.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div
@@ -4926,64 +4981,50 @@ Array [
               <div
                 className="col-12 col-lg-6 mb-4"
               >
-                <div
-                  className="card"
+                <a
+                  className="link-card"
+                  href="#/settings/threads"
+                  onClick={[Function]}
                 >
                   <div
-                    className="card-body"
+                    className="card-body link-card-body"
                   >
-                    <a
-                      className="card-fill-link"
-                      href="#/settings/threads"
-                      onClick={[Function]}
+                    <div
+                      className="row gx-3 media-object"
                     >
                       <div
-                        className="row gx-3"
+                        className="col-auto media-object-media"
                       >
-                        <div
-                          className="col-auto"
+                        <span
+                          className="stamp"
                           style={
                             Object {
-                              "width": undefined,
+                              "--color-theme": "#ffca3a",
                             }
                           }
                         >
-                          <span
-                            className="stamp"
-                            style={
-                              Object {
-                                "--color-theme": "#ffca3a",
-                              }
-                            }
-                          >
-                            <i
-                              className="icon fas fa-comment-alt fa-fw"
-                            />
-                          </span>
-                        </div>
-                        <div
-                          className="col"
-                          style={
-                            Object {
-                              "width": undefined,
-                            }
-                          }
-                        >
-                          <h5
-                            className="item-title"
-                          >
-                            Threads and posts
-                          </h5>
-                          <p
-                            className="item-description"
-                          >
-                            Change the way that threads and posts are displayed or edit posting constraints.
-                          </p>
-                        </div>
+                          <i
+                            className="icon fas fa-comment-alt fa-fw"
+                          />
+                        </span>
                       </div>
-                    </a>
+                      <div
+                        className="col media-object-body"
+                      >
+                        <h5
+                          className="item-title"
+                        >
+                          Threads and posts
+                        </h5>
+                        <p
+                          className="item-description"
+                        >
+                          Change the way that threads and posts are displayed or edit posting constraints.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>

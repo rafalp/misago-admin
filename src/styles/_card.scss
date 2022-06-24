@@ -12,46 +12,6 @@
   border-top: $card-foot-border;
 }
 
-/* Lay out items in card body */
-.card-body {
-  .item-title {
-    color: $card-item-title-color;
-    font-size: $card-item-title-size;
-  }
-
-  .item-description {
-    color: $card-item-description-color;
-    font-size: $card-item-description-size;
-  }
-
-  .item-title, .item-description {
-    margin-bottom: $card-item-spacing;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
-/* Card fill link that fills whole body */
-.card-fill-link {
-  display: block;
-
-  margin: $card-spacer-y / -2 $card-spacer-x / -2;
-  padding: $card-spacer-y / 2 $card-spacer-x / 2;
-
-  border-radius: $card-fill-link-radius;
-  text-decoration: none;
-
-  &:hover {
-    background-color: $card-fill-link-hover-bg;
-  }
-
-  &:active {
-    background-color: $card-fill-link-active-bg;
-  }
-}
-
 /* Add vertical spacing to collapsed row items in card footer and header */
 .card-header > .row,
 .card-footer > .row {

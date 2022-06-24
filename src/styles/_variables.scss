@@ -57,6 +57,8 @@ $colors: (
   "gray-dark":  $gray-800
 ) !default;
 
+$primary:       $blue !default;
+
 // Spacing
 //
 // Control the default styling of most Bootstrap elements by modifying these
@@ -102,6 +104,17 @@ $item-description:            $gray-600 !default;
 //
 // Define common padding and border radius sizes and more.
 
+$border-width:                1px !default;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px
+) !default;
+
+$border-color:                $gray-300 !default;
+
 $border-radius:               .25rem !default;
 $border-radius-sm:            .2rem !default;
 $border-radius-lg:            .3rem !default;
@@ -111,6 +124,9 @@ $box-shadow:                  0 .25rem 0.75rem rgba($gray-600, .35) !default;
 $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
+
+$component-active-color:      $white !default;
+$component-active-bg:         $primary !default;
 
 // Cards
 
@@ -186,19 +202,33 @@ $login-form-error:            $red !default;
 
 $col-side-width:              250px;
 
-// Card body items
+// Media object items
 //
 // Used to display item's details in card body
 
-$card-item-title-color:               $item-title;
-$card-item-title-size:                $font-size-base;
-$card-item-description-color:         $text-muted;
-$card-item-description-size:          $font-size-base;
-$card-item-spacing:                   $spacer / 2;
+$media-object-title-color:              $item-title;
+$media-object-title-size:               $font-size-base;
+$media-object-description-color:        $text-muted;
+$media-object-description-size:         $font-size-base;
+$media-object-spacing:                  $spacer / 2;
 
-$card-fill-link-radius:               $border-radius-sm !default;
-$card-fill-link-hover-bg:             $gray-100 !default;
-$card-fill-link-active-bg:            $gray-100 !default;
+// Link card
+//
+// Styles cards that are links
+
+$link-card-border-width:                  $border-width !default;
+$link-card-border-color:                  rgba($black, .125) !default;
+$link-card-border-radius:                 $border-radius !default;
+$link-card-box-shadow:                    null !default;
+$link-card-bg:                            $white !default;
+
+$link-card-hover-border-color:            rgba($component-active-bg, .25) !default;
+$link-card-hover-box-shadow:              0 0 0 .25rem rgba($component-active-bg, .1) !default;
+$link-card-hover-bg:                      $white !default;
+
+$link-card-active-border-color:           tint-color($component-active-bg, 50%) !default;
+$link-card-active-box-shadow:             0 0 0 .25rem rgba($component-active-bg, .25) !default;
+$link-card-active-bg:                     $white !default;
 
 // Empty list message
 

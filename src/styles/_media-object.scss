@@ -1,0 +1,22 @@
+/* Media object is image/stamp with title/description/attrs list */
+
+/* Lay out items evenly in media object body */
+.media-object-body {
+  .item-title {
+    color: $media-object-title-color;
+    font-size: $media-object-title-size;
+  }
+
+  .item-description {
+    color: $media-object-description-color;
+    font-size: $media-object-description-size;
+  }
+
+  .item-title, .item-description {
+    margin-bottom: $media-object-spacing;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

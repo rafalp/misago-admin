@@ -3,84 +3,88 @@ import React from "react"
 import AttrsList from "../../components/AttrsList"
 import { Card, CardBody, CardFooter } from "../../components/Card"
 import Icon from "../../components/Icon"
+import {
+  MediaObject,
+  MediaObjectDescription,
+  MediaObjectTitle,
+} from "../../components/MediaObject"
 import Stamp from "../../components/Stamp"
-import { Col, Row } from "../../grid"
+import { Row } from "../../grid"
 import { PluginData } from "./Plugins.types"
 
 const PluginsListItem: React.FC<{ plugin: PluginData }> = ({ plugin }) => (
   <Card>
     <CardBody>
-      <Row spacing="half">
-        <Col>
+      <MediaObject
+        media={
           <Stamp
             color={plugin.color || "#495057"}
             icon={plugin.icon || "fas fa-cube"}
           />
-        </Col>
-        <Col width="max">
-          <h5 className="item-title">{plugin.name}</h5>
-          {plugin.description && (
-            <p className="item-description">{plugin.description}</p>
-          )}
-          <AttrsList
-            items={[
-              {
-                icon: "far fa-folder",
-                text: plugin.directory,
-                title: t({
-                  id: "plugins.directory.tooltip",
-                  message: "Plugin directory",
-                }),
-              },
-              {
-                show: plugin.admin,
-                icon: "fas fa-wrench",
-                text: <Trans id="plugin.admin">Admin</Trans>,
-                title: t({
-                  id: "plugins.admin.tooltip",
-                  message: "Extends admin control panel",
-                }),
-              },
-              {
-                show: plugin.client,
-                icon: "far fa-window-maximize",
-                text: <Trans id="plugin.client">Client</Trans>,
-                title: t({
-                  id: "plugins.client.tooltip",
-                  message: "Extends client UI",
-                }),
-              },
-              {
-                show: !!plugin.version,
-                icon: "fas fa-code",
-                text: plugin.version,
-                title: t({
-                  id: "plugins.version.tooltip",
-                  message: "Version",
-                }),
-              },
-              {
-                show: !!plugin.license,
-                icon: "fas fa-medal",
-                text: plugin.license,
-                title: t({
-                  id: "plugins.license.tooltip",
-                  message: "License",
-                }),
-              },
-              {
-                show: !!plugin.author,
-                icon: "far fa-user",
-                text: plugin.author,
-                title: t({
-                  id: "plugins.author.tooltip",
-                  message: "Author",
-                }),
-              },
-            ]}
-          />
-        </Col>
-      </Row>
+        }
+      >
+        <MediaObjectTitle>{plugin.name}</MediaObjectTitle>
+        {plugin.description && (
+          <MediaObjectDescription>{plugin.description}</MediaObjectDescription>
+        )}
+        <AttrsList
+          items={[
+            {
+              icon: "far fa-folder",
+              text: plugin.directory,
+              title: t({
+                id: "plugins.directory.tooltip",
+                message: "Plugin directory",
+              }),
+            },
+            {
+              show: plugin.admin,
+              icon: "fas fa-wrench",
+              text: <Trans id="plugin.admin">Admin</Trans>,
+              title: t({
+                id: "plugins.admin.tooltip",
+                message: "Extends admin control panel",
+              }),
+            },
+            {
+              show: plugin.client,
+              icon: "far fa-window-maximize",
+              text: <Trans id="plugin.client">Client</Trans>,
+              title: t({
+                id: "plugins.client.tooltip",
+                message: "Extends client UI",
+              }),
+            },
+            {
+              show: !!plugin.version,
+              icon: "fas fa-code",
+              text: plugin.version,
+              title: t({
+                id: "plugins.version.tooltip",
+                message: "Version",
+              }),
+            },
+            {
+              show: !!plugin.license,
+              icon: "fas fa-medal",
+              text: plugin.license,
+              title: t({
+                id: "plugins.license.tooltip",
+                message: "License",
+              }),
+            },
+            {
+              show: !!plugin.author,
+              icon: "far fa-user",
+              text: plugin.author,
+              title: t({
+                id: "plugins.author.tooltip",
+                message: "Author",
+              }),
+            },
+          ]}
+        />
+      </MediaObject>
     </CardBody>
     {(plugin.homepage || plugin.repo) && (
       <CardFooter>
