@@ -4,7 +4,7 @@ import SettingsThreads from "."
 import { SETTINGS_THREADS_QUERY } from "./useSettingsThreadsQuery"
 
 export default {
-  title: "Pages/Settings/Threads and posts",
+  title: "Routes/Settings/Threads and posts",
   parameters: {
     layout: "fullscreen",
   },

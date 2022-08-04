@@ -4,7 +4,7 @@ import SettingsUsers from "."
 import { SETTINGS_USERS_QUERY } from "./useSettingsUsersQuery"
 
 export default {
-  title: "Pages/Settings/User accounts",
+  title: "Routes/Settings/User accounts",
   parameters: {
     layout: "fullscreen",
   },

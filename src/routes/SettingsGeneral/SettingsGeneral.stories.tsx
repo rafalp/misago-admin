@@ -4,7 +4,7 @@ import SettingsGeneral from "."
 import { SETTINGS_GENERAL_QUERY } from "./useSettingsGeneralQuery"
 
 export default {
-  title: "Pages/Settings/General",
+  title: "Routes/Settings/General",
   parameters: {
     layout: "fullscreen",
   },

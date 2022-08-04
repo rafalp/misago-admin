@@ -4,7 +4,7 @@ import Plugins from "."
 import { PLUGINS_QUERY } from "./usePluginsQuery"
 
 export default {
-  title: "Pages/Plugins",
+  title: "Routes/Plugins",
   parameters: {
     layout: "fullscreen",
   },

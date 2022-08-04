@@ -2,7 +2,7 @@ import { MockLayoutFull } from "../Storybook"
 import Settings from "."
 
 export default {
-  title: "Pages/Settings",
+  title: "Routes/Settings",
   parameters: {
     layout: "fullscreen",
   },

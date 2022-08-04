@@ -2635,7 +2635,7 @@ exports[`Storyshots Pages Login Page 1`] = `
 </div>
 `;
 
-exports[`Storyshots Pages/Plugins Empty 1`] = `
+exports[`Storyshots Routes/Plugins Empty 1`] = `
 Array [
   <nav
     className="navbar navbar-expand"
@@ -3332,7 +3332,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Pages/Plugins Loading 1`] = `
+exports[`Storyshots Routes/Plugins Loading 1`] = `
 Array [
   <nav
     className="navbar navbar-expand"
@@ -4029,7 +4029,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Pages/Plugins Ready 1`] = `
+exports[`Storyshots Routes/Plugins Ready 1`] = `
 Array [
   <nav
     className="navbar navbar-expand"
@@ -4726,7 +4726,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Pages/Settings Settings Groups 1`] = `
+exports[`Storyshots Routes/Settings Settings Groups 1`] = `
 Array [
   <nav
     className="navbar navbar-expand"
@@ -5035,7 +5035,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Pages/Settings/General Loading 1`] = `
+exports[`Storyshots Routes/Settings/General Loading 1`] = `
 Array [
   <nav
     className="navbar navbar-expand"
@@ -5454,7 +5454,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Pages/Settings/General Ready 1`] = `
+exports[`Storyshots Routes/Settings/General Ready 1`] = `
 Array [
   <nav
     className="navbar navbar-expand"
@@ -5873,7 +5873,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Pages/Settings/Threads and posts Loading 1`] = `
+exports[`Storyshots Routes/Settings/Threads and posts Loading 1`] = `
 Array [
   <nav
     className="navbar navbar-expand"
@@ -6281,7 +6281,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Pages/Settings/Threads and posts Ready 1`] = `
+exports[`Storyshots Routes/Settings/Threads and posts Ready 1`] = `
 Array [
   <nav
     className="navbar navbar-expand"
@@ -6689,7 +6689,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Pages/Settings/User accounts Loading 1`] = `
+exports[`Storyshots Routes/Settings/User accounts Loading 1`] = `
 Array [
   <nav
     className="navbar navbar-expand"
@@ -7039,7 +7039,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Pages/Settings/User accounts Ready 1`] = `
+exports[`Storyshots Routes/Settings/User accounts Ready 1`] = `
 Array [
   <nav
     className="navbar navbar-expand"
