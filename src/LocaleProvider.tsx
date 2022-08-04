@@ -2,7 +2,7 @@ import { i18n } from "@lingui/core"
 import { I18nProvider } from "@lingui/react"
 import * as plurals from "make-plural/plurals"
 import React from "react"
-import Loading from "./pages/Loading"
+import Loading from "./routes/Loading"
 
 type LocaleProviderProps = {
   children: React.ReactNode

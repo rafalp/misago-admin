@@ -4,7 +4,7 @@ import { useAuth } from "./auth"
 import Navbar from "./components/Navbar"
 import { MAIN_NAV, ROUTES } from "./site"
 import LayoutFull from "./layouts/LayoutFull"
-import LoginPage from "./pages/Login"
+import LoginPage from "./routes/Login"
 import { ToastsProvider, ToastsContainer } from "./toasts"
 
 declare global {

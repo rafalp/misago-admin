@@ -1,10 +1,10 @@
 import { Trans } from "@lingui/macro"
-import Dashboard from "./pages/Dashboard"
-import Plugins from "./pages/Plugins"
-import Settings from "./pages/Settings"
-import SettingsGeneral from "./pages/SettingsGeneral"
-import SettingsThreads from "./pages/SettingsThreads"
-import SettingsUsers from "./pages/SettingsUsers"
+import Dashboard from "./routes/Dashboard"
+import Plugins from "./routes/Plugins"
+import Settings from "./routes/Settings"
+import SettingsGeneral from "./routes/SettingsGeneral"
+import SettingsThreads from "./routes/SettingsThreads"
+import SettingsUsers from "./routes/SettingsUsers"
 import { MainNavItem, SettingsGroup, Route } from "./types"
 
 const MAIN_NAV: Array<MainNavItem> = [

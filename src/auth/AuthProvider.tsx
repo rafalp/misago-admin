@@ -1,5 +1,5 @@
 import React from "react"
-import Loading from "../pages/Loading"
+import Loading from "../routes/Loading"
 import { AuthContext } from "./context"
 import { clearAuthToken, setAuthToken } from "./token"
 import useAuthQuery from "./useAuthQuery"
