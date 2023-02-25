@@ -43,14 +43,12 @@ export const DataTableEmptyWithHeaderStory = () => (
       <th>one</th>
       <th>two</th>
     </DataTableHeader>
-    <DataTableEmpty colspan={3}>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
+    <DataTableEmpty colspan={1}>
+      <DataTableEmpty>This table is empty.</DataTableEmpty>
     </DataTableEmpty>
   </DataTable>
 )
-DataTableEmptyWithHeadersStory.args = {
+DataTableEmptyWithHeaderStory.args = {
   ...Template,
   children: "Data Table Empty",
 }

@@ -810,6 +810,106 @@ exports[`Storyshots Components/Controls Text Input 1`] = `
 />
 `;
 
+exports[`Storyshots Components/Data Table Data Table Empty Story 1`] = `
+<table
+  className="table datatable table-responsive"
+>
+  <tr
+    className="datatable-row datatable-empty-tr"
+  >
+    <td
+      className="datatable-empty-col"
+    >
+      This table is empty.
+    </td>
+  </tr>
+</table>
+`;
+
+exports[`Storyshots Components/Data Table Data Table Empty With Header Story 1`] = `
+<table
+  className="table datatable table-responsive"
+>
+  <tr
+    className="datatable-header"
+  >
+    <th>
+      #
+    </th>
+    <th>
+      one
+    </th>
+    <th>
+      two
+    </th>
+  </tr>
+  <tr
+    className="datatable-row datatable-empty-tr"
+  >
+    <td
+      className="datatable-empty-col"
+      colSpan={3}
+    >
+      <tr
+        className="datatable-row datatable-empty-tr"
+      >
+        <td
+          className="datatable-empty-col"
+        >
+          This table is empty.
+        </td>
+      </tr>
+    </td>
+  </tr>
+</table>
+`;
+
+exports[`Storyshots Components/Data Table Data Table Story 1`] = `
+<table
+  className="table datatable table-responsive"
+>
+  <tr
+    className="datatable-header"
+  >
+    <td>
+      #
+    </td>
+    <td>
+      one
+    </td>
+    <td>
+      two
+    </td>
+  </tr>
+  <tr
+    className="datatable-row"
+  >
+    <td>
+      1
+    </td>
+    <td>
+      one
+    </td>
+    <td>
+      two
+    </td>
+  </tr>
+  <tr
+    className="datatable-row"
+  >
+    <td>
+      1
+    </td>
+    <td>
+      one
+    </td>
+    <td>
+      two
+    </td>
+  </tr>
+</table>
+`;
+
 exports[`Storyshots Components/Form Card Complex 1`] = `
 <div
   className="card form-card"

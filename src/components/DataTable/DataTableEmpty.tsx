@@ -13,7 +13,7 @@ const DataTableEmpty: React.FC<DataTableEmptyProps> = ({
   children,
   colspan,
 }) => (
-  <DataTableRow className={classnames("datatable-empty-tr", className)}>
+  <DataTableRow className={classnames("datatable-empty-td", className)}>
     <td className="datatable-empty-col" colSpan={colspan}>
       {children}
     </td>
