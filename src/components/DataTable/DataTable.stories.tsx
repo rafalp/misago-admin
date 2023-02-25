@@ -36,7 +36,7 @@ export const DataTableEmptyStory = () => (
 )
 DataTableEmptyStory.args = { ...Template, children: "Data Table Empty" }
 
-export const DataTableEmptyWithHeadersStory = () => (
+export const DataTableEmptyWithHeaderStory = () => (
   <DataTable>
     <DataTableHeader>
       <th>#</th>
