@@ -815,7 +815,7 @@ exports[`Storyshots Components/Data Table Data Table Empty Story 1`] = `
   className="table datatable table-responsive"
 >
   <tr
-    className="datatable-row datatable-empty-tr"
+    className="datatable-row datatable-empty-td"
   >
     <td
       className="datatable-empty-col"
@@ -844,14 +844,14 @@ exports[`Storyshots Components/Data Table Data Table Empty With Header Story 1`]
     </th>
   </tr>
   <tr
-    className="datatable-row datatable-empty-tr"
+    className="datatable-row datatable-empty-td"
   >
     <td
       className="datatable-empty-col"
-      colSpan={3}
+      colSpan={1}
     >
       <tr
-        className="datatable-row datatable-empty-tr"
+        className="datatable-row datatable-empty-td"
       >
         <td
           className="datatable-empty-col"
